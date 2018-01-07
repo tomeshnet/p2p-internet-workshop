@@ -15,3 +15,4 @@ Resources including existing curriculum, workshop materials and lesson planning.
 - [Metamesh YouTube channel (Video)](https://www.youtube.com/channel/UCGEnntxbGKMU9J9GIZ1LQUQ)
 - [Detroit Community Technology Project](http://detroitcommunitytech.org/learning-materials)
 - [Community Technology Facilitation](http://csommunitytechnology.github.io/docs/facilitation/discussion-formats/)
+- [NETworkshop](https://criticalengineering.org/courses/networkshop/)
