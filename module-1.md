@@ -28,7 +28,10 @@ Planned:      1.25 hour
 - Experience local peer-to-peer applications that are relatable to those we are familiar with from the Internet (e.g. Facebook, Dropbox, Whatsapp, Twitter, Spotify)
 - "Run your own app" on pre-configured nodes and contrast "serverless" applications on a distributed physical network vs. traditional centralized edge services via ISP networks
 
-**Ideas for peer-to-peer applications (preference for those that require minimal steps, e.g. exchanging keys, after `docker start` and have a familiar UI):**
+**Ideas for peer-to-peer applications:**
+
+_Preference to those that require minimal steps (e.g. exchanging keys, after `docker start`) and have a familiar UI._
+
     - Secure Scuttlebutt / Patchwork (need to pin public keys)
     - IPFS (auto peer but need to share content hash)
     - RetroShare
