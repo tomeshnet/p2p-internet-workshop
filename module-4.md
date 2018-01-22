@@ -16,6 +16,16 @@ Planned:      1.25 hour
 
 ## 2: Hands-on and material exploration
 
+### Objectives
+
+
+### Materials
+
+
+### Format
+
+
+### Activity
 
 
 ## 3: Discussion and reflection activity

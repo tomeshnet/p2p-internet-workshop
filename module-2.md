@@ -17,7 +17,7 @@ Planned:      1.25 hour
 
 ## 2: Hands-on and material exploration
 
-### Objective
+### Objectives
 
 Set up a very basic network in class as manually as possible with the following goals:
 
@@ -35,6 +35,10 @@ Set up a very basic network in class as manually as possible with the following 
 - Two USB WiFi radios that are ad-hoc or 802.11s-capable (e.g. TP-Link TL-WN722N)
 - A 4-port network switch (to demo network centralization)
 - A physical lock with a key (to demo end-to-end encryption)
+
+### Format
+
+- Groups (or Pairs) to start, then Class
 
 ### Activity
 
@@ -68,4 +72,10 @@ Set up a very basic network in class as manually as possible with the following 
 
 ## 4: Wrap-up and week ahead
 
-- Go home and connect to a Hyperboria server to retrieve some content / solve a riddle
+- [Frequency, Amplitude, and Phase](https://www.youtube.com/watch?v=5g-Din357iY) from the [Metamesh YouTube channel](https://www.youtube.com/channel/UCGEnntxbGKMU9J9GIZ1LQUQ)
+    - Explains what "is" WiFi in the physical sense
+    - Relates radio interference to WiFi channels
+    - Shows configuration of WiFi channel that is relevant to real-world network deployments
+    - Helps future discussions around urban vs. rural deployments and omnidirectional vs. directional links
+
+- Retrieve video content from Hyperboria server as stretch goal

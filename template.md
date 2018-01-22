@@ -18,6 +18,22 @@ Planned:      1.25 hour
 
 - Mostly peer-to-peer style facilitation with multiple helpers
 
+### Objectives
+
+- Learning objectives of the activity
+
+### Materials
+
+- Materials required for the activity
+
+### Format
+
+- Format (_Individuals_, _Pairs_, _Groups_, or _Class_) of the activity
+
+### Activity
+
+- Rundown of the activity
+
 ## 3: Discussion and reflection activity
 
 - Interactive (class discussions and questions)

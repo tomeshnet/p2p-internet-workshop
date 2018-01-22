@@ -23,15 +23,39 @@ Planned:      1.25 hour
 
 ## 2: Hands-on and material exploration
 
-- Activity for audience to "run their own app" on pre-configured nodes, where the apps are relatable with those we are familiar with from the Internet (e.g. Facebook, Dropbox, Whatsapp, Twitter, Spotify)
-- See [Portable Network Kit](http://pnkgo.com) for types of services they run on a Raspberry Pi
-- Make docker container for each peer-to-peer service on pre-configured nodes so they can be launched easily and reliably (prepare two, preference for those that require minimal steps, e.g. exchanging keys, after `docker start` and have a familiar UI):
-    - IPFS (auto peer but need to share content hash)
+### Objectives
+
+- Experience local peer-to-peer applications that are relatable to those we are familiar with from the Internet (e.g. Facebook, Dropbox, Whatsapp, Twitter, Spotify)
+- "Run your own app" on pre-configured nodes and contrast "serverless" applications on a distributed physical network vs. traditional centralized edge services via ISP networks
+
+**Ideas for peer-to-peer applications (preference for those that require minimal steps, e.g. exchanging keys, after `docker start` and have a familiar UI):**
     - Secure Scuttlebutt / Patchwork (need to pin public keys)
+    - IPFS (auto peer but need to share content hash)
     - RetroShare
     - (Chat?)
     - (Collaborative text editor?)
     - (Audio/Video streaming, could be part of IPFS?)
+    - See [Portable Network Kit](http://pnkgo.com) for types of services they run on a Raspberry Pi
+
+### Materials
+
+A _Raspberry Pi 3 Kit_ for each student that includes:
+
+- USB WiFi radio that is ad-hoc or 802.11s-capable (e.g. TP-Link TL-WN722N)
+- SD card with [mesh-orange](https://github.com/tomeshnet/mesh-orange) pre-configured to mesh wirelessly with cjdns
+- Tools to discover node identity in the ad-hoc network and share human-readable names with others (e.g. [ssb-dns](https://github.com/ansuz/dnssb))
+- Contain Docker image for Secure Scuttlebutt and multiple Patchwork clients (i.e. [scuttlebot](https://github.com/ssbc/scuttlebot), [patchwork](https://github.com/ssbc/patchwork), [patchbay](https://github.com/ssbc/patchbay), [patchfoo](https://github.com/ssbc/patchfoo))
+
+### Format
+
+- Individuals
+
+### Activity
+
+- Boot all the Raspberry Pi nodes and see that they all wirelessly mesh with one another
+- Connect student laptop to each Raspberry Pi's Host AP and initiate a SSH session to `pi@10.0.0.1` (the pre-configured address of the Host AP interface)
+- Run `docker up` on each node to start a Secure Scuttlebutt node on this ad-hoc Patchwork social network
+- Visit `http://10.0.0.1:PORT` to use the desired Patchwork UI and send public and private messages to new friends in this class' local mesh network
 
 ## 3: Discussion and reflection activity
 

@@ -16,7 +16,17 @@ Planned:      1.25 hour
 
 ## 2: Hands-on and material exploration
 
-### Build a 900 MHz LoRa sensor network with WiFi mesh network as backhaul
+### Objectives
+
+Build a 900 MHz LoRa sensor network with WiFi mesh network as backhaul.
+
+### Materials
+
+
+### Format
+
+
+### Activity
 
 - Motivation to use low power networks:  
   * Energy, cost, simplicity  
@@ -28,7 +38,7 @@ Planned:      1.25 hour
   * How does LoRa work? What are some alternatives?
   * ISM band and spectrum allocation in Canada
 
-- Low Power Microcontrolers
+- Low Power Microcontrollers
   * What is an Arduino?
   * Walk-through of a simple Arduino sketch to send data over LoRa to a friend
 
