@@ -1,4 +1,4 @@
-# Module Template
+# 4: Planning a network
 
 Total length:  1.5 hour
 Planned:      1.25 hour
@@ -12,32 +12,30 @@ Planned:      1.25 hour
 
 ## 1: Topic introduction
 
-- Break up dense material into class discussion or more engaging material
+- Toronto wireless history leading up to Toronto Mesh
 
 ## 2: Hands-on and material exploration
 
-- Mostly peer-to-peer style facilitation with multiple helpers
+Mapping activity to prototype neighbourhood deployment and flag considerations based on [Commotion Construction Kit](https://commotionwireless.net/docs/cck/).
 
 ### Objectives
 
-- Learning objectives of the activity
 
 ### Materials
 
-- Materials required for the activity
+- Printed map
+- Google Earth
+- Hardware examples
 
 ### Format
 
-- Format (_Individuals_, _Pairs_, _Groups_, or _Class_) of the activity
 
 ### Activity
 
-- Rundown of the activity
 
 ## 3: Discussion and reflection activity
 
-- Interactive (class discussions and questions)
+Draw upon [WNDW](http://wndw.net) and other resources (from previous week's reading).
 
 ## 4: Wrap-up and week ahead
 
-- Video + article(s) during the week for flip classroom during class

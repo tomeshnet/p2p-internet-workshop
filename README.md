@@ -22,7 +22,6 @@
 - Expect audience to have used a computer before, with no assumption of prior programming or networking knowledge
 - Linux primer before first class (access to some shell at home for practice)
 
-
 ## Learning Outcomes
 
 - Working with Raspberry Pi's to make a network router
