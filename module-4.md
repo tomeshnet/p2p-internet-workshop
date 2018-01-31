@@ -16,11 +16,16 @@ Planned:      1.25 hour
 
 ## 2: Hands-on and material exploration
 
+Mapping activity to prototype neighbourhood deployment and flag considerations based on [Commotion Construction Kit](https://commotionwireless.net/docs/cck/).
+
 ### Objectives
 
 
 ### Materials
 
+- Printed map
+- Google Earth
+- Hardware examples
 
 ### Format
 
@@ -30,7 +35,7 @@ Planned:      1.25 hour
 
 ## 3: Discussion and reflection activity
 
-
+Draw upon [WNDW](http://wndw.net) and other resources (from previous week's reading).
 
 ## 4: Wrap-up and week ahead
 

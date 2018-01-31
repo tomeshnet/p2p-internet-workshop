@@ -16,6 +16,8 @@ Planned:      1.25 hour
 
 ## 2: Hands-on and material exploration
 
+Expand on network concepts, use new LoRa radio with Raspberry Pis to talk over large distances and SDR to observe.
+
 ### Objectives
 
 Build a 900 MHz LoRa sensor network with WiFi mesh network as backhaul.
@@ -46,6 +48,7 @@ Build a 900 MHz LoRa sensor network with WiFi mesh network as backhaul.
 
 ## 3: Discussion and reflection activity
 
+CRTC spectrum allocation and alternative spectrums such as ISM bands and TVWS. What do you want your network to do?
 
 ## 4: Wrap-up and week ahead
 

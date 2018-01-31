@@ -23,6 +23,8 @@ Planned:      1.25 hour
 
 ## 2: Hands-on and material exploration
 
+Trying out peer-to-peer applications running over a decentralized infrastructure.
+
 ### Objectives
 
 - Experience local peer-to-peer applications that are relatable to those we are familiar with from the Internet (e.g. Facebook, Dropbox, Whatsapp, Twitter, Spotify)
@@ -62,7 +64,7 @@ A _Raspberry Pi 3 Kit_ for each student that includes:
 
 ## 3: Discussion and reflection activity
 
-- Reflect on the role of technology in society
+Reflect on the role of technology in society and power, based on [Explore Community Technology: Investigate Technology](https://communitytechnology.github.io/docs/intro-ct/investigate-tech/).
 
 ## 4: Wrap-up and week ahead
 

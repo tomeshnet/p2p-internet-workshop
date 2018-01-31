@@ -17,6 +17,8 @@ Planned:      1.25 hour
 
 ## 2: Hands-on and material exploration
 
+Make visible the underlying infrastructure by sending text messages over ethernet cables.
+
 ### Objectives
 
 Set up a very basic network in class as manually as possible with the following goals:

@@ -16,6 +16,8 @@ Planned:      1.25 hour
 
 ## 2: Hands-on and material exploration
 
+Group activity to wirelessly mesh with other groups by configuring Raspberry Pis.
+
 ### Objectives
 
 
@@ -30,6 +32,6 @@ Planned:      1.25 hour
 
 ## 3: Discussion and reflection activity
 
-
+Q & A discussion around the different hardware we employ to build a network.
 
 ## 4: Wrap-up and week ahead
