@@ -34,7 +34,7 @@ Learn to establish wireless links between nodes and manipulate the nodes' radio 
 
 ### Materials
 
-* A Raspberry Pi 3 for each member labelled with the SSID for the node
+* A Raspberry Pi 3 for each member labeled with the SSID for the node
 * SD cards with pre-flashed images with all required software 
 * Laptops that can establish a SSH session to each Raspberry Pi (each running a Host AP with unique SSID) 
 * 802.11s capable (e.g. TP-Link TL-WN722N v1) Radio for each Raspberry Pi 3 
