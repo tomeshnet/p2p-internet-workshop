@@ -12,36 +12,83 @@ Planned:      1.25 hour
 
 ## 1: Topic introduction
 
-
+* Take up homework 
+* Discuss the need for keeping a pulse of the network
+  * What attributes are important to monitor
+  * How are these attributes measured?
+  * Identify units and what they mean
+  * Where have we seen it in our daily lives?
 
 ## 2: Hands-on and material exploration
 
-Monitor flow of network traffic using different tools as we do everyday digital things.
+Monitor flow of network traffic using different tools as we do every day digital things.
 
 ### Objectives
 
+Learn how these metrics affect us in our day to day lives, and in contrast how the same metrics affect others.
 
 ### Materials
 
 
 ### Format
 
+Groups (or pairs) to start, class discussion then back to groups again
 
 ### Activity
 
-- Understanding the current internet:
-  - Speed test with library internet
-  - How much data does your app use
+* Review your cell phone usage
+  * Identify your apps’ data usage
+  * Record top 3 apps that took up the most data
+  * Was this data cellular, or WiFi?
+* Free WiFi Speed Test
+  * Use a speed test tool to test the speed of the public WiFi, record the result.
+  * Is it faster or slower than the one you have at home? 
+  * Run the speed test again, record the result
+  
+* Discuss
+  * What unit is the data usage of your apps measured in?
+  * What does MB mean?
+  * What was your top app and how much MB did it use?
+  * Was that surprising?
+  * Would you be more/less surprised if it was cellular data? What if it was WiFi data? 
+    * Are different data sources worth more?
+    * Why? What is your cell data limit?
+  
+  * What was the unit that the WiFi speed was measured in?
+  * What does Mbps mean?
+  * How does this relate to the MB from apps?
+  * Why was the speed different between tests?
+  
+* Show Grafana functioning on a node, and describe what it is
+  * Access via web interface
+  * Show how to select nodes
+  
+* Break into groups
+  * Connect to the node
+  * Access the Grafana interface and look around
+  * Stream a music file that is located on a node's local webserver and observe the metrics
+  * Stream a video file that is located on a node's local webserver and observe the metrics
+  * Observe what metrics change if you do the same from a remote node (over the mesh)
+  * Can you measure both nodes at the same time?
 
-- Grafana to show bandwidth usage:
-  - Locally stream music and video and see interface bandwidth
-  - What do your metrics mean?
-
-- Physical network topology (i.e. Toronto Mesh map) and Virtual peering topology (i.e. fc00.org)
+* Discuss results
+  * Did difficulty increase measuring two nodes at the same time?
+  * What would happen if you had a citywide mesh?
+  * Are some metrics more important than others?
+  * How do you represent a mesh network?
+    * Physical network topology (i.e. Toronto Mesh map)
+    * Virtual peering topology (i.e. fc00.org)
 
 ## 3: Discussion and reflection activity
 
-Q & A about sharing broken internet experiences.
+Q & A about sharing broken internet experiences
+  * How would you be affected if the internet went down at home?
+  * Do you have alternate sources of internet (i.e. cellphone)?
+  * Have you ever had internet issues that were not complete outages?
+  * Gamers - why is low ping important? What impacts your ping?
+  * Review what a ping is
+  * Discuss - is the solution more bandwidth?
+  
 
 ## 4: Wrap-up and week ahead
 
