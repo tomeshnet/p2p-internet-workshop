@@ -29,6 +29,12 @@ Learn how these metrics affect us in our day to day lives, and in contrast how t
 
 ### Materials
 
+* Your cellphone
+* Some sort of public WiFi or some sort of internet connection
+* A Raspberry Pi 3 for each member labeled with the SSID for the node
+* SD cards with pre-flashed images with all required software
+* Laptops that can establish a SSH session to each Raspberry Pi (each running a Host AP with unique SSID)
+* 802.11s capable (e.g. TP-Link TL-WN722N v1) Radio for each Raspberry Pi 3
 
 ### Format
 
@@ -40,7 +46,7 @@ Groups (or pairs) to start, class discussion then back to groups again
   * Identify your apps’ data usage
   * Record top 3 apps that took up the most data
   * Was this data cellular, or WiFi?
-* Free WiFi Speed Test
+* Public WiFi Speed Test
   * Use a speed test tool to test the speed of the public WiFi, record the result.
   * Is it faster or slower than the one you have at home? 
   * Run the speed test again, record the result
