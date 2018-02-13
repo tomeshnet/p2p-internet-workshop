@@ -64,32 +64,36 @@ Reflect on the role of technology in society and power, based on [Explore Commun
 
 Put a list of popular mobile/web applications on the board (e.g. Facebook, Dropbox, Whatsapp, Twitter, Spotify) and pick the one most used by the audience (e.g. put your hand up if you use this daily). Divide the class into five groups, they spend 10 min to dissect this application (questions sourced from _Investigate Technology_ linked above):
 
-    1. Mission & Ownership
-        - What is the goal or mission of the technology?
-        - Who owns the technology? 
-        - Who makes decisions about it? 
-        - How are decisions made?
-    1. Design & Access
-        - Who designs the technology or system?
-        - Who is it designed for?
-        - Who can use the technology? 
-        - Who is left out?
-    1. Community & Local Impact
-        - Who is strengthened? 
-        - Are local relationships strengthened or weakened? 
-        - Is anyone negatively impacted?
-        - Is the content made by people in your community? 
-        - Is the content for people in your community? 
-        - How is the local media ecosystem strengthened or weakened?
-    1. Profit & Sustainability
-        - Who profits from the technology?
-        - Are the profits or results shared?
-        - Where does the money go? 
-        - Does that technology generate jobs in your community?
-    1. Teaching & Learning
-        - How are skills and knowledge shared about the technology?
-        - Who installs it?
-        - Who repairs it?
+1. Mission & Ownership
+    - What is the goal or mission of the technology?
+    - Who owns the technology?
+    - Who makes decisions about it? 
+    - How are decisions made?
+
+1. Design & Access
+    - Who designs the technology or system?
+    - Who is it designed for?
+    - Who can use the technology? 
+    - Who is left out?
+
+1. Community & Local Impact
+    - Who is strengthened? 
+    - Are local relationships strengthened or weakened? 
+    - Is anyone negatively impacted?
+    - Is the content made by people in your community? 
+    - Is the content for people in your community? 
+    - How is the local media ecosystem strengthened or weakened?
+
+1. Profit & Sustainability
+    - Who profits from the technology?
+    - Are the profits or results shared?
+    - Where does the money go? 
+    - Does that technology generate jobs in your community?
+
+1. Teaching & Learning
+    - How are skills and knowledge shared about the technology?
+    - Who installs it?
+    - Who repairs it?
 
 In the next 10 min, have each group present their findings. As a class, discuss how these answers may differ if the technology is created and maintained by its community of users.
 
