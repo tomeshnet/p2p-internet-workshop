@@ -119,10 +119,13 @@ Set up a very basic network in class as manually as possible with the following 
 
 ## 3: Discussion and reflection activity
 
-Spend a little time to casually discuss how our internet's Domain Name System (DNS) works, and who controls which Top-Level Domains (TLDs). Draw from [I Think Therefore ICANN](http://networks.land/activities/i-think-therefore-icann/) by [Networks Land](http://networks.land):
-    - Start with [The "original" TLDs](http://networks.land/reference/top-level-domains/) and emphasize which organization controls each domain
-    - There will not be enough time to play [I Think Therefore ICANN](http://networks.land/activities/i-think-therefore-icann/), but we can print some of the "Neat Real-World Examples" on cards and share them with the class, for example:
-    >`.ly`: Libya’s two governments, as well as other splinter groups, are competing over the ability to communicate officially via the internet, and in places it comes down simply to who holds the login details: “the government domains are distributed between the two parties and it depends on who has the password which allows them to change the details of the domain.
+Spend a little time to casually discuss how our internet's Domain Name System (DNS) works, and who controls which Top-Level Domains (TLDs). Draw from [I Think Therefore ICANN](http://networks.land/activities/i-think-therefore-icann/) by [Networks Land](http://networks.land).
+
+Start with [The "original" TLDs](http://networks.land/reference/top-level-domains/) and emphasize which organization controls each domain.
+
+There will not be enough time to play [I Think Therefore ICANN](http://networks.land/activities/i-think-therefore-icann/), but we can print some of the "Neat Real-World Examples" on cards and share them with the class, for example:
+
+>`.ly`: Libya’s two governments, as well as other splinter groups, are competing over the ability to communicate officially via the internet, and in places it comes down simply to who holds the login details: “the government domains are distributed between the two parties and it depends on who has the password which allows them to change the details of the domain.
 
 ## 4: Wrap-up and week ahead
 
