@@ -93,3 +93,12 @@ Q & A discussion around the different hardware we employ to build a network.
 
 ## 4: Wrap-up and week ahead
 
+
+- Watch one (or all) of:
+    - https://www.youtube.com/watch?v=aLusYsScrv0 (4:03)
+    - https://www.youtube.com/watch?v=eKkVEeVNhm8 (4:31)
+    - https://www.youtube.com/watch?v=QM7MUWDcNxk (6:12)
+- (Stretch) Read: "Wireless Networking in the Developing World, Chapter 10: Deployment Planning"
+     - http://wndw.net/pdf/wndw3-en/ch10-deployment-planning.pdf
+
+
