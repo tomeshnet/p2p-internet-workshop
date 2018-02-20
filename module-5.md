@@ -87,13 +87,26 @@ Groups (or pairs) to start, class discussion then back to groups again
 
 ## 3: Discussion and reflection activity
 
-Q & A about sharing broken internet experiences
+Q & A about sharing broken internet experiences, understanding failure points and why we measure
   * How would you be affected if the internet went down at home?
-  * Do you have alternate sources of internet (i.e. cellphone)?
-  * Have you ever had internet issues that were not complete outages?
+    - Do you have alternate sources to conntect to the internet (i.e. cellphone/LTE)?
+    - Do you wait for a user to complain that the internet is down or can you be instantly notified by monitoring your network?
+  * Have you ever had internet issues that were not complete outages? 
+    - Packet losses, poor signal quality, how much load time can you tolerate
+    - What are the most popular services on your networt? How many users are accessing it and what is the available bandwidth
+    - Do you need to setup additional nodes to offload bandwidth if a current node is over taxed with traffic?
+    - Who are the heaviest users? Do you need to introduce bandwidth metering? How do you prioritize bandwidth and users?
+    - Does network traffic change throughout the day?
+  * Port Traffic - clients can communicate over ports and port monitoring may be required if there is excessive traffic
   * Gamers - why is low ping important? What impacts your ping?
-  * Review what a ping is
-  * Discuss - is the solution more bandwidth?
+  * Review what a ping is and packet loss rates and how to use ping as a troubleshooting tool
+  * Other impacts on network health include routing loops, excessive broadcasts, denial of service attacks, viruses
+  * Baseline Measurements
+    - What is the ideal capacity of your network, are there any bottlenecks?
+    - What is the total number of users your network can support? How many users can each of the nodes handle?
+    - What will be your network policy? free access, bandwidth restrictions, usage restrictions, priority access
+    - What services do you want to offer over your network
+  * Discuss - is the solution more bandwidth? more nodes?
   
 
 ## 4: Wrap-up and week ahead
