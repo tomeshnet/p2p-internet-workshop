@@ -18,7 +18,7 @@ Planned:      1.25 hour
   * Radio (onboard and external)
   * Antennas
 * Review Homework from Module 2 (radio waves)
-* Introduce WiFi concepts as they relate to configuring the radio (frequencies, bands, bandwidth (40 MHz vs 20 MHz), SSID etc)
+* Introduce WiFi concepts as they relate to configuring the radio (frequencies, bands, bandwidth (40 MHz vs 20 MHz), SSID, etc)
 * Touch upon licensed and unlicensed frequencies (900Mhz, 2.4Ghz, 5Ghz), how they change from jurisdiction to jurisdiction, and the CRTC as the governing body in Canada.
 
 ## 2: Hands-on and material exploration
@@ -30,7 +30,7 @@ Group activity to wirelessly mesh with other groups by configuring Raspberry Pis
 Learn to establish wireless links between nodes and manipulate the nodes' radio properties.
 * Understand the roll that frequency, bands, bandwidth and SSIDs play in a wireless mesh
 * Allow opportunity for students to tinker with the radios and create a mesh
-* Discover first hand real-world problems on growing the mesh
+* Discover first hand real-world problems with growing the mesh
 
 ### Materials
 
@@ -67,7 +67,7 @@ ifconfig wlan1 192.168.1.x
 * End the group stage by discussing
   * Did you seek help with another group to mesh your first two nodes?
   * What where the barriers of connecting to another group?
-  * How did you come to a consensus of mesh method, frequency, ssid, ip address schema? Build upon discussion in module 2.
+  * How did you come to a consensus of mesh method, frequency, SSID, ip address schema? Build upon discussion in module 2.
   * Was it easier or harder to connect as the mesh got bigger?
   * Did we manage to mesh the whole class? Why, Why not?
   * Parallel the experience with the real world
