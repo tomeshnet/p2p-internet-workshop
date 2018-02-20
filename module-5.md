@@ -1,4 +1,4 @@
-# 5: Measuring networks
+﻿# 5: Measuring networks
 
 Total length:  1.5 hour
 Planned:      1.25 hour
@@ -89,11 +89,11 @@ Groups (or pairs) to start, class discussion then back to groups again
 
 Q & A about sharing broken internet experiences, understanding failure points and why we measure
   * How would you be affected if the internet went down at home?
-    - Do you have alternate sources to conntect to the internet (i.e. cellphone/LTE)?
+    - Do you have alternate sources to connect to the internet (i.e. cellphone/LTE)?
     - Do you wait for a user to complain that the internet is down or can you be instantly notified by monitoring your network?
   * Have you ever had internet issues that were not complete outages? 
     - Packet losses, poor signal quality, how much load time can you tolerate
-    - What are the most popular services on your networt? How many users are accessing it and what is the available bandwidth
+    - What are the most popular services on your network? How many users are accessing it and what is the available bandwidth?
     - Do you need to setup additional nodes to offload bandwidth if a current node is over taxed with traffic?
     - Who are the heaviest users? Do you need to introduce bandwidth metering? How do you prioritize bandwidth and users?
     - Does network traffic change throughout the day?
@@ -104,9 +104,9 @@ Q & A about sharing broken internet experiences, understanding failure points an
   * Baseline Measurements
     - What is the ideal capacity of your network, are there any bottlenecks?
     - What is the total number of users your network can support? How many users can each of the nodes handle?
-    - What will be your network policy? free access, bandwidth restrictions, usage restrictions, priority access
-    - What services do you want to offer over your network
-  * Discuss - is the solution more bandwidth? more nodes?
+    - What will be your network policy? Free access, bandwidth restrictions, usage restrictions, priority access
+    - What services do you want to offer over your network?
+  * Discuss - is the solution more bandwidth? More nodes?
   
 
 ## 4: Wrap-up and week ahead
