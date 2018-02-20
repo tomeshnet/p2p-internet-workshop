@@ -15,7 +15,7 @@ Planned:      1.25 hour
 - Introduce yourself, why you are interested in this workshop
 - Discuss familiar topics like net neutrality, internet service providers, and internet censorship
 - Explain how a mesh topology differs from ISP internet
-- Discuss social, political and technical reasons for a mesh
+- Discuss social, political, and technical reasons for a mesh
 - Succinct high-level slides on many pieces that will be explored in more detail in upcoming modules:
     - Two minutes on historic Toronto networks
     - Two minutes on community mesh networks in North America and other parts of the world
