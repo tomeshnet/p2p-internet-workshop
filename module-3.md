@@ -93,12 +93,11 @@ Q & A discussion around the different hardware we employ to build a network.
 
 ## 4: Wrap-up and week ahead
 
+- Watch Meta Mesh [quick tour of a mesh networking installation](https://www.youtube.com/watch?v=aLusYsScrv0): [https://www.youtube.com/watch?v=aLusYsScrv0](https://www.youtube.com/watch?v=aLusYsScrv0) (4:03)
+- Optionally read "[Wireless Networking in the Developing World, Chapter 10: Deployment Planning](http://wndw.net/pdf/wndw3-en/ch10-deployment-planning.pdf)": [http://wndw.net/pdf/wndw3-en/ch10-deployment-planning.pdf](http://wndw.net/pdf/wndw3-en/ch10-deployment-planning.pdf)
+- Optionally watch
+    - SmartrekTech [How to install a Smartrek wireless mesh network for sugar making purposes](https://www.youtube.com/watch?v=eKkVEeVNhm8 ): [https://www.youtube.com/watch?v=eKkVEeVNhm8](https://www.youtube.com/watch?v=eKkVEeVNhm8) (4:31)
+    - [Rural Next Generation Broadband Project](https://www.youtube.com/watch?v=QM7MUWDcNxk): [https://www.youtube.com/watch?v=QM7MUWDcNxk](https://www.youtube.com/watch?v=QM7MUWDcNxk) (6:12)
 
-- Watch one (or all) of:
-    - https://www.youtube.com/watch?v=aLusYsScrv0 (4:03)
-    - https://www.youtube.com/watch?v=eKkVEeVNhm8 (4:31)
-    - https://www.youtube.com/watch?v=QM7MUWDcNxk (6:12)
-- (Stretch) Read: "Wireless Networking in the Developing World, Chapter 10: Deployment Planning"
-     - http://wndw.net/pdf/wndw3-en/ch10-deployment-planning.pdf
 
 
