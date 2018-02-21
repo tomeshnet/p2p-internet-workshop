@@ -20,7 +20,7 @@ Planned:      1.25 hour
 ### Materials
 
 - Class Presentation
-- Class Shared Notes?
+- Class Shared Notes (i.e., using Riseup Pad or something similar)
 
 ### Steps
 
@@ -29,7 +29,7 @@ Planned:      1.25 hour
   1. Split into groups/pairs
   2. Assign each group a case from [WNDW](http://wndw.net/caseStudies.html) (5 exist)
   3. Ask the groups to read through the cases, identify aspects to keep in mind when planning and present a summary to the group of what they anticipate
-  4. Collect responses on a sheet/etherpad and discuss
+  4. Collect responses on in class shared notes and discuss
 
 ## 2: Mapping the Fort York Micro Mesh
 
@@ -45,14 +45,19 @@ Planned:      1.25 hour
 
 ### Steps
 
-- Introduce
-- Group Mapping Exercise based on [Commotion Construction Kit](https://commotionwireless.net/docs/cck/)
+- Introduce Group Mapping Exercise 
+  - based on [Commotion Construction Kit](https://commotionwireless.net/docs/cck/): "[Every Network Tells a Story](https://commotionwireless.net/docs/cck/planning/design-your-network-every-network-tells-story/)"
+  - Describe Routers and Rules
+- Group Mapping 
 - Discussion, Show & Tell
 
 ## 3: Discussion and reflection activity
 
-
-
+- Ask group to review planning considerations in light of the mapping activity
+  - Have someone as note-taker update the original list
+- Review the 3 other planning activities in the Commotion Construction Kit](https://commotionwireless.net/docs/cck/): [Survey your Neighbors](https://commotionwireless.net/docs/cck/planning/survey-your-neighbors/), [Identify Neighbourhood Skills](https://commotionwireless.net/docs/cck/planning/identify-neighborhood-skills/), [Inventory your Neighbourhood](https://commotionwireless.net/docs/cck/planning/inventory-the-neighborhood/)
+- With remaining time jointly brainstorm an Outreach Strategy for Toronto Mesh, starting in their neighbourhood
+  - Have someone as note-taker add to class shared notes  
 
 ## 4: Wrap-up and week ahead
 
