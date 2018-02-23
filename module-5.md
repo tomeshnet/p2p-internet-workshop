@@ -1,4 +1,4 @@
-﻿# 5: Measuring networks
+# 5: Measuring networks
 
 Total length:  1.5 hour
 Planned:      1.25 hour
@@ -12,7 +12,13 @@ Planned:      1.25 hour
 
 ## 1: Topic introduction
 
-* Take up homework 
+* Review of homework - Net Neutrality
+  * Did you know about Net Neutrality?
+  * Did you think it was a good thing?
+  * Did you ever think about the negative aspects of it being put into law?
+  * Are there reasons for traffic shaping or blocking connections
+  * Why are large tel-cos interested in having it fail.
+* Point: Network is a limited resource that is determined by the infrastructure
 * Discuss the need for keeping a pulse of the network
   * What attributes are important to monitor
   * How are these attributes measured?
@@ -30,11 +36,11 @@ Learn how these metrics affect us in our day to day lives, and in contrast how t
 ### Materials
 
 * Your cellphone
-* Some sort of public WiFi or some sort of internet connection
-* A Raspberry Pi 3 for each member labeled with the SSID for the node
+* Some sort of public WiFi or some sort of Internet connection
+* A Raspberry Pi 3 for each participant labeled with the SSID for the node
 * SD cards with pre-flashed images with all required software
 * Laptops that can establish a SSH session to each Raspberry Pi (each running a Host AP with unique SSID)
-* 802.11s capable (e.g. TP-Link TL-WN722N v1) Radio for each Raspberry Pi 3
+* 802.11s capable (e.g. [TP-Link TL-WN722N v1](https://www.tp-link.com/us/download/TL-WN722N_V1.html)) Radio for each Raspberry Pi 3
 
 ### Format
 
@@ -43,18 +49,20 @@ Groups (or pairs) to start, class discussion then back to groups again
 ### Activity
 
 * Review your cell phone usage
-  * Identify your apps’ data usage
-  * Record top 3 apps that took up the most data
+  * Identify your apps' data usage
+  * Record a few of the top apps that took up the most data
   * Was this data cellular, or WiFi?
 * Public WiFi Speed Test
-  * Use a speed test tool to test the speed of the public WiFi, record the result.
+  * Use a speed test tool to test the speed of the public WiFi, record the result
+    - IE: Speedtest.net
   * Is it faster or slower than the one you have at home? 
   * Run the speed test again, record the result
   
 * Discuss
   * What unit is the data usage of your apps measured in?
   * What does MB mean?
-  * What was your top app and how much MB did it use?
+  * What was some of the top app and how much MB did it use? 
+    - Have participants volunteer their info if they feel comfortable doing so.
   * Was that surprising?
   * Would you be more/less surprised if it was cellular data? What if it was WiFi data? 
     * Are different data sources worth more?
@@ -77,9 +85,12 @@ Groups (or pairs) to start, class discussion then back to groups again
   * Observe what metrics change if you do the same from a remote node (over the mesh)
   * Can you measure both nodes at the same time?
 
-* Discuss results
+* Discuss results, ask the following questions:
   * Did difficulty increase measuring two nodes at the same time?
   * What would happen if you had a citywide mesh?
+    - Ping time
+    - Throughput
+    - CPU usage
   * Are some metrics more important than others?
   * How do you represent a mesh network?
     * Physical network topology (i.e. Toronto Mesh map)
@@ -87,27 +98,30 @@ Groups (or pairs) to start, class discussion then back to groups again
 
 ## 3: Discussion and reflection activity
 
-Q & A about sharing broken internet experiences, understanding failure points and why we measure
-  * How would you be affected if the internet went down at home?
-    - Do you have alternate sources to connect to the internet (i.e. cellphone/LTE)?
-    - Do you wait for a user to complain that the internet is down or can you be instantly notified by monitoring your network?
-  * Have you ever had internet issues that were not complete outages? 
-    - Packet losses, poor signal quality, how much load time can you tolerate
-    - What are the most popular services on your network? How many users are accessing it and what is the available bandwidth?
-    - Do you need to setup additional nodes to offload bandwidth if a current node is over taxed with traffic?
-    - Who are the heaviest users? Do you need to introduce bandwidth metering? How do you prioritize bandwidth and users?
-    - Does network traffic change throughout the day?
-  * Port Traffic - clients can communicate over ports and port monitoring may be required if there is excessive traffic
-  * Gamers - why is low ping important? What impacts your ping?
-  * Review what a ping is and packet loss rates and how to use ping as a troubleshooting tool
-  * Other impacts on network health include routing loops, excessive broadcasts, denial of service attacks, viruses
-  * Baseline Measurements
-    - What is the ideal capacity of your network, are there any bottlenecks?
-    - What is the total number of users your network can support? How many users can each of the nodes handle?
-    - What will be your network policy? Free access, bandwidth restrictions, usage restrictions, priority access
-    - What services do you want to offer over your network?
-  * Discuss - is the solution more bandwidth? More nodes?
-  
+Q & A about sharing broken Internet experiences, understanding failure points and why we measure
 
-## 4: Wrap-up and week ahead
+  * Break into 3 groups.
+  * Each group is assigned a user profile
+    - Gamer
+    - Streamer (Youtube, Netflix etc)
+    - Basic Web user (Email, Web, Im.)
+  * Spend 10 minutes discussing the characteristics of this user and what metrics are important to them and why. Consider some of these questions.
+    - What are the most used services on the users network? 
+    - How would the user be affected if the Internet went down?
+    - What would the user consider "down".
+    - What is the threshold for the user
+      - Packet loss/poor link quality
+      - Latency/ping
+      - Bandwidth speed
+      - Bandwidth allotment
+    - Does network traffic trend change throughout the day for the user's connection?
+    - Look at your local Internet provider (Bell, Rogers etc), which plan would you suggest for them and why
+    - Does wired vs Wireless affect the experience?
+
+  * Have each group spend 2 minutes presenting their user Profile and their findings
+  * Make the assumption that the 3 profiles live in the same household
+  * Pose the question - 
+    - Does that change any of the recommendations is so how?
+
+    ## 4: Wrap-up and week ahead
 
