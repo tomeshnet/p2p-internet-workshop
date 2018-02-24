@@ -78,7 +78,7 @@ Set up a very basic network in class as manually as possible with the following 
     root@host2:~# nc <host1>.local 80
     ```
     then start typing text messages
-- Use `nc` to run a minimal webserver that can respond to HTTP messages send via `curl`:
+- Use `nc` to run a minimal webserver that can respond to HTTP messages sent via `curl`:
     ```
     root@host1:~# while true; do { echo -e 'HTTP/1.1 200 OK\r\n'; echo -e "You have reached $(cat /etc/hostname) on $(date)"; } | nc -l -p 80; done
     ```
