@@ -125,4 +125,9 @@ Q & A about sharing broken Internet experiences, understanding failure points an
 
 ## 4: Wrap-up and week ahead
 
-TODO
+1. Watch the National Film Board series on Antennas:
+   * [Propogation](https://www.youtube.com/watch?v=7bDyA5t1ldU)
+   * [Directivity](https://www.youtube.com/watch?v=md7GjQQ2YA0&t=648s)
+   * [Bandwidth](https://www.youtube.com/watch?v=9iV_YICgifA&t=566s)
+2. Read Sonia Bussu's perspective on [public engagement in the development of IoT](http://blogs.lse.ac.uk/usappblog/2014/12/13/public-engagement-on-the-internet-of-things-is-essential-if-we-are-to-put-societal-values-at-the-centre-of-technological-developments/)
+3. Browse [Public Lab's website of DIY science projects](https://publiclab.org/methods). Are there any projects of your own that you might want to use technology to explore?
