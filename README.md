@@ -6,7 +6,7 @@
 
 **Description:** Participants will learn about community networks, wireless mesh networks, distributed applications, and train their pet Raspberry Pi to do networking things. While this course assumes no technical expertise, all sessions contain a technical hands-on component and a reflection activity to explore the role of technologies on our society. A socially-minded tinkerer who enjoys a collaborative learning experience will be the ideal participant.
 
-**Duration:** 1.5 hour sessions, weekly for 6 weeks
+**Duration:** 1.5 hour weekly sessions for 6 weeks
 
 **Discussion:** https://chat.tomesh.net/#/room/#reading-networks:tomesh.net
 
