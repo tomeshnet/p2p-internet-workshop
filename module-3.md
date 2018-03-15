@@ -47,11 +47,11 @@ Learn to establish wireless links between nodes and manipulate the nodes' radio 
 
 * As a class review the purpose of each command in a sample starter script
     ```
-    ifconfig wlan1 down
+    ip link set dev wlan1 down
     iw wlan1 set type mp
-    ifconfig wlan1 up
+    ip link set dev wlan1 up
     iw dev wlan1 mesh join MY_MESH_NAME_HERE freq 2412
-    ifconfig wlan1 192.168.1.x
+    ip addr add 192.168.0.1/24 dev wlan0
     ```
 * Break into groups of two
 * Each group needs a pair of Raspberry Pis
@@ -89,8 +89,7 @@ Q & A discussion around the different hardware we employ to build a network.
   * Radios 
     * 2.4 Ghz vs 5 Ghz
     * Ubiquiti proprietary protocols meshed over Ethernet
-    * FCC ruling regarding SDR and binary blobs making drivers harder to come by
-
+    
 ## 4: Wrap-up and week ahead
 
 - Watch Meta Mesh [quick tour of a mesh networking installation](https://www.youtube.com/watch?v=aLusYsScrv0): [https://www.youtube.com/watch?v=aLusYsScrv0](https://www.youtube.com/watch?v=aLusYsScrv0) (4:03)
