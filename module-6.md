@@ -1,26 +1,23 @@
 # 6: Living on a decentralized network
 
-Total length:  1.5 hour
-Planned:      1.25 hour
-
-| **Section**                                        | **Length** |
-|----------------------------------------------------|------------|
-| **1: Topic introduction**                          | 15 min     |
-| **2: Hands-on and material exploration**           | 50 min     |
-| **3: Discussion and reflection activity**          | 15 min     |
-| **4: Wrap-up and week ahead**                      | 5 min      |
+| **Section**                                                                        | **Length** |
+|------------------------------------------------------------------------------------|------------|
+| [**1: Topic introduction**](#1-topic-introduction)                                 | 15 min     |
+| [**2: Hands-on and material exploration**](#2-hands-on-and-material-exploration)   | 40 min     |
+| [**3: Discussion and reflection activity**](#3-discussion-and-reflection-activity) | 20 min     |
+| [**4: Wrap-up and week ahead**](#4-wrap-up-and-week-ahead)                         | 5 min      |
+| **Workshop length**                                                                | 1:30 min   |
 
 ## 1: Topic introduction
 
 - As the cost of hardware (specifically processors and sensors) drops a lot of the compution and network that's being done isn't just in our computers but in embedded systems all around us
 - Discussion format questions:
-  * What are some examples of internet connected devices that are not personal computers?
-  * As more devices come online what are some new challenges that can arise? Are the security stakes higher?
-  * When can it be a bad idea to connect something to the internet? What is at risk?
-
+  - What are some examples of internet connected devices that are not personal computers?
+  - As more devices come online what are some new challenges that can arise? Are the security stakes higher?
+  - When can it be a bad idea to connect something to the internet? What is at risk?
 - Motivation to use low power networks:
-  * Accessibility: Energy, cost, simplicity
-  * Ideal for community projects (eg. citizen science projects, emergency communication systems)
+  - Accessibility: Energy, cost, simplicity
+  - Ideal for community projects (eg. citizen science projects, emergency communication systems)
 
 ## 2: Hands-on and material exploration
 
