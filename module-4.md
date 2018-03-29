@@ -29,7 +29,7 @@
   1. Ask the groups to read through the cases, identify aspects to keep in mind when planning and present a summary to the group of what they anticipate
   1. Collect responses on in class shared notes and discuss
 
-## 2: Mapping the Fort York Micro Mesh
+## 2: Hands-on - Mapping the Fort York Micro Mesh
 
 ### Objectives
 
