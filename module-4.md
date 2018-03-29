@@ -1,12 +1,12 @@
 # 4: Planning a network
 
-| **Section**                                                                                        | **Length** |
-|----------------------------------------------------------------------------------------------------|------------|
-| [**1: Topic - Network Deployment Planning**](#1-topic-network-deployment-planning)                 | 15 min     |
-| [**2: Hands-on - Mapping the Fort York Micro Mesh**](#2-hands-on-mapping-the-fort-york-micro-mesh) | 40 min     |
-| [**3: Discussion and reflection activity**](#3-discussion-and-reflection-activity)                 | 20 min     |
-| [**4: Wrap-up and week ahead**](#4-wrap-up-and-week-ahead)                                         | 5 min      |
-| **Workshop length**                                                                                | 1:30 min   |
+| **Section**                                                                                          | **Length** |
+|------------------------------------------------------------------------------------------------------|------------|
+| [**1: Topic - Network Deployment Planning**](#1-topic---network-deployment-planning)                 | 15 min     |
+| [**2: Hands-on - Mapping the Fort York Micro Mesh**](#2-hands-on---mapping-the-fort-york-micro-mesh) | 40 min     |
+| [**3: Discussion and reflection activity**](#3-discussion-and-reflection-activity)                   | 20 min     |
+| [**4: Wrap-up and week ahead**](#4-wrap-up-and-week-ahead)                                           | 5 min      |
+| **Workshop length**                                                                                  | 1:30 min   |
 
 ## 1: Topic - Network Deployment Planning
 
