@@ -8,7 +8,7 @@ Participants will learn about community networks, wireless mesh networks, distri
 
 Participants will be expected to bring their own laptop. 
 
-**Schedule:** Tuesdays April 10 - May 15  
+**Schedule:** Tuesdays April 10 - May 15, [register through the Toronto Public Library workshop](https://www.torontopubliclibrary.ca/detail.jsp?Entt=RDMEVT23011&R=EVT23011)  
 **Duration:** 1.5 hours per week for 6 weeks  
 **Discussion:** https://chat.tomesh.net/#/room/#reading-networks:tomesh.net
 
@@ -25,7 +25,7 @@ Participants will be expected to bring their own laptop.
 
 - Working with Raspberry Pi's to make a network router
 - Building mesh networks and running peer-to-peer applications
-- Understanding the barriers to access and the history of the Internet in Toronto and mesh networks around the world
+- Understanding the barriers to access and the history of the internet in Toronto as well as mesh networks worldwide
 - Unpacking the values of distributed vs. centralized systems
 - Applying network security and private communications
 - Starting and maintaining a sustainable community mesh network
@@ -34,7 +34,7 @@ Participants will be expected to bring their own laptop.
 
 - Participants will bring your own laptop
 - TPL will provide Raspberry Pi 2's and we will try to provide Raspberry Pi 3's
-- Expect participants to have used a computer before, with no assumption of prior programming or networking knowledge
+- Participants are comfortable using a computer before, with no assumptions about prior programming or networking knowledge
 - We will provide a primer before first class about Linux shell
 
 ## Course Design
