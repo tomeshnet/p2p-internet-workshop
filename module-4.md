@@ -1,28 +1,26 @@
 # 4: Planning a network
 
-Total length:  1.5 hour
-Planned:      1.25 hour
+| **Section**                                                                                          | **Length** |
+|------------------------------------------------------------------------------------------------------|------------|
+| [**1: Topic - Network Deployment Planning**](#1-topic---network-deployment-planning)                 | 15 min     |
+| [**2: Hands-on - Mapping the Fort York Micro Mesh**](#2-hands-on---mapping-the-fort-york-micro-mesh) | 40 min     |
+| [**3: Discussion and reflection activity**](#3-discussion-and-reflection-activity)                   | 20 min     |
+| [**4: Wrap-up and week ahead**](#4-wrap-up-and-week-ahead)                                           | 5 min      |
+| **Workshop length**                                                                                  | 1:30 min   |
 
-| **Section**                                        | **Length** |
-|----------------------------------------------------|------------|
-| **1: Network Deployment Planning**                 | 15 min     |
-| **2: Mapping the Fort York Micro Mesh**            | 40 min     |
-| **3: Discussion and reflection activity**          | 20 min     |
-| **4: Wrap-up and week ahead**                      | 5 min      |
-
-## 1: Network Deployment Planning
+## 1: Topic - Network Deployment Planning
 
 ### Objectives
 
-- List features of a wifi/mesh deployment
-- Explain and summarized important factors to consider for deployment
+- List features of a wifi or mesh deployment
+- Explain and summarize important factors to consider for deployment
 
 ### Materials
 
 - Class Presentation
 - Class Shared Notes (i.e., using Riseup Pad or something similar)
 
-### Steps
+### Activity
 
 - Presentation on Deployment (8 min)
 - Planning Considerations Activity (8 min)
@@ -31,7 +29,7 @@ Planned:      1.25 hour
   1. Ask the groups to read through the cases, identify aspects to keep in mind when planning and present a summary to the group of what they anticipate
   1. Collect responses on in class shared notes and discuss
 
-## 2: Mapping the Fort York Micro Mesh
+## 2: Hands-on - Mapping the Fort York Micro Mesh
 
 ### Objectives
 
@@ -43,7 +41,7 @@ Planned:      1.25 hour
 - Google Earth
 - Hardware examples
 
-### Steps
+### Activity
 
 - Introduce Group Mapping Exercise 
   - Based on [Commotion Construction Kit](https://commotionwireless.net/docs/cck/): "[Every Network Tells a Story](https://commotionwireless.net/docs/cck/planning/design-your-network-every-network-tells-story/)"
@@ -63,6 +61,10 @@ Planned:      1.25 hour
   - Have someone as note-taker add to class shared notes  
 
 ## 4: Wrap-up and week ahead
+
+- Next session we will talk about Net Neutrality and _why_ and _how_ to "keep the pulse of a network"
+
+### Homework 
 
 - Watch [Net Neutrality - 6 Minute Explanation](https://www.youtube.com/watch?v=zASHI9qdB0U) by drawntoknowledge _(NOTE: This video incorrectly labeled ISPs as Tier 1 providers, however this does not impact the video's message)_
 - Watch selection of ["The Internet We Want" Panel starting @ 27:00](https://youtu.be/PtO4rPPBWjY?t=27m00s)
