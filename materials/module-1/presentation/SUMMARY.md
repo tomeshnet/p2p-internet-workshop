@@ -1,0 +1,15 @@
+# Summary
+
+* [About this workshop series](part-0/README.md)
+    * [Who runs this?](part-0/who-runs-this.md)
+    * [Introduce yourself](part-0/introduce-yourself.md)
+* [Meshnets and peer-to-peer applications](part-1/README.md)
+    * [Home internet](part-1/home-internet.md)
+    * [Mesh topology](part-1/mesh-topology.md)
+    * [Peer-to-peer applications](part-1/peer-to-peer-applications.md)
+    * [Meshnets around the world](part-1/meshnets-around-the-world.md)
+* [Peer-to-peer file sharing over a meshnet](part-2/README.md)
+* [Investigate our technologies](part-3/README.md)
+* [Wrap-up & homework](part-4/README.md)
+    * [Wrap-up](part-4/wrap-up.md)
+    * [Homework](part-4/homework.md)

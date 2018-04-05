@@ -1,0 +1,11 @@
+#!/bin/sh
+
+rm -rf output
+mkdir output
+
+# Requires: npm install -g markdown-pdf
+markdown-pdf 3-mission-ownership.md -o output/3-mission-ownership.pdf
+markdown-pdf 3-design-access.md -o output/3-design-access.pdf
+markdown-pdf 3-community-local-impact.md -o output/3-community-local-impact.pdf
+markdown-pdf 3-profit-sustainability.md -o output/3-profit-sustainability.pdf
+markdown-pdf 3-teaching-learning.md -o output/3-teaching-learning.pdf
