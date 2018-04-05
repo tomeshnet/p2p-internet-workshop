@@ -11,5 +11,5 @@
 * [Peer-to-peer file sharing over a meshnet](part-2/README.md)
 * [Investigate our technologies](part-3/README.md)
 * [Wrap-up & homework](part-4/README.md)
-    * [Wrap-up](part-4/wrap-up.md)
+    * [Recap](part-4/recap.md)
     * [Homework](part-4/homework.md)
