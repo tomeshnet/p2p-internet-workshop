@@ -8,7 +8,7 @@
                                                 +---------+
                                                      ^
                                                      |
-                                                     |  Internet
+                                                     | Internet
                                                      |
 +---------+                                     +----+-----+
 | Your    |          Last-mile network          | Internet |
