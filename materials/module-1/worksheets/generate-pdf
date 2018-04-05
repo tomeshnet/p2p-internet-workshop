@@ -4,6 +4,7 @@ rm -rf output
 mkdir output
 
 # Requires: npm install -g markdown-pdf
+markdown-pdf 2-peer-to-peer-file-sharing-on-a-mesh.md -o output/2-peer-to-peer-file-sharing-on-a-mesh.pdf
 markdown-pdf 3-mission-ownership.md -o output/3-mission-ownership.pdf
 markdown-pdf 3-design-access.md -o output/3-design-access.pdf
 markdown-pdf 3-community-local-impact.md -o output/3-community-local-impact.pdf
