@@ -23,19 +23,18 @@
     Learn new or update existing skills  	
 
 1. Besides the course content, what importance did the following factors have on your choice to attend the workshop?
-  	Not important at all 	Slightly important 	Important 	Very important 	Extremely important
+  	Not important at all 	Slightly important 	Important 	Very important 	Extremely important (or convert to checkboxes)
 
     Attending an in-person/live workshop  
     Location and timing of workshop  
     Learning with friends/colleagues  
     Other (please specify)  
 
-6. How did you hear about Toronto Mesh / Building the Peer-to-Peer Internet workshop? (Select all that apply)
+1. How did you hear about Toronto Mesh / Building the Peer-to-Peer Internet workshop? (Select all that apply)
 
     Friend/colleague  
     Conference/meeting/seminar  
-    Library website or flyer  
-    Funding organization or program officer  
+    Library website or flyer   
     Journal or publication  
     Our website  
     Social Media (Twitter, Facebook, etc.)  
@@ -43,13 +42,11 @@
 
 1. If you experienced any strong concerns about attending this workshop, can you let us know what they were? Are there ways we can address them?
 
-   
----
 
-8. Tell us about your experience with the following topics:
+1. Tell us about your experience with the following topics:
 
     _Current knowledge (Little or no knowledge | Some knowledge | Extensive knowledge)_	
-    _Perception about this topic (Very intimidating | Slightly intimidating | Neither intimidating nor unintimidating | Not very intimidating | Not at all intimidating | N/A or No opinion)_  
+    _Perception about this topic (Very intimidating | Slightly intimidating | Neither intimidating nor unintimidating | Not very intimidating | Not at all intimidating | N/A or No opinion)_   (or cut perception question given survey constraints)
     Unix Shell  
     Networking  
     Decentralized Services  
