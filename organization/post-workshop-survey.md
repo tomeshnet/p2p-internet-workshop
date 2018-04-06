@@ -1,6 +1,6 @@
 # Post-Workshop Survey
 
-1. Did you attend Building the Peer-to-Peer Internet?
+1. Did you attend Building the Peer-to-Peer Internet? *
 
     Yes  
     No  
