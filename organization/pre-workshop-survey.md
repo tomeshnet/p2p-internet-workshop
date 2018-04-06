@@ -4,7 +4,7 @@
 
     Yes
 
-1. Are you age 18 or above? (we should not collect if under 18)* 
+1. Are you age 18 or above? (we should not collect if under 18) * 
 
     Yes
     No
@@ -41,7 +41,7 @@
     Social Media (Twitter, Facebook, etc.)  
     Other (please specify)  
 
-1. If you experienced any strong concerns about attending this workshop, can you let us know what they were? Did we address these concerns, or were there ways we could have addressed them? w
+1. If you experienced any strong concerns about attending this workshop, can you let us know what they were? Are there ways we can address them?
 
    
 ---
@@ -58,7 +58,7 @@
 
 1. How would you rate your motivation to learn about these topics?
 
-    _N/A - Not relevant to me/Not sure what this is |	Not at all motivated | Slightly motivated | Motivated | Very motivated | Extremely motivated_  
+    _N/A - Not relevant to me/Not sure what this is | Not at all motivated | Slightly motivated | Motivated | Very motivated | Extremely motivated_  
     Unix Shell
     Networking
     Decentralized Services
@@ -68,17 +68,9 @@
 1. How would you describe your ability to do the following tasks?
   	Can you do this?
 
-    _Yes - No - Maybe_  
+    _Yes | No | Maybe_  
     Use terminal or command line to list files in a directory
     Log in or 'ssh into' a server
     Log in to router admin panel (i.e., to change network password)
     Update software or firmware on a router
 
----
-
-11. What is your gender? 
-
-    Female  
-    Male  
-    Other  
-    Prefer not to say  
