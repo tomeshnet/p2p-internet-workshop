@@ -12,6 +12,11 @@ Links that will be used in the workshop:
 - lesson materials https://github.com/tomeshnet/p2p-internet-workshop/
 - shared notepad https://pad.riseup.net/p/peer-to-peer-internet
 
+You may also want to check out these resources about the Unix Shell:
+- Learnshell.org https://www.learnshell.org/
+- Software Carpentry's [Introducing the Shell](https://swcarpentry.github.io/shell-novice/01-intro/) and [Navigating Files and Directories](https://swcarpentry.github.io/shell-novice/02-filedir/)
+
+
 Getting to the workshop: 
 [ add directions ]
 
