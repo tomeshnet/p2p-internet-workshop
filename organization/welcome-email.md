@@ -27,4 +27,4 @@ Looking forward to seeing you soon!
 
 Best,
 
-[ sender name ]
+Toronto Mesh
