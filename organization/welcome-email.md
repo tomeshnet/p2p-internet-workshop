@@ -19,8 +19,7 @@ You may also want to check out these resources about the Unix Shell:
 - Software Carpentry's Introducing the Shell https://swcarpentry.github.io/shell-novice/01-intro/
 - and, Navigating Files and Directories https://swcarpentry.github.io/shell-novice/02-filedir/
 
-Getting to the workshop: 
-[ add directions ]
+Getting to the workshop: https://www.torontopubliclibrary.ca/fortyork/
 
 We are committed to making sure that the workshop is accessible to everyone. Please tell us if there is anything we should know in advance in order to make the workshop accessible for you (e.g. sign-language interpreters, large-print handouts, lactation facilities).
 
