@@ -46,11 +46,11 @@ Group activity to wirelessly mesh with other groups by configuring Raspberry Pis
 
 - As a class review the purpose of each command in a sample starter script
     ```
-    ifconfig wlan1 down
+    ip link set dev wlan1 down
     iw wlan1 set type mp
-    ifconfig wlan1 up
+    ip link set dev wlan1 up
     iw dev wlan1 mesh join MY_MESH_NAME_HERE freq 2412
-    ifconfig wlan1 192.168.1.x
+    ip addr add 192.168.0.1/24 dev wlan0
     ```
 - Break into groups of two
 - Each group needs a pair of Raspberry Pis
@@ -74,20 +74,19 @@ Group activity to wirelessly mesh with other groups by configuring Raspberry Pis
   
 ## 3: Discussion and reflection activity
 
-Q & A discussion around the different hardware we employ to build a network:
+Q & A discussion around the different hardware we employ to build a network.
 
-- Discuss alternative components that could be used in a node for different applications and environments
-  - SBC (Orange Pi Zero, Rock64, ExpressoBin, Raspberry Pi, etc.)
-    - Price point
-    - Processing power
-    - Power consumption
-    - Features (10/100 Ethernet, mPci-e, USB ports, etc.)
-  - Power Supply (wall wart, POE, battery, solar panel, lamp post)
-  - Storage and OS (OpenWrt/Lede, LibreMesh)
-  - Radios 
-    - 2.4 Ghz vs 5 Ghz
-    - Ubiquiti proprietary protocols meshed over Ethernet
-    - FCC ruling regarding SDR and binary blobs making drivers harder to come by
+* Discuss alternative components that could be used in a node for different applications and environments
+  * SBC (Orange Pi Zero, Rock64, ExpressoBin, Raspberry Pi, etc.)
+    * Price point
+    * Processing power
+    * Power consumption
+    * Features (10/100 Ethernet, mPci-e, USB ports, etc.)
+  * Power Supply (wall wart, POE, battery, solar panel, lamp post)
+  * Storage and OS (OpenWrt/Lede, LibreMesh)
+  * Radios 
+    * 2.4 Ghz vs 5 Ghz
+    * Ubiquiti proprietary protocols meshed over Ethernet
 
 ## 4: Wrap-up and week ahead
 
