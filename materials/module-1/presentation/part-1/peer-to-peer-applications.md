@@ -1,17 +1,6 @@
 # Peer-to-peer applications
 
-```
-          Last-mile content mesh network
-                     +----------------+
-                     |                |    ...
-       +------------>| +----------------+
-       |             +-|                |    ...
-+------+--+----------->| +----------------+
-| Your    |            +-| Mesh peer with +--> More peers
-| home    +------------->| content store  |
-| devices |              +----------------+
-+---------+  ipfs://some-resource-hash
-```
+![Peer-to-peer applications](peer-to-peer-applications.svg)
 
 - Distribute the content to mesh nodes such that you can access them from your peers, or through your peers to their peers, and so on
 - The content-addressing scheme, as opposed to traditional host-addressing, allows you to self-verify integrity of the data, so you generally don't have to trust where the data is coming from
