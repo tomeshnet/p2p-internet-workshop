@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Mono:400,700,700i&subset=latin-ext');
+
+body {
+    font-size: 0.625em;
+    font-family: 'Open Sans' sans-serif;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: 'Roboto Mono' monospace, serif !important;
+}

@@ -32,10 +32,22 @@ Participants will be expected to bring their own laptop.
 
 ## Expectations
 
-- Participants will bring your own laptop
-- TPL will provide Raspberry Pi 2's and we will try to provide Raspberry Pi 3's
+- TPL will provide Raspberry Pi 2s and 3s
+- Participants will bring their own laptop
+- Participants will receive primer information via a [welcome email](./organization/welcome-email.txt), which includes [laptop setup instructions](./SETUP.md), a Linux shell primer, and a [pre-workshop survey](./organization/pre-workshop-survey.md)
 - Participants are comfortable using a computer before, with no assumptions about prior programming or networking knowledge
-- We will provide a primer before first class about Linux shell
+
+## Facilitation Guidelines
+
+- Each module should be presented by a lead facilitator driving the session according to the lesson plan
+- Aim to have one helper for every 3 to 4 students, responsible for:
+    - Providing assistance during hands-on sections
+    - Keeping groups on schedule for each activity
+    - Having one helper observe the class and providing feedback ([sample reflection questions](http://www.teachhub.com/teaching-strategies-value-self-reflection))
+- Use a [shared notepad](https://pad.riseup.net/p/peer-to-peer-internet) for:
+    - Sharing notes and links
+    - Jargon-busting
+- Conclude with a [ticket out the door](http://www.ideasforeducators.com/idea-blog/a-twist-on-ticket-out-the-door) activity where students can optionally and anonymously leave feedback as they leave the class
 
 ## Course Design
 
