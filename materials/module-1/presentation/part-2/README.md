@@ -5,6 +5,6 @@ Each Raspberry Pi:
 - Advertises a WiFi SSID `<hostname>` which you can connect with `password` as password
 - Connects to other in-range Raspberry Pis via a second WiFi interface and forms a mesh
 
-We will use the [InterPlanetary File System (IPFS)](https://ipfs.io), a peer-to-peer hypermedia protocol, to share content with one another.
+We will use the [InterPlanetary File System (IPFS)](https://ipfs.io), a peer-to-peer hypermedia protocol, to share content with each other on our own network.
 
-You can think of the Raspberry Pi as your home router and modem connecting to your ISP, except now it has a direct line to other content-serving mesh nodes just like itself, and has superpowers because it runs like a full computer.
+You can think of the Raspberry Pi as your home router and modem connecting to your Internet Service Provider (ISP), except now it has a direct line to other content-serving mesh nodes just like itself, and has superpowers because it runs like a full computer.

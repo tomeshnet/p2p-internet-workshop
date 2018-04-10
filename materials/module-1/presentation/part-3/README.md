@@ -1,6 +1,6 @@
 # Investigate our technologies
 
-Select a popular mobile/web application and investigate based on the following criteria:
+Select a popular website or application and investigate based on the following criteria:
 
 1. Mission & Ownership
 1. Design & Access
