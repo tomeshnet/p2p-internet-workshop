@@ -31,7 +31,7 @@ Trying out peer-to-peer applications running over a decentralized infrastructure
 
 - Experience local peer-to-peer applications that are relatable to those we are familiar with from the Internet (e.g. Facebook, Dropbox, Whatsapp, Twitter, Spotify)
 - "Run your own app" on pre-configured nodes and contrast "serverless" applications on a distributed physical network vs. traditional centralized edge services via ISP networks
-- Run [Secure Scuttlebutt](https://github.com/ssbc/secure-scuttlebutt) on Raspberry Pi 3s and exchange content on an ad-hoc peer-to-peer social network
+- Run [IPFS](https://ipfs.io) on Raspberry Pi 3s and exchange content on an ad-hoc peer-to-peer social network
 
 ### Materials
 
@@ -39,22 +39,23 @@ A _Raspberry Pi 3 Kit_ for each student that includes:
 
 - Raspberry Pi 3 and power supply
 - USB WiFi radio that is [ad-hoc or 802.11s-capable](https://github.com/phillymesh/802.11s-adapters)
-- SD card with [mesh-workshop](https://github.com/benhylau/mesh-workshop) pre-configured to mesh wirelessly with cjdns and [scuttlebot-ws](https://github.com/vuldin/scuttlebot-ws) docker
-- Paper print-outs with instructions and commands (since no internet connectiviy is required)
+- SD card with [mesh-workshop](https://github.com/benhylau/mesh-workshop) pre-configured to mesh wirelessly with cjdns and [IPFS docker](https://github.com/vanmesh/p2p-apps-dockers)
+- Worksheet printout for each student
 
 ### Format
 
-- Individuals
+- Groups of 2
 
 ### Activity
 
+- Explain distributed web content on a mesh network
+- Assign one Raspberry Pi to each student, but keep students in groups of 2 so they can help each other through the worksheet
 - Boot all the Raspberry Pi nodes and see that they all wirelessly mesh with one another
 - Connect student laptop to each Raspberry Pi's Host AP and initiate a SSH session to `root@<hostname>.local` (the pre-configured address of the Host AP interface)
-- Run `docker load` on each node to start a scuttlebot-ws docker container (pre-loaded into each SD image) to form an ad-hoc social network
-- In the SSH session, use [`sbot` CLI](https://scuttlebot.io/docs/basics/publish-a-message.html) in the SSH session to publish messages to each other
-- Explain how Secure Scuttlebutt propagates messages across the network
-- From laptop clients, browse to `http://<hostname>.local` to use the web UI and send public and private messages to new friends in this class' local mesh network
-- Compare the peer-to-peer social network to familiar social networks and discuss differences in data ownership and accessibility
+- Follow worksheet and share content with each other using IPFS
+- Discuss how the systems we just built relate to the content mesh network presented earlier
+- Recognize this is a low-level interaction with minimal user interface, but we can build high-level applications based on this content-distributed topology that resemble familiar centralized applications
+- Transition to next activity to investigate a centralized application
 
 ## 3: Discussion and reflection activity
 
