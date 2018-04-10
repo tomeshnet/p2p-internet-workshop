@@ -43,11 +43,11 @@ Participants will be expected to bring their own laptop.
 - Aim to have one helper for every 3 to 4 students, responsible for:
     - Providing assistance during hands-on sections
     - Keeping groups on schedule for each activity
-    - Observing the class and providing feedback
+    - Having one helper observe the class and providing feedback ([sample reflection questions](http://www.teachhub.com/teaching-strategies-value-self-reflection))
 - Use a [shared notepad](https://pad.riseup.net/p/peer-to-peer-internet) for:
     - Sharing notes and links
     - Jargon-busting
-- "Ticket out the door" where students can optionally and anonymously leave feedback at end of each class
+- Conclude with a [ticket out the door](http://www.ideasforeducators.com/idea-blog/a-twist-on-ticket-out-the-door) activity where students can optionally and anonymously leave feedback as they leave the class
 
 ## Course Design
 
