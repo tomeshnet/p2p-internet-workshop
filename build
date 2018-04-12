@@ -28,6 +28,15 @@ basedir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 css="$basedir/pdf.css"
 echo "Using CSS styles from $css"
 
+# Generate general assets
+for doc in general/*.md; do
+    if [ -f $doc ]; then
+        out="output/$(echo "$doc" | sed 's|/|-|g' | sed 's|.md|.pdf|')"
+        echo "Generating document from $doc to $out"
+        markdown-pdf "$doc" --out "$out" --cwd general --css-path pdf.css
+    fi
+done
+
 # Go through each module
 for mod in module-*; do
     # Generate lesson plans .pdf
