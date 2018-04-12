@@ -1,6 +1,6 @@
 # Building the Peer-to-Peer Internet
 
-[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/tomeshnet/p2p-internet-workshop/releases)
+[![GitHub release](https://img.shields.io/github/release/tomeshnet/p2p-internet-workshop.svg)](https://github.com/tomeshnet/p2p-internet-workshop/releases)
 
 **Workshop Series** _by Toronto Mesh_, [tomesh.net/peer-to-peer-internet](https://tomesh.net/peer-to-peer-internet/)
 
