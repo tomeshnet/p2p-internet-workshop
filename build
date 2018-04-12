@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+# Check for required tools
+echo "Checking for markdown-pdf node module"
+npm -g list markdown-pdf
+S=$?
+if [ $S -ne 0 ]; then
+    echo "markdown-pdf is missing, install by running:"
+    echo "    npm install -g markdown-pdf"
+    return $S
+fi
+
+echo "Checking for gitbook-cli node module"
+npm -g list gitbook-cli
+S=$?
+if [ $S -ne 0 ]; then
+    echo "gitbook-cli is missing, install by running:"
+    echo "    npm install -g gitbook-cli"
+    return $S
+fi
+
+# Delete generated assets
+rm -rf output
+mkdir output
+
+# Get absolute path to pdf.css
+basedir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+css="$basedir/pdf.css"
+echo "Using CSS styles from $css"
+
+# Go through each module
+for mod in module-*; do
+    # Generate lesson plans .pdf
+    doc="$mod/README.md"
+    if [ -f $doc ]; then
+        out="output/$mod.pdf"
+        echo "Generating lesson plan from $doc to $out"
+        markdown-pdf "$doc" --out "$out" --cwd "$mod" --css-path pdf.css
+    fi
+
+    # Generate worksheets as .pdf
+    for doc in $mod/worksheet/*.md; do
+        if [ -f $doc ]; then
+            out="output/$(echo "$doc" | sed 's|/|-|g' | sed 's|.md|.pdf|')"
+            echo "Generating worksheet from $doc to $out"
+            markdown-pdf "$doc" --out "$out" --cwd "$mod/worksheet" --css-path pdf.css
+        fi
+    done
+
+    # Generate presentation GitBooks
+    book="$mod/presentation"
+    if [ -d $book ]; then
+        out="output/$(echo "$book" | sed 's|/|-|g')"
+        echo "Generating presentation from $book to $out"
+        gitbook build "$book" "$out"
+    fi
+done

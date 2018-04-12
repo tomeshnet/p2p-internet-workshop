@@ -1,0 +1,8 @@
+# Generated asset directory
+output
+
+# GitBook
+_book
+book.pdf
+book.epub
+book.mobi

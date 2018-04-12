@@ -14,12 +14,12 @@ Participants will be expected to bring their own laptop.
 
 ## Module Topics
 
-1. [What is mesh?](./module-1.md)
-1. [Setting up your first node](./module-2.md)
-1. [Building nodes (hardware)](./module-3.md)
-1. [Planning a network](./module-4.md)
-1. [Measuring networks](./module-5.md)
-1. [Living on a decentralized network](./module-6.md)
+1. [What is mesh?](./module-1/README.md)
+1. [Setting up your first node](./module-2/README.md)
+1. [Building nodes (hardware)](./module-3/README.md)
+1. [Planning a network](./module-4/README.md)
+1. [Measuring networks](./module-5/README.md)
+1. [Living on a decentralized network](./module-6/README.md)
 
 ## Learning Outcomes
 
@@ -34,7 +34,7 @@ Participants will be expected to bring their own laptop.
 
 - TPL will provide Raspberry Pi 2s and 3s
 - Participants will bring their own laptop
-- Participants will receive primer information via a [welcome email](./organization/welcome-email.txt), which includes [laptop setup instructions](./SETUP.md), a Linux shell primer, and a [pre-workshop survey](./organization/pre-workshop-survey.md)
+- Participants will receive primer information via a [welcome email](./general/welcome-email.txt), which includes [laptop setup instructions](./SETUP.md), a Linux shell primer, and a [pre-workshop survey](./general/pre-workshop-survey.md)
 - Participants are comfortable using a computer before, with no assumptions about prior programming or networking knowledge
 
 ## Facilitation Guidelines
