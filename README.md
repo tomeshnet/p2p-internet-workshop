@@ -51,6 +51,14 @@ Participants will be expected to bring their own laptop.
     - Jargon-busting
 - Conclude with a [ticket out the door](http://www.ideasforeducators.com/idea-blog/a-twist-on-ticket-out-the-door) activity where students can optionally and anonymously leave feedback as they leave the class
 
+## Workshop Materials
+
+Workshop materials such as lesson plans and worksheets are written as simple [Markdown](https://en.wikipedia.org/wiki/Markdown) files. Each presentation slide deck is created as a Markdown-based [GitBook](https://www.gitbook.com). All generated assets are published to [GitHub Releases for download](https://github.com/tomeshnet/p2p-internet-workshop/releases).
+
+If you want to generate these assets yourself, simply run `./build` and you will find the generated assets in the `output` folder. The `./release` script is used to zip up the generated assets into archives convenient for publishing, which is the form you will find in the GitHub Releases.
+
+When using the GitBook presentations at a workshop, it is most convenient to clone this repository, navigate to the appropriate presentation directory of the module, and serve the GitBook locally by running `gitbook serve`, then navigate to [localhost:4000](http://localhost:4000) from your browser to see the slides.
+
 ## Course Design
 
 ### Objectives
@@ -59,14 +67,6 @@ Participants will be expected to bring their own laptop.
 - With a community network project as basis, establish regular hack nights at the Toronto Libraries' Innovation Hubs
 - Engage students and equip them with necessary knowledge to continue involvement in local mesh community efforts
 - Publish this as open-source syllabus that other communities can adopt to kick-start a mesh community
-
-### Workshop Materials
-
-Workshop materials such as lesson plans and worksheets are written as simple [Markdown](https://en.wikipedia.org/wiki/Markdown) files. Each presentation slide deck is created as a Markdown-based [GitBook](https://www.gitbook.com). All generated assets are published to [GitHub Releases for download](https://github.com/tomeshnet/p2p-internet-workshop/releases).
-
-If you want to generate these assets yourself, simply run `./build` and you will find the generated assets in the `output` folder. The `./release` script is used to zip up the generated assets into archives convenient for publishing, which is the form you will find in the GitHub Releases.
-
-When using the GitBook presentations at a workshop, it is most convenient to clone this repository, navigate to the appropriate presentation directory of the module, and serve the gitbook locally by running `gitbook serve`, then navigate to [localhost:4000](http://localhost:4000) from your browser to see the slides.
 
 ### Credits
 
