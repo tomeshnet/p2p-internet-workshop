@@ -53,11 +53,14 @@ Participants will be expected to bring their own laptop.
 
 ## Workshop Materials
 
-Workshop materials such as lesson plans and worksheets are written as simple [Markdown](https://en.wikipedia.org/wiki/Markdown) files. Each presentation slide deck is created as a Markdown-based [GitBook](https://www.gitbook.com). All generated assets are published to [GitHub Releases for download](https://github.com/tomeshnet/p2p-internet-workshop/releases).
+Workshop materials such as lesson plans and worksheets are written as simple [Markdown](https://en.wikipedia.org/wiki/Markdown) files. Each presentation slide deck is created as a Markdown-based [GitBook](https://www.gitbook.com). All generated assets are published to [GitHub Pages individually](https://github.com/tomeshnet/p2p-internet-workshop/tree/gh-pages) and [GitHub Releases as an archive](https://github.com/tomeshnet/p2p-internet-workshop/releases) for download.
 
-If you want to generate these assets yourself, simply run `./build` and you will find the generated assets in the `output` folder. The `./release` script is used to zip up the generated assets into archives convenient for publishing, which is the form you will find in the GitHub Releases.
+If you want to generate these assets yourself, simply run `./build` and you will find the generated assets in the `output` folder. The `./release` script is used to zip up the generated assets into archives convenient for download, which is the form you will find in the GitHub Releases.
 
-When using the GitBook presentations at a workshop, it is most convenient to clone this repository, navigate to the appropriate presentation directory of the module, and serve the GitBook locally by running `gitbook serve`, then navigate to [localhost:4000](http://localhost:4000) from your browser to see the slides.
+When using the GitBook presentations at a workshop, you can either:
+
+- Load the appropriate module from GitHub Pages, such as [module-1-presentation](https://tomeshnet.github.io/p2p-internet-workshop/module-1-presentation/)
+- Or serve the slides from your local machine by cloning this repository, navigate to the appropriate presentation directory of the module to run `gitbook serve`, then navigate to [localhost:4000](http://localhost:4000) from your browser to see the slides
 
 ## Course Design
 
