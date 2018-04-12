@@ -23,10 +23,8 @@ fi
 rm -rf output
 mkdir output
 
-# Get absolute path to pdf.css
-basedir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-css="$basedir/pdf.css"
-echo "Using CSS styles from $css"
+# Echo CSS sourced from pdf.css
+echo "Using CSS styles from pdf.css"
 
 # Generate general assets
 for doc in general/*.md; do
