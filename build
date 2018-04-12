@@ -23,15 +23,16 @@ fi
 rm -rf output
 mkdir output
 
-# Echo CSS sourced from pdf.css
-echo "Using CSS styles from pdf.css"
+# Set CSS styles source
+css="pdf.css"
+echo "Using CSS styles from $css"
 
 # Generate general assets
 for doc in general/*.md; do
     if [ -f $doc ]; then
         out="output/$(echo "$doc" | sed 's|/|-|g' | sed 's|.md|.pdf|')"
         echo "Generating document from $doc to $out"
-        markdown-pdf "$doc" --out "$out" --cwd general --css-path pdf.css
+        markdown-pdf "$doc" --out "$out" --cwd general --css-path "$css"
     fi
 done
 
@@ -42,7 +43,7 @@ for mod in module-*; do
     if [ -f $doc ]; then
         out="output/$mod.pdf"
         echo "Generating lesson plan from $doc to $out"
-        markdown-pdf "$doc" --out "$out" --cwd "$mod" --css-path pdf.css
+        markdown-pdf "$doc" --out "$out" --cwd "$mod" --css-path "$css"
     fi
 
     # Generate worksheets as .pdf
@@ -50,7 +51,7 @@ for mod in module-*; do
         if [ -f $doc ]; then
             out="output/$(echo "$doc" | sed 's|/|-|g' | sed 's|.md|.pdf|')"
             echo "Generating worksheet from $doc to $out"
-            markdown-pdf "$doc" --out "$out" --cwd "$mod/worksheet" --css-path pdf.css
+            markdown-pdf "$doc" --out "$out" --cwd "$mod/worksheet" --css-path "$css"
         fi
     done
 
