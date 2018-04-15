@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# Requires: npm install -g gitbook-cli
-gitbook serve

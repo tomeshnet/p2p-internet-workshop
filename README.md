@@ -1,5 +1,7 @@
 # Building the Peer-to-Peer Internet
 
+[![GitHub release](https://img.shields.io/github/release/tomeshnet/p2p-internet-workshop.svg)](https://github.com/tomeshnet/p2p-internet-workshop/releases)
+
 **Workshop Series** _by Toronto Mesh_, [tomesh.net/peer-to-peer-internet](https://tomesh.net/peer-to-peer-internet/)
 
 ## Description
@@ -14,12 +16,12 @@ Participants will be expected to bring their own laptop.
 
 ## Module Topics
 
-1. [What is mesh?](./module-1.md)
-1. [Setting up your first node](./module-2.md)
-1. [Building nodes (hardware)](./module-3.md)
-1. [Planning a network](./module-4.md)
-1. [Measuring networks](./module-5.md)
-1. [Living on a decentralized network](./module-6.md)
+1. [What is mesh?](./module-1/README.md)
+1. [Setting up your first node](./module-2/README.md)
+1. [Building nodes (hardware)](./module-3/README.md)
+1. [Planning a network](./module-4/README.md)
+1. [Measuring networks](./module-5/README.md)
+1. [Living on a decentralized network](./module-6/README.md)
 
 ## Learning Outcomes
 
@@ -34,7 +36,7 @@ Participants will be expected to bring their own laptop.
 
 - TPL will provide Raspberry Pi 2s and 3s
 - Participants will bring their own laptop
-- Participants will receive primer information via a [welcome email](./organization/welcome-email.txt), which includes [laptop setup instructions](./SETUP.md), a Linux shell primer, and a [pre-workshop survey](./organization/pre-workshop-survey.md)
+- Participants will receive primer information via a [welcome email](./general/welcome-email.txt), which includes [laptop setup instructions](./SETUP.md), a Linux shell primer, and a [pre-workshop survey](./general/pre-workshop-survey.md)
 - Participants are comfortable using a computer before, with no assumptions about prior programming or networking knowledge
 
 ## Facilitation Guidelines
@@ -48,6 +50,17 @@ Participants will be expected to bring their own laptop.
     - Sharing notes and links
     - Jargon-busting
 - Conclude with a [ticket out the door](http://www.ideasforeducators.com/idea-blog/a-twist-on-ticket-out-the-door) activity where students can optionally and anonymously leave feedback as they leave the class
+
+## Workshop Materials
+
+Workshop materials such as lesson plans and worksheets are written as simple [Markdown](https://en.wikipedia.org/wiki/Markdown) files. Each presentation slide deck is created as a Markdown-based [GitBook](https://www.gitbook.com). All generated assets are published to [GitHub Pages individually](https://github.com/tomeshnet/p2p-internet-workshop/tree/gh-pages) and [GitHub Releases as an archive](https://github.com/tomeshnet/p2p-internet-workshop/releases) for download.
+
+If you want to generate these assets yourself, simply run `./build` and you will find the generated assets in the `output` folder. The `./release` script is used to zip up the generated assets into archives convenient for download, which is the form you will find in the GitHub Releases.
+
+When using the GitBook presentations at a workshop, you can either:
+
+- Load the appropriate module from GitHub Pages, such as [module-1-presentation](https://tomeshnet.github.io/p2p-internet-workshop/module-1-presentation/)
+- Or serve the slides from your local machine by cloning this repository, navigate to the appropriate presentation directory of the module to run `gitbook serve`, then navigate to [localhost:4000](http://localhost:4000) from your browser to see the slides
 
 ## Course Design
 
