@@ -8,6 +8,26 @@ This is a scenario in which someone outside of a player's country uses their TLD
 
 ---
 
+# `.ly`
+
+Libya's two governments, as well as other splinter groups, are competing over the ability to communicate officially via the internet, and in places it comes down simply to who holds the login details: "the government domains are distributed between the two parties and it depends on who has the password which allows them to change the details of the domain.
+
+**Scenario: Political Unrest**
+
+While similar to the government collapse scenario, this more typically refers to chaos within a government more like a revolution or coup than confluence of several factions dissolving the nation. Players can choose a few scenarios to resolve or not resolve their conflict.
+
+---
+
+# `.tv`
+
+The domain is currently operated by dotTV, a Verisign company; the Tuvalu government owns twenty percent of the company. In 1999, Tuvalu negotiated a contract leasing its Internet domain name ".tv" to a company formed by idealab for $50 million in royalties over a 12-year period. The Tuvalu government receives a quarterly payment of US$1 million for use of the top-level domain. With the first $1 million payment the government received, Tuvalu was finally able to afford the $100,000 it cost to join the United Nations. Lou Kerner joined .tv as its CEO in January 2000, and the company began selling .tv domain names in April 2000. Verisign acquired .tv in December 2001.
+
+**Scenario: Middleman Offer**
+
+In this scenario, a ccTLD hands over maintenance and management of their TLD to a third-party operator. They can choose to do this for lots of reasons, though the most common reason is that the country itself lacks the IT infrastructure to actually run a domain registry and needs assistance promoting the TLD. However, this choice comes with caveats–technically the players only receive a percentage of profits from the TLD.
+
+---
+
 # `.yu`
 
 Computer Scientists at the Jožef Stefan Institute in Slovenia, then part of the Socialist Federal Republic of Yugoslavia, registered the .yu domain in 1987.
@@ -22,16 +42,6 @@ This is a scenario in which political unrest within your country leads to your c
 
 ---
 
-# `.tv`
-
-The domain is currently operated by dotTV, a Verisign company; the Tuvalu government owns twenty percent of the company. In 1999, Tuvalu negotiated a contract leasing its Internet domain name ".tv" to a company formed by idealab for $50 million in royalties over a 12-year period. The Tuvalu government receives a quarterly payment of US$1 million for use of the top-level domain. With the first $1 million payment the government received, Tuvalu was finally able to afford the $100,000 it cost to join the United Nations. Lou Kerner joined .tv as its CEO in January 2000, and the company began selling .tv domain names in April 2000. Verisign acquired .tv in December 2001.
-
-**Scenario: Middleman Offer**
-
-In this scenario, a ccTLD hands over maintenance and management of their TLD to a third-party operator. They can choose to do this for lots of reasons, though the most common reason is that the country itself lacks the IT infrastructure to actually run a domain registry and needs assistance promoting the TLD. However, this choice comes with caveats–technically the players only receive a percentage of profits from the TLD.
-
----
-
 # `.io`
 
 .io is one of the fastest-growing top-level domains on the internet, a particular favourite among start-ups and technology companies. It refers to the British Indian Ocean Territory, a remote but strategically-important scattering of islands in the middle of the Indian Ocean, also known as the Chagos Archipelago. It consists of seven atolls and over 1,000 tiny islands.
@@ -43,16 +53,6 @@ All this to say, when ccTLDs were being registered Chagossians weren't exactly p
 **Scenario: Middleman Offer**
 
 A few ccTLDs are managed by middlemen not necessarily by choice or in the service of financial gain or support. Some countries' TLDs were registered early in the TLD creation process, and representatives from that country weren't necessarily able to actually engage in the process.
-
----
-
-# `.ly`
-
-Libya's two governments, as well as other splinter groups, are competing over the ability to communicate officially via the internet, and in places it comes down simply to who holds the login details: "the government domains are distributed between the two parties and it depends on who has the password which allows them to change the details of the domain.
-
-**Scenario: Political Unrest**
-
-While similar to the government collapse scenario, this more typically refers to chaos within a government more like a revolution or coup than confluence of several factions dissolving the nation. Players can choose a few scenarios to resolve or not resolve their conflict.
 
 ---
 
