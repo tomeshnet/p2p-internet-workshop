@@ -6,7 +6,7 @@ Violet Blue's "sex-positive URL shortener" vb.ly was deleted by the .ly domain r
 
 This is a scenario in which someone outside of a player's country uses their TLD in a way that doesn't necessarily reflect the country's political or cultural experiences, and the player has to decide whether to allow that use of their TLD or intervene, potentially damaging their TLD's reputation and position on the political stage or damaging their reputation in their country as a political leader.
 
---------
+---
 
 # `.yu`
 

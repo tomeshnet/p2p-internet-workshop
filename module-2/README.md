@@ -10,11 +10,12 @@
 
 ## 1: Topic introduction
 
+- Recap that in the last session, we ran a peer-to-peer application over a mesh network isolated from the internet, and today we will manually set up such a mesh network on the same Raspberry Pi devices running GNU/Linux
 - Summarize homework takeaways and answer any questions:
     - IP address and packet
     - DHCP, NAT, IPv6 self-addressing
     - Packet forwarding and network routing
-- Recap that in the last session, we ran a peer-to-peer application over a mesh network isolated from the internet, and today we will manually set up such a mesh network on the same Raspberry Pi devices running GNU/Linux
+- Act as DHCP server and assign IP addresses to a couple students, route a paper message, using the terminologies, to demonstrate these concepts
 
 ## 2: Hands-on and material exploration
 
@@ -76,20 +77,17 @@ Set up a very basic network in class as manually as possible with the following 
     root@host2:~# nc <host1>.local 80
     ```
     then start typing text messages
-- Use `nc` to run a minimal webserver that can respond to HTTP messages sent via `curl`:
+- Run a minimal webserver that can respond to HTTP messages. Look at the script `start-webserver.sh` and run it:
     ```
-    root@host1:~# while true; do { echo -e 'HTTP/1.1 200 OK\r\n'; echo -e "You have reached $(cat /etc/hostname) on $(date)"; } | nc -l -p 80; done
+    root@host1:~# cat ~/scripts/start-webserver.sh
+    root@host1:~# sh ~/scripts/start-webserver.sh
     ```
     and send a HTTP request to it from `<host2>`:
     ```
     root@host2:~# curl <host1>.local
     ```
-    then observe the response from the webserver
+    then observe the response from the webserver. When you are ready to move on, hit `Ctrl + C` to stop the server.
 - This is similar to manually performing the task of a browser or application
-- To kill the webserver on `<host1>`, press `Ctrl + Z` then:
-    ```
-    root@host1:~# ps aux | grep '[nc] -l -p 80' | awk '{ print $2 }' | xargs -n 1 kill -9
-    ```
 
 #### Form a 3-node centralized network
 
@@ -124,6 +122,8 @@ Start with [The "original" TLDs](http://networks.land/reference/top-level-domain
 There will not be enough time to play [I Think Therefore ICANN](http://networks.land/activities/i-think-therefore-icann/), but we can print some of the "Neat Real-World Examples" on cards and share them with the class, for example:
 
 >`.ly`: Libya’s two governments, as well as other splinter groups, are competing over the ability to communicate officially via the internet, and in places it comes down simply to who holds the login details: “the government domains are distributed between the two parties and it depends on who has the password which allows them to change the details of the domain.
+
+Hand out the scenario cards each to a different student, when we get to that particular TLD, they can volunteer to read the incident on the card to the class.
 
 ## 4: Wrap-up and week ahead
 

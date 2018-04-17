@@ -3,6 +3,7 @@
 * [Recap from last week](part-0/README.md)
 * [Internet protocols and routing](part-1/README.md)
 * [Your node in a mesh network](part-2/README.md)
+    * [Three-node mesh network](part-2/three-node-mesh-network.md)
 * [Top-level domains of the internet](part-3/README.md)
     * [Domain names](part-3/domain-names.md)
     * [Top-level domains](part-3/top-level-domains.md)
