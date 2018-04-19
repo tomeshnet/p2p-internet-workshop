@@ -3,7 +3,7 @@
 # Package assets for release
 #
 
-RELEASE_VERSION=0.1
+RELEASE_VERSION=0.2
 
 ./build
 
