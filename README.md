@@ -59,7 +59,7 @@ If you want to generate these assets yourself, simply run `./build` and you will
 
 When using the GitBook presentations at a workshop, you can either:
 
-- Load the appropriate module from GitHub Pages, such as [module-1-presentation](https://tomeshnet.github.io/p2p-internet-workshop/module-1-presentation/)
+- Load the appropriate module from GitHub Pages, such as [module-1-presentation](https://tomeshnet.github.io/p2p-internet-workshop/module-1-presentation/index.html)
 - Or serve the slides from your local machine by cloning this repository, navigate to the appropriate presentation directory of the module to run `gitbook serve`, then navigate to [localhost:4000](http://localhost:4000) from your browser to see the slides
 
 ## Course Design
