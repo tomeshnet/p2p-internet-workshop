@@ -32,15 +32,13 @@ You are now connected to and able to run commands from your Raspberry Pi, but un
 
 1. Connect the two nodes with an ethernet cable, then run the same command again. You will find that the state has changed to `State: degraded (configuring)`. Even though we have a road (i.e. ethernet cable), there is no street addresses (i.e. IP addresses) or road signs for directions (i.e. routes).
 
-1. Assign an IP address to `eth0` and add a route on `example`:
+1. We will now assign IP addresses to the `eth0` interface on the two nodes. It is important that they have different addresses for the same reason two houses should not have the same street address. Let us assign `192.168.0.1` to `example`, and `192.168.0.2` to `example2`:
 
-    **root@example:~#** `ip addr add 192.168.0.1 dev eth0`
-    **root@example:~#** `ip route add 192.168.0.0/24 via 192.168.0.1`
+    **root@example:~#** `ip addr add 192.168.0.1/24 dev eth0`
 
-    We are assigning the IP address `192.168.0.1` to the ethernet interface of `example`, and telling the device to route all IP traffic to and from `192.168.0.X` addresses through that ethernet cable. Similarly, on `example2` we run these commands but assigning a different IP address:
-
-    **root@example2:~#** `ip addr add 192.168.0.2 dev eth0`
-    **root@example2:~#** `ip route add 192.168.0.0/24 via 192.168.0.2`
+    **root@example2:~#** `ip addr add 192.168.0.2/24 dev eth0`
+    
+    We are assigning the IP address `192.168.0.1` to the ethernet interface of `example`, and the `/24` tells the device to route all IP traffic to and from `192.168.0.X` addresses through the `eth0` interface with that IP address. On `example2`, the command does the same thing except the traffic is routed through its `eth0` interface with IP address `192.168.0.2`.
 
 1. Check the status of `eth0` again and you should find that its state has changed to `State: routable (configuring)` and its newly assigned IP address will also be printed.
 
@@ -48,7 +46,7 @@ You are now connected to and able to run commands from your Raspberry Pi, but un
 
     **root@example:~#** `ip route`
 
-    One of the lines in the output should look like `192.168.0.0/24 via 192.168.0.1 dev eth0`, which means IP traffic to and from `192.168.0.X` addresses will be routed through the network interface with the IP address `192.168.0.1` that is `eth0`. There are other network interfaces on your Raspberry Pi, such as the one wireless connecting your computer. You can see them all by running:
+    One of the lines in the output should look like `192.168.0.0/24 dev eth0 proto kernel scope link src 192.168.0.1`, which means IP traffic to and from `192.168.0.X` addresses will be routed through the `eth0` network interface with the IP address `192.168.0.1`. There are other network interfaces on your Raspberry Pi, such as the one wirelessly connecting your computer. You can see them all by running:
 
     **root@example:~#** `networkctl status`
 
