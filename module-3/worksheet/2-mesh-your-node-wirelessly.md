@@ -24,7 +24,7 @@ You are now connected to and able to run commands from your Raspberry Pi. The Ra
 
 ## Determine your interface
 
-1. Raspberry pi can prepare interfaces out of order.  To make sure we do not accidently change the settings on the node running the Access Point wi will confirm the interface names.
+1. Raspberry pi can prepare interfaces out of order.  To make sure we do not accidently change the settings on the node running the Access Point we will confirm the interface names.
     **root@example:~#** `iw dev`
  
    You should see one interfaces with `type: AP`. This is your Access Point that use use to conenct to the node wirelessly.
