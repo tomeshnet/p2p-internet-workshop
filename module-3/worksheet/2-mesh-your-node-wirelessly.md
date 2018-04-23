@@ -37,10 +37,12 @@ You are now connected to and able to run commands from your Raspberry Pi. The Ra
 
 1. Decide on a name for your newly formed mesh.  Keep it simple and one word.  Don't spend to much time on this.
 
-1. Use the commands provided to create a mesh network between the two nodes
+1. Use the commands provided to create a mesh network between the two nodes.
 
 ## Grow your mesh
 
-1. Now that you have successfully created your mesh, find another group in your proximity
+1. Now that you have successfully created your mesh, find another group in your proximity.
 
-1. Expand your mesh two include the new group
+1. Expand your mesh to include the new group.
+
+1. Now repeat it with another group.
