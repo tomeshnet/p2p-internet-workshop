@@ -39,6 +39,14 @@ You are now connected to and able to run commands from your Raspberry Pi. The Ra
 
 1. Use the commands provided to create a mesh network between the two nodes.
 
+  Remember to give a differnt IP address to each node. ie `192.168.0.1` for one and `192.168.0.2` for another etc.  
+
+## Test your mesh
+
+1. Use `ping` to ping the other connected node and see if it responds.
+
+1. You can check to see what nodes are connected by using the `iw wlan0 station dump` command.
+
 ## Grow your mesh
 
 1. Now that you have successfully created your mesh, find another group in your proximity.
