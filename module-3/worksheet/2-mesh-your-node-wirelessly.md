@@ -24,12 +24,13 @@ You are now connected to and able to run commands from your Raspberry Pi. The Ra
 
 ## Determine your interface
 
-1. Raspberry pi can prepare interfaces out of order.  To make sure we do not accidently change the settings on the node running the Access Point we will confirm the interface names.
+1. Raspberry Pi can prepare interfaces out of order.  To make sure we do not accidently change the settings on the node running the Access Point (and disconnect us from the Pi) we will first confirm the interface names.
+
     **root@example:~#** `iw dev`
  
-   You should see one interfaces with `type: AP`. This is your Access Point that use use to conenct to the node wirelessly.
+   You should see one of the interfaces with `type: AP`. This is your Access Point that you use to conenct to the node wirelessly.
    
-1. Make note of the interface node that is *NOT* your `AP`. It will most likly be `wlan1`
+1. Make note of the interface node that is **NOT** your `AP`. It will most ikely be `wlan1`
 
 ## Creating your mesh
 
@@ -37,9 +38,11 @@ You are now connected to and able to run commands from your Raspberry Pi. The Ra
 
 1. Decide on a name for your newly formed mesh.  Keep it simple and one word.  Don't spend to much time on this.
 
-1. Use the commands provided to create a mesh network between the two nodes.
+1. Use the commands provided to create a mesh network between the two nodes. 
 
-  Remember to give a differnt IP address to each node. ie `192.168.0.1` for one and `192.168.0.2` for another etc.  
+* Make sure you use the correct `wlanX` that you noted above. The example uses `wlan1` which may not be accurate.  
+* Replace **MY_MESH_NAME_HERE** with the mesh name you decided on.
+* Give each node a differnt IP address. ie `192.168.0.1` for the first one and `192.168.0.2` for the second etc.  
 
 ## Test your mesh
 
