@@ -20,7 +20,7 @@ Mesh your node wirelessly
 
     On **Windows** using the **PuTTY** graphical interface, enter the `Host` and select `SSH` then click `Open` to initiate an SSH session. Enter the `Username` and `Password` when prompted.
 
-You are now connected to and able to run commands from your Raspberry Pi, but unlike last week, your Raspberry Pi is currently not connected to all the other ones in the room. Find a partner and we will manually get the two Raspberry Pis to talk over an ethernet cable. For the rest of this activity, we will use `example` to represent one node, and `example2` to represent the other.
+You are now connected to and able to run commands from your Raspberry Pi. The Raspberry Pis are currently not connected to all the other ones in the room. Find a partner and we will manually get the two Raspberry Pis to talk over a mesh with a series of commands provided. For the rest of this activity, we will use `example` to represent one node, and `example2` to represent the other.
 
 ## Determine your interface
 
