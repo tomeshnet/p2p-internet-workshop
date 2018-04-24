@@ -20,39 +20,41 @@ Mesh your node wirelessly
 
     On **Windows** using the **PuTTY** graphical interface, enter the `Host` and select `SSH` then click `Open` to initiate an SSH session. Enter the `Username` and `Password` when prompted.
 
-You are now connected to and able to run commands from your Raspberry Pi. The Raspberry Pis are currently not connected to all the other ones in the room. Find a partner and we will manually get the two Raspberry Pis to talk over a mesh with a series of commands provided. For the rest of this activity, we will use `example` to represent one node, and `example2` to represent the other.
+You are now connected to and able to run commands from your Raspberry Pi. The Raspberry Pis are currently not connected to all the other ones in the room. Find a partner and we will manually get the two Raspberry Pis to talk over a wireless mesh with a series of commands provided. For the rest of this activity, we will use `example` to represent your node.
 
-## Determine your interface
+## Finding your mesh interface
 
-1. Raspberry Pi can prepare interfaces out of order.  To make sure we do not accidently change the settings on the node running the Access Point (and disconnect us from the Pi) we will first confirm the interface names.
+1. The Raspberry Pi may prepare network interfaces out of order. To make sure we do not accidentally change the settings on the interface running the Access Point (and disconnect us from the Pi) we will first confirm the interface names:
 
     **root@example:~#** `iw dev`
  
-   You should see one of the interfaces with `type: AP`. This is your Access Point that you use to connect to the node wirelessly.
+   You should see one of the interfaces with `type: AP`. This is the Access Point that your computer uses to connect to the node wirelessly.
    
-1. Make note of the interface node that is **NOT** your `AP`. It will most likely be `wlan1`
+1. Make note of the interface that is _not_ your `AP`. It will most likely be `wlan1`.
 
-## Creating your mesh
+## Creating your mesh network
 
-1. Partner up with someone at the table.  You will be a new mesh group.
+1. Partner up with someone at the table to form a new mesh group.
 
-1. Decide on a name for your newly formed mesh.  Keep it simple and one word.  Don't spend too much time on this.
+1. Decide on a name for your newly formed mesh. Keep it simple and a single word. Don't spend too much time on this.
 
-1. Use the commands provided to create a mesh network between the two nodes. 
+1. Use the commands provided to create a mesh network between the two nodes, with the following substitutions:
 
-* Make sure you use the correct `wlanX` that you noted above. The example uses `wlan1` which may not be accurate.  
-* Replace **MY_MESH_NAME_HERE** with the mesh name you decided on.
-* Give each node a different IP address. ie `192.168.0.1` for the first one and `192.168.0.2` for the second etc.  
+    * Make sure you use the correct `wlanX` network interface that you noted above.
+    * Replace `MY_MESH_NAME` with the mesh name you decided on.
+    * Assign each node a different IP address. For example, `192.168.0.1` for the first and `192.168.0.2` for the second.
 
-## Test your mesh
+## Testing your mesh network
 
 1. Use `ping` to ping the other connected node and see if it responds.
 
-1. You can check to see what nodes are connected by using the `iw wlan0 station dump` command.
+1. You can check to see what nodes are connected by doing a station dump:
 
-## Grow your mesh
+    **root@example:~#** `iw wlanX station dump`
 
-1. Now that you have successfully created your mesh, find another group in your proximity.
+## Growing your mesh network
+
+1. Now that you have successfully created your small mesh network, find another group in your proximity.
 
 1. Expand your mesh to include the new group.
 
