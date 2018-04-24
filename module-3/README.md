@@ -44,21 +44,21 @@ Group activity to wirelessly mesh with other groups by configuring Raspberry Pis
 
 ### Activity
 
-- As a class review the purpose of each command in a sample starter script
+- As a class review the purpose of each command in a sample starter script:
     ```
-    ip link set dev wlan1 down
-    iw wlan1 set type mp
-    ip link set dev wlan1 up
-    iw dev wlan1 mesh join MY_MESH_NAME_HERE freq 2412
-    ip addr add 192.168.0.1/24 dev wlan0
+    ip link set dev wlanX down
+    iw wlanX set type mp
+    ip link set dev wlanX up
+    iw dev wlanX mesh join MY_MESH_NAME freq 2412
+    ip addr add 192.168.0.Y/24 dev wlanX
     ```
 - Break into groups of two
 - Each group needs a pair of Raspberry Pis
 - Each group will connect to their Raspberry Pi's Host AP and initiate a SSH session
 - Use ifconfig to identify which wlan interface is which (Hint: look for 10.0.0.1)
 - Use ifconfig and iw to create a mesh between the nodes with this sample starter script
-- Use `iw wlan1 station dump` to see if connections are established
-- Use `iperf3 -s` on one node and `iperf3 -c 192.168.1.x` on another node to test the speed across the link
+- Use `iw wlanX station dump` to see if connections are established
+- Use `iperf3 -s` on one node and `iperf3 -c 192.168.0.Y` on another node to test the speed across the link
 - Once the nodes are properly meshed, have groups seek out another group that has finished
 - Work together to integrate all 4 nodes into one mesh
 - Encourage group to continue to merge meshes until all the groups are meshed into one
