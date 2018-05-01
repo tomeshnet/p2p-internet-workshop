@@ -1,1 +1,1 @@
-# The Mesh Node
+# Parts of a node and radio frequency
