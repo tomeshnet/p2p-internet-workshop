@@ -74,18 +74,18 @@ c. Discuss measurements and units:
   - How does this relate to the MB from apps?
   - Why was the speed different between tests?
   
-d. Show Grafana functioning on a mesh node and describe what it is:
-  - Access via web interface
-  - Show how to select nodes
+d. Show BWM-NG (Bandwith monitor next generation) on a mesh node and describe what it is:
+  - Information provided
+  - How to toggle between items
   
 Break into smaller groups:
 
 - Connect to the node
-- Access the Grafana interface and look around
-- Stream a music file that is located on a node's local webserver and observe the metrics
+- SSH into the node
+- Run small web server
+- Run BWM-NG
 - Stream a video file that is located on a node's local webserver and observe the metrics
-- Observe what metrics change if you do the same from a remote node (over the mesh)
-- Can you measure both nodes at the same time?
+- Use TC to limit the bandwith and observe what and how the metrics change
 
 Discuss results in larger group and ask the following questions:
 
