@@ -3,12 +3,12 @@ Measuring networks provides a single point in time calculation of an attribute o
 ## Why do we measure networks.
 
 * What is expected of our network and what is the reality?
-* How can we improve the network.
-* Is the user experiance acceptable?
+* How can we improve the network?
+* Is the user experience acceptable?
 
 ## Monitoring as a form of long term measuring
 
-* Monitoring networks provides a constan measurment
+* Monitoring networks provides a constant measurement
 * Most monitoring suites provide
   * Means of collecting measurement results (Push or Poll)
   * Means of storing this data for a long period of time
@@ -19,10 +19,12 @@ Measuring networks provides a single point in time calculation of an attribute o
 ### Push
 * Push provide event driven information
 * Nodes must be operational
-* Usualy only one node provides access to the information
+* Usually only one node provides access to the information
 
 ### Poll
 * Monitoring service requests information from each device
 * More consistent information is provided
 * When a node is none responsive you get feedback of that
-* Uses more bandwith
+* Uses more bandwidth
+
+
