@@ -8,6 +8,7 @@
     * [Network Metrics](part-1/network-metrics.md)
     * [Speed Test](part-1/speed-test.md)
 * [Streaming and Monitoring](part-2/README.md)
+    * [Cellphone](part-2/cellphone-usage.md)
     * [Connecting with Wi-Fi](part-2/connecting-with-wifi.md)
     * [Worksheet](part-2/worksheet.md)
 * [Profiling users](part-3/README.md)
