@@ -87,6 +87,16 @@ You can actually add any type of file, such as photos and videos, to IPFS, and r
 
 1. Now let's add some content on `example2`, then type `exit` twice to return to `example`, and try to read that text back on `example` and from your browser. It may take a while after you first establish peering, but eventually the content will become available across the network.
 
+1. Of course we can add other types of content too, such as a video. Try to add the `bunny.mp4` video file to one node:
+
+    **root@example:~#** `docker cp www/bunny.mp4 ipfs:/`
+    **root@example:~#** `docker exec -it ipfs sh`
+    **/ #** `ipfs add bunny.mp4`
+
+    Then stream it from the browser of another node:
+
+    `http://example2.local:8080/ipfs/QmVdYXXQAosw3Tj3WweoLjDz11vWRwRjzf2RWx1q2Fh9PT`
+
 To recap, we started the IPFS application and ipfs-to-http gateway in a docker container running on a Raspberry Pi, then peered two nodes to create an IPFS content-addressing network. Each mesh node is now also an IPFS node that publishes and fetches content within our local mesh network.
 
 ![Peer-to-peer applications](peer-to-peer-applications.svg)
