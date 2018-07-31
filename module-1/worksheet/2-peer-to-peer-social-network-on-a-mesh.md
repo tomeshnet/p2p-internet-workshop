@@ -6,9 +6,7 @@ Peer-to-peer social network on a mesh
 1. Start SSB in the background:
 
     **root@example:~#** `docker load --input ~/docker/tomeshnet-ssb-0.6.tar`
-    **root@example:~#** `docker run --name ipfs --network host --detach tomeshnet/ssb:0.6`
-
-    With these two commands, we have used a tool called `docker` (which we will not go into detail for now) to load all the files required to run IPFS, then told the Raspberry Pi to run IPFS in the background. You won't see much visual output, but next we will start interacting with this application.
+    **root@example:~#** `docker run --name ssb --network host --detach tomeshnet/ssb:0.6`
 
 1. Initiate an interactive session:
 
