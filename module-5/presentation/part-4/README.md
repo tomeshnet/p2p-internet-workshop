@@ -1,3 +1,3 @@
 # Next week
 
-Long Rage Low Power radio - LoRA
+Long-range low-power radio networks using **LoRa technology**

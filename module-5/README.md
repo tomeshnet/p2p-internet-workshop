@@ -74,7 +74,7 @@ c. Discuss measurements and units:
   - How does this relate to the MB from apps?
   - Why was the speed different between tests?
   
-d. Show BWM-NG (Bandwith monitor next generation) on a mesh node and describe what it is:
+d. Show `bwm-ng` (Bandwidth Monitor - Next Generation) on a mesh node and describe what it is:
   - Information provided
   - How to toggle between items
   
@@ -83,9 +83,9 @@ Break into smaller groups:
 - Connect to the node
 - SSH into the node
 - Run small web server
-- Run BWM-NG
+- Run `bwm-ng`
 - Stream a video file that is located on a node's local webserver and observe the metrics
-- Use TC to limit the bandwith and observe what and how the metrics change
+- Use `tc` (Traffic Control) to limit the bandwidth and observe what and how the metrics change
 
 Discuss results in larger group and ask the following questions:
 

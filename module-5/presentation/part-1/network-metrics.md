@@ -1,27 +1,31 @@
-# Network Attributes
+# Network metrics
 
-## Volume (Bytes or bits)
+## Volume _(bits or bytes)_
 
- * Collected over time
- * Sum of all bits/bytes sent and received
- * Common tool to keep track of this is `MRTG
+- Collected over time
+- Sum of all bits/bytes sent and received
+- Common tool to keep track of this is `MRTG` (Multi Router Traffic Grapher)
  
-## Speed/Bandwidth (Bytes or Bits per second)
+## Speed _(bps or Bps)_
 
- * How much data over a period of time
- * Common tool to test is called `iperf3`
+- Also called "bandwidth" sometimes
+- How much data over a period of time
+- Common to test between two points using `iperf3`
  
-## Round Trip Times (seconds)
- * Acronym RTT
- * Calculation how long it takes for a packet to reach the destination and back again
- * Common tool to test this is `ping` or `noping`
+## Round trip time _(seconds)_
 
-## Jitter (seconds)
- * The time difference between how long packets take to travel to the destination
- * Usually done in UDP packets
- * Common tool to test this is `ipef3` using UDP packets
+- Commonly called "RTT"
+- Time for a packet to reach the destination and back
+- Common tool to test this is `ping` or `noping`
+
+## Jitter _(seconds)_
+
+- Difference between time packets take to reach the destination
+- Usually measured with UDP packets
+- Common tool to test this is `iperf3` using UDP packets
  
-## Packet Loss
- * Measurement of the number of packets that did not reach their destination
- * Packets sometimes are re-transmitted other times ignores
- * Common tool to test this is `ping` and `noping`
+## Packet loss
+
+- The number of packets that do not reach the destination
+- Packets are sometimes re-transmitted, other times ignored
+- Common tool to test this is `ping` and `noping`

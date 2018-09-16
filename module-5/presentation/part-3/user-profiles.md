@@ -1,4 +1,6 @@
-In a group discuss one of the following user profiles
+# User profiles
+
+In a group, discuss one of the following user profiles:
 
 - Gamer
 - Streamer (YouTube, Netflix, etc.)

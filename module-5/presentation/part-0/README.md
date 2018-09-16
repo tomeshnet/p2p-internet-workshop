@@ -1,21 +1,11 @@
 # Recap from last week
 
-**First Week**
+**First Week**, we formed a `wireless mesh network` using Raspberry Pis
 
-Using Raspberry Pis, we formed a `wireless mesh network`.
+**Second week**, we configured a `wired network` using Raspberry Pis
 
-**Second week**
+**Third Week**, we configured a `wireless mesh network` using Raspberry Pis
 
-Using Raspberry Pis, we configured a `wired network`.
+**Fourth Week**, we planned out a `wireless mesh network` in our community
 
-**Third Week**
-
-Using Raspberry Pis, we configured a `wireless mesh network`.
-
-**Fourth Week**
-
-Planned out a `wireless mesh network` in the community.
-
-**This Week**
-
-Measure our `network`.
+**This Week**, we will measure our `network`

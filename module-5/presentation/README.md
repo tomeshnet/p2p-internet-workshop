@@ -1,7 +1,7 @@
-# Module 5: Monitoring Networks
+# Module 5: Measuring networks
 
 1. Recap from last week
-1. Measuring and Monitoring
-1. Streaming and Monitoring
+1. Measuring and monitoring
+1. Streaming and monitoring
 1. Profiling users
-1. Homework and Wrapup
+1. Wrap-up & homework

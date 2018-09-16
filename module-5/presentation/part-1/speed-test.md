@@ -1,14 +1,13 @@
-# Speed Test
+# Speed test
 
-Using www.speedtest.net run a speed test with available public wifi.
+Using [speedtest.net](https://www.speedtest.net), run a speed test with available public WiFi:
 
-  - Run speedtest.net on a single device
-  - Run speedtest.net on two devices
-  - Run speedtest.net on any several devices
+- Run speed test from a single device
+- Run speed test from two devices simultaneously
+- Run speed test from several devices simultaneously
 
-If the speed test is using uses the full internet connection, each additional user running a speed test should cut the speed for everyone.
+If the speed test is using the full internet connection, each additional user running a speed test should cut the speed for everyone. If it does not, it could indicate:
 
-If it does not it could indicate
-  - Wireless Bottleneck
-  - Server Bottleneck
-  - Bandwith Limiting
+- Wireless bottleneck
+- Server bottleneck
+- Per device bandwidth limit

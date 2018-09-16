@@ -1,4 +1,6 @@
-Consider the following in your discussion
+# User profile considerations
+
+Consider the following in your discussion:
 
 - What are the most used services by the user?
 - How would the user be affected if internet access becomes unavailable?
