@@ -1,4 +1,4 @@
-# Important Factors While Planning
+# Important factors while planning
 
 - Antenna types and characteristics
   - Transmit (TX) Power (dBm)
