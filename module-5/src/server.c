@@ -1,4 +1,4 @@
-root@orangepione:~# cat 1.c
+//src from https://www.ibm.com/developerworks/systems/library/es-nweb/index.html
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
