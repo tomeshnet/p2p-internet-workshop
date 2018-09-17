@@ -1,0 +1,16 @@
+# Summary
+
+- [Recap from last week](part-0/README.md)
+- [Measuring and monitoring](part-1/README.md)
+    - [Net neutrality](part-1/net-neutrality.md)
+    - [Measuring networks](part-1/measuring-networks.md)
+    - [Bits and bytes](part-1/bits-and-bytes.md)
+    - [Network metrics](part-1/network-metrics.md)
+    - [Speed test](part-1/speed-test.md)
+- [Streaming and monitoring](part-2/README.md)
+    - [Cellphone usage](part-2/cellphone-usage.md)
+    - [Streaming over WiFi](part-2/streaming-over-wifi.md)
+- [Profiling users](part-3/README.md)
+    - [User profiles](part-3/user-profiles.md)
+    - [User profile considerations](part-3/user-profile-considerations.md)
+- [Wrap-up & homework](part-4/README.md)
