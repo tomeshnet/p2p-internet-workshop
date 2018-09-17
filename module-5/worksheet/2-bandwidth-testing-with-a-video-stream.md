@@ -66,9 +66,9 @@ For this workshop you will need to open two SSH connections. Repeat the last ste
 
 ## Streaming video content with the wireless interface
 
-1. Keeping the `bwm-ng` program open in our first SSH session, we will now use the other SSH session to start a mini webserver sharing the contents of the folder `www` on the Raspberry Pi by running:
+1. Keeping the `bwm-ng` program open in our first SSH session, we will now use the other SSH session to start a mini webserver with `nweb` to share the contents of the `www` folder on the Raspberry Pi:
 
-    **root@example:~#** `./server.bin 8080 www`
+    **root@example:~#** `nweb 8080 www`
 
 1. From the browser of your computer, go to:
 
