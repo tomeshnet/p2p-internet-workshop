@@ -55,7 +55,7 @@ Participants will be expected to bring their own laptop.
 
 Workshop materials such as lesson plans and worksheets are written as simple [Markdown](https://en.wikipedia.org/wiki/Markdown) files. Each presentation slide deck is created as a Markdown-based [GitBook](https://www.gitbook.com). All generated assets are published to [GitHub Pages individually](https://github.com/tomeshnet/p2p-internet-workshop/tree/gh-pages) and [GitHub Releases as an archive](https://github.com/tomeshnet/p2p-internet-workshop/releases) for download.
 
-If you want to generate these assets yourself, simply run `./build` and you will find the generated assets in the `output` folder. The `./release` script is used to zip up the generated assets into archives convenient for download, which is the form you will find in the GitHub Releases.
+If you want to generate these assets yourself, simply run `./install-dependencies.sh` and `./build.sh` and you will find the generated assets in the `output` folder. The `./package.sh` script is used to zip up the generated assets into archives convenient for download, which is the form you will find in the GitHub Releases.
 
 When using the GitBook presentations at a workshop, you can either:
 
