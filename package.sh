@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
-#
-# Package assets for release
-#
 
-RELEASE_VERSION=0.2
-
-./build
+RELEASE_VERSION=$1
 
 # Create directory for release assets ready to be published
 rm -rf publish
