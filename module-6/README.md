@@ -34,6 +34,8 @@ Try out a toy 900 MHz long range low power network and visualize the packet flow
 - 1 SDR
 - 1 coulomb counter
 
+See [this repository](https://github.com/steamlink/p2p-workshop-nodes) for help with setup
+
 ### Format
 - 4-6 groups
 
