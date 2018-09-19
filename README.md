@@ -82,4 +82,4 @@ When using the GitBook presentations at a workshop, you can either:
 
 ## License
 
-All Building the Peer-to-Peer Internet workshop materials at [github.com/tomeshnet/p2p-internet-workshop/](https://github.com/tomeshnet/p2p-internet-workshop/) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/), the text of which is included in the repository [`LICENSE`](./LICENSE.md).
+All Building the Peer-to-Peer Internet workshop materials at [github.com/tomeshnet/p2p-internet-workshop/](https://github.com/tomeshnet/p2p-internet-workshop/) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/), the text of which is included in the repository [`LICENSE`](./LICENSE).
