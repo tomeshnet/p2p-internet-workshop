@@ -2,7 +2,7 @@ install: "./install-dependencies.sh"
 
 script: "./build.sh"
 
-before_deploy: "./package $TRAVIS_TAG"
+before_deploy: "./package.sh $TRAVIS_TAG"
 
 deploy:
   provider: releases

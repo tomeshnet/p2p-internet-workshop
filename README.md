@@ -1,5 +1,6 @@
 # Building the Peer-to-Peer Internet
 
+[![Build Status](https://travis-ci.org/tomeshnet/p2p-internet-workshop.svg?branch=master)](https://travis-ci.org/tomeshnet/p2p-internet-workshop)
 [![GitHub release](https://img.shields.io/github/release/tomeshnet/p2p-internet-workshop.svg)](https://github.com/tomeshnet/p2p-internet-workshop/releases)
 
 **Workshop Series** _by Toronto Mesh_, [tomesh.net/peer-to-peer-internet](https://tomesh.net/peer-to-peer-internet/)
@@ -56,6 +57,11 @@ Participants will be expected to bring their own laptop.
 Workshop materials such as lesson plans and worksheets are written as simple [Markdown](https://en.wikipedia.org/wiki/Markdown) files. Each presentation slide deck is created as a Markdown-based [GitBook](https://www.gitbook.com). All generated assets are published to [GitHub Pages individually](https://github.com/tomeshnet/p2p-internet-workshop/tree/gh-pages) and [GitHub Releases as an archive](https://github.com/tomeshnet/p2p-internet-workshop/releases) for download.
 
 If you want to generate these assets yourself, simply run `./install-dependencies.sh` and `./build.sh` and you will find the generated assets in the `output` folder. The `./package.sh` script is used to zip up the generated assets into archives convenient for download, which is the form you will find in the GitHub Releases.
+
+Travis CI is configured to build, package, and publish a new release to GitHub Releases when you push a new tag, so to publish a new package, all you need is to find the current version with `git tag`, and if the next one should be `v0.4`, you do:
+
+    git tag v0.4
+    git push --tag
 
 When using the GitBook presentations at a workshop, you can either:
 
