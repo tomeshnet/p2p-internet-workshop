@@ -1,1 +1,1 @@
-# LoRa Workshop
+# LoRa workshop

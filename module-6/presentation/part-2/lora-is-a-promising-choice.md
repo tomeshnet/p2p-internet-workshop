@@ -1,4 +1,5 @@
 # LoRa is a promising choice
+
 * **Cost**: Low Cost; $2 RF transceivers
 * **Range**: Long Range; Advertised up to 25 km; World record: 702 km
 * **Power Requirements**: Very Low Power; Sensor applications ~10 Year life from 2 AA batteries

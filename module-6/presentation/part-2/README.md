@@ -1,3 +1,1 @@
-# Technologies of Smart Environments
-
-
+# Technologies of smart environments

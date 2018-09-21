@@ -1,4 +1,4 @@
-# Module 6: Living on a Decentralized Network
+# Module 6: Living on a decentralized network
 
 * Recap
 * Motivation: Smart Environments and IoT
