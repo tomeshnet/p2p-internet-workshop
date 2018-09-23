@@ -18,7 +18,7 @@ deploy:
   - provider: pages
     github-token:
       secure: VnXRjvEsJKZJ0mto3ZMOFccE8QzuRvqyxm6juM05g3Z9GuC1E3wuQI+3N0qSinkxUpzbjfSWhBSeApN7cKPKYJTBehDA6euQyTTY12LbZliSNkwmS2YBfPjJqll4/kCLMzYvaQwVbPijhIUYOCUI/6x28OGJUSohdH3RplJ68LGsIzbTkZ/j17u6iKDIqzmazngTMriWaNC5eKGTSYLXbTibJxJtYOTi8OcsvuAd5KGQpU06MJFxB5ARCK1WATwHIeLWsIKux670vJkH2duYRxexirRcL5C42PwqqihalW4JC7nEilC2IMq2MUGlTeO2ph8UEKZ4O/w0BZTOvb1SJ2YJlfF1lm1Hu/LiEw1pDzkWA1DcneyvAezCjJ9cEjqT2nRPqBY3e/OSjpH7pFMr0o8xaX0N3MRzvZ7Lu/7Ds/DMZeavqE+UVLLvb3BKqboJYwl3T0tN452zUkGpiP+MNW+ZECKbd5FGF9kpSLfGG4rT7FFtVAvPkqzwKuX+1QCFOXemrrtfcL6H7uDIJzlzz7qxccIo5rGfeb/XXNeAVc0+L3S9DNHN+L6u0T5kOMiwO6sLabjBrqhiA6yowSMlSV1oKWDeXkzYZBC+05bA/cRpC6W+49+I1zBze9qe4YMZ1ztDtlV/E5LfbfisrWSjQQRhyvA7FxVsXLw/Q5st17Q=
-    local-dir: output
+    local-dir: site/_site
     target-branch: gh-pages
     keep-history: false
     skip-cleanup: true
