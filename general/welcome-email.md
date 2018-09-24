@@ -1,3 +1,5 @@
+# Welcome Email
+
 Hello,
 
 We are excited for the first Building the Peer-to-Peer Internet workshop, and we hope you are too! The workshops run on Tuesdays, April 10 to May 15 from 6:30-8:00 p.m. at the Fort York library. Here are a few notes to get you ready for the first session.
