@@ -1,4 +1,14 @@
-# 1: What is mesh?
+---
+layout: page
+title: "What is mesh?"
+module: "1"
+contents:
+  - _articles/module-1/presentation.md
+  - _articles/module-1/pdf-assets.md
+following: _articles/module-1/presentation.md
+---
+
+# Module 1: What is mesh?
 
 | **Section**                                                                        | **Length** |
 |------------------------------------------------------------------------------------|------------|

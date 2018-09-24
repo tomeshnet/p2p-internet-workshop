@@ -23,10 +23,10 @@ done
 
 # Go through each module
 for mod in module-*; do
-    # Create folder for each module
+    # Create folder for module
     mkdir "$mod"
 
-    # Generate lesson plans .pdf
+    # Generate lesson plan .pdf
     doc="$mod/README.md"
     if [ -f $doc ]; then
         out="output/$mod/$mod.pdf"
@@ -44,7 +44,7 @@ for mod in module-*; do
         fi
     done
 
-    # Generate presentation GitBooks
+    # Generate presentation GitBook
     book="$mod/presentation"
     if [ -d $book ]; then
         out="output/$mod/presentation"
