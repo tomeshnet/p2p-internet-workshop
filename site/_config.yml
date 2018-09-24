@@ -1,27 +1,36 @@
 title: Building the Peer-to-Peer Internet
+subtitle: Workshop Series by Toronto Mesh
 email: hello@tomesh.net
+twitter: https://twitter.com/tomeshnet
+chat: https://chat.tomesh.net/#/room/#p2p-internet-workshop:tomesh.net
 description: >-
   Open-source syllabus to explore community mesh networks and distributed applications
   through social activities and various tinkerings with Raspberry Pi and LoRa systems.
 baseurl: "/p2p-internet-workshop"
 url: "https://tomeshnet.github.io"
-twitter_username: tomeshnet
-github_username: tomeshnet
+github:
+  repo: "tomeshnet/p2p-internet-workshop"
+  branch: "gh-pages"
+collections:
+  articles:
+    output: true
+permalink: /:path/
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+redcarpet:
+    extensions: [
+        'no_intra_emphasis',
+        'fenced_code_blocks',
+        'autolink',
+        'strikethrough',
+        'superscript',
+        'with_toc_data',
+        'tables',
+        'hardwrap'
+    ]
+
+# variables
+video: "<span class=\"video-player\"></span>"
+assignment: "<span class=\"assignment\">Assignment: </span>"
