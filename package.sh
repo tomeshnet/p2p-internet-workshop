@@ -97,7 +97,7 @@ for mod in module-*; do
     filename="$mod.pdf"
     echo "* [$filename]($filename)" >> "$dst/pdf-assets.md"
 
-    if [ -f "output/$mod/worksheet/*.pdf" ]; then
+    if [ -d output/$mod/worksheet ] && [ "$(ls output/$mod/worksheet/*.pdf 2>/dev/null)" ]; then
         echo "" >> "$dst/pdf-assets.md"
         echo "### Class worksheets" >> "$dst/pdf-assets.md"
         for doc in output/$mod/worksheet/*.pdf; do
