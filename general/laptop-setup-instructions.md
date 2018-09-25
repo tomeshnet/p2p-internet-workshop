@@ -1,4 +1,4 @@
-# Setup Instructions
+# Laptop Setup Instructions
 
 To participate in the workshop, you will need access to the software described below. You will also need an up-to-date web browser.
 
