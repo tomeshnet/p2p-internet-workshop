@@ -1,4 +1,14 @@
-# 6: Living on a decentralized network
+---
+layout: page
+title: "Living on a decentralized network"
+module: "6"
+contents:
+  - _articles/module-6/presentation.md
+  - _articles/module-6/pdf-assets.md
+following: _articles/module-6/presentation.md
+---
+
+# Module 6: Living on a decentralized network
 
 | **Section**                                                                        | **Length** |
 |------------------------------------------------------------------------------------|------------|

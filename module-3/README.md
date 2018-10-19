@@ -1,4 +1,14 @@
-# 3: Building nodes (hardware)
+---
+layout: page
+title: "Building nodes (hardware)"
+module: "3"
+contents:
+  - _articles/module-3/presentation.md
+  - _articles/module-3/pdf-assets.md
+following: _articles/module-3/presentation.md
+---
+
+# Module 3: Building nodes (hardware)
 
 | **Section**                                                                        | **Length** |
 |------------------------------------------------------------------------------------|------------|

@@ -1,4 +1,14 @@
-# 4: Planning a network
+---
+layout: page
+title: "Planning a network"
+module: "4"
+contents:
+  - _articles/module-4/presentation.md
+  - _articles/module-4/pdf-assets.md
+following: _articles/module-4/presentation.md
+---
+
+# Module 4: Planning a network
 
 | **Section**                                                                                          | **Length** |
 |------------------------------------------------------------------------------------------------------|------------|

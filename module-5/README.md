@@ -1,4 +1,14 @@
-# 5: Measuring networks
+---
+layout: page
+title: "Measuring networks"
+module: "5"
+contents:
+  - _articles/module-5/presentation.md
+  - _articles/module-5/pdf-assets.md
+following: _articles/module-5/presentation.md
+---
+
+# Module 5: Measuring networks
 
 | **Section**                                                                        | **Length** |
 |------------------------------------------------------------------------------------|------------|

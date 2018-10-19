@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<div class="lesson-content">
+<!--
+<div class="page-header">
+  <h2>
+    {% if page.module %}{{ page.module }}.{% endif %}
+    {{ page.title }}
+  </h2>
+</div>
+-->
+<!--
+<div class="details">
+  <div class="row p-y-1">
+  {% if page.summary %}
+    <div class="col-sm-8">
+    <blockquote>
+      <i>{{ page.summary }}</i>
+    </blockquote>
+    </div>
+  {% endif %}
+    <div class="col-sm-4">
+      {% if page.time %} <time>{{page.time}}</time>{% endif %}
+      <a target="_blank" class="suggest-changes" href="https://github.com/{{ site.github.repo }}/edit/{{ site.github.branch }}/{{ page.path }}">Suggest changes</a>
+    </div>
+  </div>
+  {% if page.format or page.prereq or page.materials %}
+  <div class="row p-y-1">
+    <div class="col-sm-4">
+      {% if page.format %}
+      <h5>Format</h5>
+      {{ page.format | markdownify }}
+      {% endif %}
+    </div>
+    <div class="col-sm-4">
+      {% if page.prereq %}
+      <h5>Prerequisites</h5>
+      {{ page.prereq | markdownify }}
+      {% endif %}
+    </div>
+    <div class="col-sm-4">
+      {% if page.materials %}
+      <h5>Materials</h5>
+      {{ page.materials | markdownify }}
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+-->
+{{ content }}
+
+{% if page.contents %}
+  <h3>In This Section</h3>
+{% for path in page.contents %}
+  {% assign subpage = site.articles | where: "path", path | first %}
+   <p>
+    {% if subpage.module %}{{ subpage.module }}.{% endif %}
+    <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
+    {% if subpage.time %}
+    ({{ subpage.time }})
+    {% endif %}
+  </p>
+{% endfor %}
+{% endif %}
+
+{% if page.following %}
+ {% assign next = site.articles | where: "path", page.following | first %}
+ <a class="btn btn-lg btn-default btn-next" href="{{ next.url | prepend: site.baseurl }}">
+next:
+{{ next.title }} &nbsp;
+<i class="fa fa-play" aria-hidden="true"></i>
+</a>
+<br />
+{% endif %}
+
+
+<p class="help-us">
+    <edit></edit>
+    Help us improve content and
+    <a target="_blank" href="https://github.com/{{ site.github.repo }}/issues">suggest changes</a> to this course.
+</p>
+</div>

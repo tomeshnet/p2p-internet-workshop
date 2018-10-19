@@ -1,4 +1,14 @@
-# 2: Setting up your first node 
+---
+layout: page
+title: "Setting up your first node "
+module: "2"
+contents:
+  - _articles/module-2/presentation.md
+  - _articles/module-2/pdf-assets.md
+following: _articles/module-2/presentation.md
+---
+
+# Module 2: Setting up your first node
 
 | **Section**                                                                        | **Length** |
 |------------------------------------------------------------------------------------|------------|
