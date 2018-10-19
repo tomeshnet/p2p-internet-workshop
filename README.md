@@ -15,12 +15,12 @@ This course can be facilitated in an environment without internet access. Partic
 
 ## Module Topics
 
-1. [What is mesh?]({{ site.baseurl }}/articles/module-1/)
-1. [Setting up your first node]({{ site.baseurl }}/articles/module-2/)
-1. [Building nodes (hardware)]({{ site.baseurl }}/articles/module-3/)
-1. [Planning a network]({{ site.baseurl }}/articles/module-4/)
-1. [Measuring networks]({{ site.baseurl }}/articles/module-5/)
-1. [Living on a decentralized network]({{ site.baseurl }}/articles/module-6/)
+1. [What is mesh?](https://tomeshnet.github.io/p2p-internet-workshop/articles/module-1/)
+1. [Setting up your first node](https://tomeshnet.github.io/p2p-internet-workshop/articles/module-2/)
+1. [Building nodes (hardware)](https://tomeshnet.github.io/p2p-internet-workshop/articles/module-3/)
+1. [Planning a network](https://tomeshnet.github.io/p2p-internet-workshop/articles/module-4/)
+1. [Measuring networks](https://tomeshnet.github.io/p2p-internet-workshop/articles/module-5/)
+1. [Living on a decentralized network](https://tomeshnet.github.io/p2p-internet-workshop/articles/module-6/)
 
 ## Learning Outcomes
 
@@ -33,9 +33,9 @@ This course can be facilitated in an environment without internet access. Partic
 
 ## Expectations
 
-- A set of hardware is available for each participant
+- Each participant will have a hardware kit
 - Participants will bring their own laptop
-- Participants will receive primer information via a [welcome email]({{ site.baseurl }}/articles/general/general-welcome-email.pdf), which includes [laptop setup instructions]({{ site.baseurl }}/articles/general/general-laptop-setup-instructions.pdf), a Linux shell primer, and a [pre-workshop survey]({{ site.baseurl }}/articles/general/general-pre-workshop-survey.pdf)
+- Participants will receive primer information via a [welcome email](https://tomeshnet.github.io/p2p-internet-workshop/articles/general/general-welcome-email.pdf), which includes [laptop setup instructions](https://tomeshnet.github.io/p2p-internet-workshop/articles/general/general-laptop-setup-instructions.pdf), a Linux shell primer, and a [pre-workshop survey](https://tomeshnet.github.io/p2p-internet-workshop/articles/general/general-pre-workshop-survey.pdf)
 - Participants are comfortable using a computer before, with no assumptions about prior programming or networking knowledge
 
 ## Facilitation Guidelines
@@ -52,7 +52,7 @@ This course can be facilitated in an environment without internet access. Partic
 
 ## Workshop Materials
 
-Class materials are written as [Markdown](https://en.wikipedia.org/wiki/Markdown) files and presentation slides are created as a Markdown-based [GitBook](https://www.gitbook.com). All generated assets are hosted on [GitHub Pages]({{ site.baseurl }}/) and packaged as a downloadable archive on [GitHub Releases](https://github.com/tomeshnet/p2p-internet-workshop/releases/latest).
+Class materials are written as [Markdown](https://en.wikipedia.org/wiki/Markdown) files and presentation slides are created as a Markdown-based [GitBook](https://www.gitbook.com). All generated assets are hosted on [GitHub Pages](https://tomeshnet.github.io/p2p-internet-workshop/) and packaged as a downloadable archive on [GitHub Releases](https://github.com/tomeshnet/p2p-internet-workshop/releases/latest).
 
 When facilitating the workshop in an offline environment, you can run `gitbook serve` from a `presentation` directory to serve the slides on `http://localhost:4000`.
 
@@ -62,7 +62,7 @@ If you want to generate course assets yourself, simply run `./install-dependenci
   
 ## Credits
 
-The first version of this syllabus is created by [Toronto Mesh](https://tomesh.net) contributors: [@benhylau](https://github.com/benhylau), [@darkdrgn2k](https://github.com/darkdrgn2k), [@dcwalk](https://github.com/dcwalk), [@uditvira](https://github.com/uditvira), [@Shrinks99](https://github.com/Shrinks99), and [@Pedro-on-a-bike](https://github.com/Pedro-on-a-bike). While most of the material is created new, the course also incorporates many prior works listed [here]({{ site.baseurl }}/articles/general/general-extra-resources.pdf), or otherwise referenced in their individual course modules.
+The first version of this syllabus is created by [Toronto Mesh](https://tomesh.net) contributors: [@benhylau](https://github.com/benhylau), [@darkdrgn2k](https://github.com/darkdrgn2k), [@dcwalk](https://github.com/dcwalk), [@uditvira](https://github.com/uditvira), [@Shrinks99](https://github.com/Shrinks99), and [@Pedro-on-a-bike](https://github.com/Pedro-on-a-bike). While most of the material is created new, the course also incorporates many prior works listed [here](https://tomeshnet.github.io/p2p-internet-workshop/articles/general/general-extra-resources.pdf), or otherwise referenced in their individual course modules.
 
 Hands-on activities rely on software from many projects: [mesh-orange](https://github.com/tomeshnet/mesh-orange), [mesh-router-builder](https://github.com/benhylau/mesh-router-builder), [mesh-workshop](https://github.com/benhylau/mesh-workshop/), [steamlink](https://github.com/steamlink), [cjdns](https://github.com/cjdelisle/cjdns/), [Yggdrasil](https://yggdrasil-network.github.io/about.html), [IPFS](https://ipfs.io/), [Secure Scuttlebutt](https://github.com/ssbc/). Course material generation uses [markdown-pdf](https://github.com/alanshaw/markdown-pdf) and [gitbook-cli](https://github.com/GitbookIO/gitbook-cli). The course website is built with [Jekyll](https://jekyllrb.com/), and the theme is from [Mozilla's Open Leadership Training Series](https://github.com/mozilla/open-leadership-training-series). Icons from [Font Awesome](http://fontawesome.io/) and [Jake Ingman](https://thenounproject.com/search/?q=mesh&i=74809) are used.
 
