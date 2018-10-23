@@ -1,0 +1,19 @@
+# Take Tracking
+
+This sheet tracks distribution of grant funding relating to the development and facilitation of this workshop. You can find out more about the "take" funds distribution process [here](https://github.com/benhylau/ssbc-grants-scuttlemesh/blob/master/README.md#funds-distribution).
+
+## Secure Scuttlebutt Consortium 2018 (for ScuttleMesh)
+
+Amount: ETH 7.253  
+See: https://github.com/benhylau/ssbc-grants-scuttlemesh  
+Take: https://github.com/benhylau/ssbc-grants-scuttlemesh/blob/master/take.md
+
+## IPFS Research 2018
+
+Amount: USD 5,000
+See: https://github.com/tomeshnet/p2p-internet-workshop/issues/55
+
+| GitHub Handle | Nov 10 | Nov 24 | Dec 7 | Dec 21 |
+|:-------------:|:------:|:------:|:-----:|:------:|
+| @benhylau     |        |        |       |        |
+
