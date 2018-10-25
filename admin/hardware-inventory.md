@@ -8,7 +8,7 @@ _@benhylau to update once items are shipped_
 
 | Item | Units | Shipping costs | Delivered by | For |
 |:--|:--|:--|:--|:--|
-| TOP-S5 | 3 | _@darkdrgn2k to fill_ | @darkdrgn2k | Florida Polytechnic |
+| TOP-S5 | 3 | $20.09 | @darkdrgn2k | Florida Polytechnic |
 | TOP-S5 | 2 | 0.00 | @benhylau | NYU Abu Dhabi |
 
 See [collaboration groups](https://github.com/tomeshnet/p2p-internet-workshop/issues/68).
