@@ -13,7 +13,6 @@ Take: https://github.com/benhylau/ssbc-grants-scuttlemesh/blob/master/take.md
 Amount: USD 5,000
 See: https://github.com/tomeshnet/p2p-internet-workshop/issues/55
 
-| GitHub Handle | Nov 10 | Nov 24 | Dec 7 | Dec 21 |
-|:-------------:|:------:|:------:|:-----:|:------:|
-| @benhylau     |        |        |       |        |
-
+| GitHub Handle | Dec 15 | Dec 29 |
+|:-------------:|:------:|:------:|
+| @benhylau     |        |        |
