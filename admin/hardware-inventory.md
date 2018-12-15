@@ -2,7 +2,12 @@
 
 ## Current inventory
 
-_@benhylau to update once items are shipped_
+| Item | Units | Status |
+|:-----|:------|:-------|
+| Raspberry Pi 3B+ with power | 6 | With @benhylau |
+| Toplinkst TOP-S5 | 45 | Waiting for USB adapters |
+| Samsung Evo Select 32 GB | 20 | With @benhylau |
+| LoRa hardware | 0 | In chargeback process, have not ordered new ones |
 
 ## Hardware allocation
 
@@ -17,10 +22,10 @@ See [collaboration groups](https://github.com/tomeshnet/p2p-internet-workshop/is
 
 | Item | Units | Cost (CAD) | Total (CAD) | Status | Note |
 |:--|--:|--:|--:|:--|:--|
-| [Raspberry Pi 3B+ with power](https://www.ebay.ca/itm/232708265037) | 6 | 80.29 | 481.74 (352.70 USD) | Paid | Prices have gone up on Amazon, @benhylau bought from a slightly better option on ebay |
+| [Raspberry Pi 3B+ with power](https://www.ebay.ca/itm/232708265037) | 6 | 80.29 | 481.74 (352.70 USD) | Received | Prices have gone up on Amazon, @benhylau bought from a slightly better option on ebay |
 | [Toplinkst TOP-S5](https://toplinkst-wifi.en.made-in-china.com/product/NyaQzvYEsGWL/China-Top-S5-802-11A-B-G-N-300Mbps-Rt5572-Dual-Band-USB-Wireless-Module-with-Ce-FCC-for-STB.html) + accessories (pigtails, antennas, [USB header](https://www.ebay.ca/itm/10PCS-USB-Male-to-2-54mm-DIP-Adapter-Converter-Board-4-Pin-PCB-DIY-Power-Supply/132646223066)) | 50 | 13.74 | 631.11 (470 USD) + 12.73 (9.48 USD) + 42.98 (customs) | Received | Price changes and shipping costs, @benhylau revised to 50 units |
 | [Samsung Evo Select 32 GB](https://www.amazon.com/gp/product/B06XWN9Q99/) | 20 | 11.23 | 224.51 (166.99 USD) | Received | Evo Select cards should be just like Evo Plus cards, but distributed by Samsung/Amazon officially. There were concerns over fake SD cards from third-party sources. Max allowed per order is 20 so @benhylau revised quantity |
-| [LoRa hardware](https://www.aliexpress.com/item/LoRa-ESP32-ESP-32-0-96-Inch-Blue-OLED-Display-Bluetooth-WIFI-CP2102-LoRa-Kit-32/32856663861.html) | 20 | 13.26 | 265.12 | Paid | Vendor shipped me the wrong item, pending refund |
+| ~~[LoRa hardware](https://www.aliexpress.com/item/LoRa-ESP32-ESP-32-0-96-Inch-Blue-OLED-Display-Bluetooth-WIFI-CP2102-LoRa-Kit-32/32856663861.html)~~ | ~~20~~ | ~~13.26~~ | ~~265.12~~ | ~~Paid~~ | Vendor shipped me the wrong item, pending refund |
 
 ## Planned purchases
 
