@@ -1,0 +1,67 @@
+@import url('https://indestructibletype-fonthosting.github.io/jost.css');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,700,700i&amp;subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700');
+
+/* Typography */
+body {
+  font-family: 'Zilla Slab', serif;
+}
+
+h1 {
+  font-family: 'Jost*','Futura', sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  color: #FFCD50;
+}
+
+h3 {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 700;
+  color: #ddeaed;
+}
+
+p,ul,ol {
+  color: #ddeaed;
+  line-height: 1.05em;
+  margin-top: 1.1em;
+}
+
+li {
+  margin-top: 0.5em;
+}
+
+a, a:visited {
+  color: #3EB1CF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #78d3eb;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.8em;
+  background-color: #3f424d;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.remark-inline-code {
+  color: #FFCD50;
+}
+
+.footer {
+  color: #9ba4a5;
+  position: fixed;
+  top: 90%;
+  left: 6.5%;
+  width: 100%;
+}
+
+/* Slide Layout */
+div.remark-slide-content {
+  background-color: #1c1f2b;
+}
