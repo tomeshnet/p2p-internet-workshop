@@ -78,7 +78,7 @@ Other accessories:
 
 ## Software
 
-1. Download the [latest mesh-orange release](https://github.com/benhylau/mesh-router-builder/releases/latest) of `raspberrypi3-<version>_default.img`, then flash the image onto an SD card with a tool like [Etcher](https://etcher.io).
+1. Download the [latest mesh-orange release](https://github.com/benhylau/mesh-router-builder/releases/latest) of `raspberrypi3-<version>_default.img`, then flash the image onto an SD card with a tool like [Etcher](https://www.balena.io/etcher/).
 
 2. Download the [latest mesh-workshop release](https://github.com/benhylau/mesh-workshop/releases/latest) and unpack it. Mount the FAT partition of the SD card you flashed in the previous step, then use the tool `mesh-workshop` to install workshop files on each node:
 
