@@ -1,6 +1,8 @@
 # Take Tracking
 
-This sheet tracks distribution of grant funding relating to the development and facilitation of this workshop. You can find out more about the "take" funds distribution process [here](https://github.com/benhylau/ssbc-grants-scuttlemesh/blob/master/README.md#funds-distribution).
+This sheet tracks distribution of grant funding relating to the development and facilitation of this workshop. You can find out more about the "take" funds distribution process [here](https://github.com/benhylau/ssbc-grants-scuttlemesh/blob/master/README.md#funds-distribution), the basic pattern:
+
+> Once your Take Request gets two +1's from other collaborators on the list, @benhylau will send you the requested amount and merge your Pull Request.
 
 ## Secure Scuttlebutt Consortium 2018 (for ScuttleMesh)
 
