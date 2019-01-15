@@ -59,7 +59,6 @@ for mod in module-*; do
     doc="$mod-presentation.html"
     cd $mod
     if [ -f $doc ]; then
-
         # Generate PDF
         out="../output/$mod-presentation.pdf"
         echo "Generating lesson plan from $doc to $out"
