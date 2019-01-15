@@ -28,7 +28,7 @@ done
 for mod in module-*; do
     # Create folder for module
     mkdir "$mod"
-    
+
     # Generate lesson plan .pdf
     doc="$mod/README.md"
     if [ -f $doc ]; then
@@ -56,22 +56,22 @@ for mod in module-*; do
     fi
 
     # Generate presentation DeckTape pdf and Remark content
-    doc="$mod-presentation.html"      
+    doc="$mod-presentation.html"
     cd $mod
     if [ -f $doc ]; then
-    
+
         # Generate PDF
         out="../output/$mod/$mod-deck.pdf"
         echo "Generating lesson plan from $doc to $out"
         decktape remark "$doc" "$out" --chrome-arg=--allow-file-access-from-files
-        
+
         # Copy remark Content
         cp -r "$mod/slide-images/" "../output/$mod/"
         cp $doc "../output/$mod/"
      fi
      cd $base_dir
-     
+
 done
 
 # Copy slide files for Remark
-cp -r "slide-files/" "output/$"
+cp -r "slide-files/" "output/"
