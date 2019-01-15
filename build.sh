@@ -1,25 +1,27 @@
 #!/usr/bin/env bash
 
 # Delete generated assets
-rm -rf output
-mkdir output
+rm -rf output2
+mkdir output2
 
 # Set CSS styles source
 css="pdf.css"
 echo "Using CSS styles from $css"
 
 # Generate general assets
-for doc in general/*.md; do
-    # Create folder for general assets
-    mkdir output/general
+#for doc in general/*.md; do
+#    # Create folder for general assets
+#    mkdir output/general
+#
+#    # Generate assets as .pdf
+#    if [ -f $doc ]; then
+#        out="output/general/$(echo "$doc" | sed 's|/|-|g' | sed 's|.md|.pdf|')"
+#        echo "Generating document from $doc to $out"
+#        markdown-pdf "$doc" --out "$out" --cwd general --css-path "$css"
+#    fi
+#done
 
-    # Generate assets as .pdf
-    if [ -f $doc ]; then
-        out="output/general/$(echo "$doc" | sed 's|/|-|g' | sed 's|.md|.pdf|')"
-        echo "Generating document from $doc to $out"
-        markdown-pdf "$doc" --out "$out" --cwd general --css-path "$css"
-    fi
-done
+base_dir=`pwd`
 
 # Go through each module
 for mod in module-*; do
@@ -51,4 +53,18 @@ for mod in module-*; do
         echo "Generating presentation from $book to $out"
         gitbook build "$book" "$out"
     fi
+
+    # Create folder for module
+    mkdir "output/$mod"
+
+    # Generate lesson plan .pdf
+    doc="$mod-presentation.html"
+    cd $mod
+    if [ -f $doc ]; then
+        out="../output/$mod/$mod-deck.pdf"
+        echo "Generating lesson plan from $doc to $out"
+        decktape remark "$doc" "$out" --chrome-arg=--allow-file-access-from-files
+     fi
+     cd $base_dir
+
 done
