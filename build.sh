@@ -72,5 +72,5 @@ for mod in module-*; do
 
 done
 
-# Copy slide files for Remark
+# Copy slide files for remark
 cp -r "slide-files/" "output/"
