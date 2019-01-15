@@ -54,9 +54,6 @@ for mod in module-*; do
         gitbook build "$book" "$out"
     fi
 
-    # Create folder for module
-    mkdir "output/$mod"
-
     # Generate lesson plan .pdf
     doc="$mod-presentation.html"
     cd $mod
