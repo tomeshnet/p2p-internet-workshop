@@ -55,7 +55,7 @@ for mod in module-*; do
         gitbook build "$book" "$out"
     fi
 
-    # Generate lesson plan .pdf
+    # Generate presentation DeckTape pdf
     doc="$mod-presentation.html"
     cd $mod
     if [ -f $doc ]; then
