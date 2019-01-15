@@ -55,7 +55,7 @@ for mod in module-*; do
         gitbook build "$book" "$out"
     fi
 
-    # Generate presentation DeckTape pdf and Remark content
+    # Copy remark presentation and generate pdf copy with decktape
     doc="$mod-presentation.html"
     cd $mod
     if [ -f $doc ]; then
