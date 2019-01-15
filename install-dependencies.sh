@@ -11,4 +11,3 @@ gem install bundler
 
 # For converting remark presentations to PDF
 npm install -g decktape
-
