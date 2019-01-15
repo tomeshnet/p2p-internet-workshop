@@ -1,25 +1,25 @@
 #!/usr/bin/env bash
 
 # Delete generated assets
-rm -rf output2
-mkdir output2
+rm -rf output
+mkdir output
 
 # Set CSS styles source
 css="pdf.css"
 echo "Using CSS styles from $css"
 
 # Generate general assets
-#for doc in general/*.md; do
-#    # Create folder for general assets
-#    mkdir output/general
-#
-#    # Generate assets as .pdf
-#    if [ -f $doc ]; then
-#        out="output/general/$(echo "$doc" | sed 's|/|-|g' | sed 's|.md|.pdf|')"
-#        echo "Generating document from $doc to $out"
-#        markdown-pdf "$doc" --out "$out" --cwd general --css-path "$css"
-#    fi
-#done
+for doc in general/*.md; do
+    # Create folder for general assets
+    mkdir output/general
+
+    # Generate assets as .pdf
+    if [ -f $doc ]; then
+        out="output/general/$(echo "$doc" | sed 's|/|-|g' | sed 's|.md|.pdf|')"
+        echo "Generating document from $doc to $out"
+        markdown-pdf "$doc" --out "$out" --cwd general --css-path "$css"
+    fi
+done
 
 base_dir=`pwd`
 
