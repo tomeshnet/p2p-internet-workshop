@@ -64,7 +64,7 @@ for mod in module-*; do
         echo "Generating lesson plan from $doc to $out"
         decktape remark "$doc" "$out" --chrome-arg=--allow-file-access-from-files
 
-        # Copy remark Content
+        # Copy remark presentation
         cp -r "slide-images/" "../output/$mod/"
         cp $doc "../output/$mod/"
      fi
