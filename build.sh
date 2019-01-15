@@ -66,7 +66,7 @@ for mod in module-*; do
 
         # Copy remark presentation
         cp -r "slide-images/" "../output/$mod/"
-        cp $doc "../output/$mod/"
+        cp "$doc" "../output/$mod/"
      fi
      cd $base_dir
 
