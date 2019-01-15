@@ -61,7 +61,7 @@ for mod in module-*; do
     if [ -f $doc ]; then
         # Generate PDF
         out="../output/$mod-presentation.pdf"
-        echo "Generating lesson plan from $doc to $out"
+        echo "Generating presentation from $doc to $out"
         decktape remark "$doc" "$out" --chrome-arg=--allow-file-access-from-files
 
         # Copy remark presentation
