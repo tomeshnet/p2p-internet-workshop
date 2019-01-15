@@ -61,12 +61,12 @@ for mod in module-*; do
     if [ -f $doc ]; then
 
         # Generate PDF
-        out="../output/$mod/$mod-deck.pdf"
+        out="../output/$mod-presentation.pdf"
         echo "Generating lesson plan from $doc to $out"
         decktape remark "$doc" "$out" --chrome-arg=--allow-file-access-from-files
 
         # Copy remark Content
-        cp -r "$mod/slide-images/" "../output/$mod/"
+        cp -r "slide-images/" "../output/$mod/"
         cp $doc "../output/$mod/"
      fi
      cd $base_dir
