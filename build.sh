@@ -55,16 +55,16 @@ for mod in module-*; do
         gitbook build "$book" "$out"
     fi
 
-    # Copy remark presentation and generate pdf copy with decktape
+    # Copy Remark presentation and generate .pdf copy with DeckTape
     doc="$mod-presentation.html"
     cd $mod
     if [ -f $doc ]; then
-        # Generate PDF
+        # Generate .pdf
         out="../output/$mod-presentation.pdf"
         echo "Generating presentation from $doc to $out"
         decktape remark "$doc" "$out" --chrome-arg=--allow-file-access-from-files
 
-        # Copy remark presentation
+        # Copy Remark presentation
         cp -r "slide-images/" "../output/$mod/"
         cp "$doc" "../output/$mod/"
      fi
@@ -72,5 +72,5 @@ for mod in module-*; do
 
 done
 
-# Copy slide files for remark
+# Copy slide files for Remark
 cp -r "slide-files/" "output/"
