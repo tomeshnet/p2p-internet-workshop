@@ -8,6 +8,9 @@ mkdir output
 css="pdf.css"
 echo "Using CSS styles from $css"
 
+# Define starting directory
+base_dir="$(pwd)"
+
 # Generate general assets
 for doc in general/*.md; do
     # Create folder for general assets
@@ -51,4 +54,23 @@ for mod in module-*; do
         echo "Generating presentation from $book to $out"
         gitbook build "$book" "$out"
     fi
+
+    # Copy Remark presentation and generate .pdf copy with DeckTape
+    doc="$mod-presentation.html"
+    cd $mod
+    if [ -f $doc ]; then
+        # Generate .pdf
+        out="../output/$mod-presentation.pdf"
+        echo "Generating presentation from $doc to $out"
+        decktape remark "$doc" "$out" --chrome-arg=--allow-file-access-from-files
+
+        # Copy Remark presentation
+        cp -r "slide-images/" "../output/$mod/"
+        cp "$doc" "../output/$mod/"
+     fi
+     cd $base_dir
+
 done
+
+# Copy slide files for Remark
+cp -r "slide-files/" "output/"

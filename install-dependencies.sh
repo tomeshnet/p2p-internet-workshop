@@ -9,6 +9,5 @@ npm install -g gitbook-cli
 # For generating course website with Jekyll
 gem install bundler
 
-# For converting remark presentations to .pdf
-
+# For converting Remark presentations to .pdf
 npm install -g decktape
