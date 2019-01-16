@@ -37,13 +37,13 @@ for mod in module-*; do
         markdown-pdf "$doc" --out "$out" --cwd "$mod" --css-path "$css"
     fi
 
-    # Generate worksheets as .pdf
-    mkdir "output/$mod/worksheet"
-    for doc in $mod/worksheet/*.md; do
+    # Generate handouts as .pdf
+    mkdir "output/$mod/handouts"
+    for doc in $mod/handouts/*.md; do
         if [ -f $doc ]; then
-            out="output/$mod/worksheet/$(echo "$doc" | sed 's|/|-|g' | sed 's|.md|.pdf|')"
-            echo "Generating worksheet from $doc to $out"
-            markdown-pdf "$doc" --out "$out" --cwd "$mod/worksheet" --css-path "$css"
+            out="output/$mod/handouts/$(echo "$doc" | sed 's|/|-|g' | sed 's|.md|.pdf|')"
+            echo "Generating handouts from $doc to $out"
+            markdown-pdf "$doc" --out "$out" --cwd "$mod/handouts" --css-path "$css"
         fi
     done
 
@@ -60,17 +60,17 @@ for mod in module-*; do
     cd $mod
     if [ -f $doc ]; then
         # Generate .pdf
-        out="../output/$mod-presentation.pdf"
+        out="../output/$mod/handouts/$mod-presentation.pdf"
         echo "Generating presentation from $doc to $out"
         decktape remark "$doc" "$out" --chrome-arg=--allow-file-access-from-files
 
         # Copy Remark presentation
-        cp -r "slide-images/" "../output/$mod/"
+        cp -r "slide-images/" "../output/$mod/slide-images"
         cp "$doc" "../output/$mod/"
      fi
      cd $base_dir
 
 done
 
-# Copy slide files for Remark
-cp -r "slide-files/" "output/"
+# Copy technical files used by Remark
+cp -r "slide-files/" "output/slide-files"
