@@ -24,6 +24,9 @@ for doc in general/*.md; do
     fi
 done
 
+# Copy technical files used by Remark
+cp -r "slide-files/" "output/slide-files"
+
 # Go through each module
 for mod in module-*; do
     # Create folder for module
@@ -71,6 +74,3 @@ for mod in module-*; do
      cd $base_dir
 
 done
-
-# Copy technical files used by Remark
-cp -r "slide-files/" "output/slide-files"
