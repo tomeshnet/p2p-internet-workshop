@@ -1,0 +1,74 @@
+/* Light */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Zilla Slab Light'), local('ZillaSlab-Light'), url(ZillaSlab-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Zilla Slab Light Italic'), local('ZillaSlab-LightItalic'), url(ZillaSlab-LightItalic.woff2) format('woff2');
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Zilla Slab'), local('ZillaSlab-Regular'), url(ZillaSlab-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Zilla Slab Italic'), local('ZillaSlab-Italic'), url(ZillaSlab-Italic.woff2) format('woff2');
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Zilla Slab Medium'), local('ZillaSlab-Medium'), url(ZillaSlab-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Zilla Slab Medium Italic'), local('ZillaSlab-MediumItalic'), url(ZillaSlab-MediumItalic.woff2) format('woff2');
+}
+
+/* SemiBold */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Zilla Slab SemiBold'), local('ZillaSlab-SemiBold'), url(ZillaSlab-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Zilla Slab SemiBold Italic'), local('ZillaSlab-SemiBoldItalic'), url(ZillaSlab-SemiBoldItalic.woff2) format('woff2');
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Zilla Slab Bold'), local('ZillaSlab-Bold'), url(ZillaSlab-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Zilla Slab';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Zilla Slab Bold Italic'), local('ZillaSlab-BoldItalic'), url(ZillaSlab-BoldItalic.woff2) format('woff2');
+}
