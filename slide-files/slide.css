@@ -10,9 +10,13 @@ body {
 h1 {
   font-family: 'Jost*','Futura', sans-serif;
   font-weight: 600;
+  color: #FFCD50;
 }
 
-h1 {
+h2 {
+  font-family: 'Jost*','Futura', sans-serif;
+  font-weight: 600;
+  font-size: 1.7em !important;
   color: #FFCD50;
 }
 
@@ -24,8 +28,8 @@ h3 {
 
 p,ul,ol {
   color: #ddeaed;
-  line-height: 1.05em;
-  margin-top: 1.1em;
+  line-height: 1.4em;
+  margin-top: 1.4em;
 }
 
 li {
@@ -43,17 +47,24 @@ a:hover {
 
 .remark-code, .remark-inline-code {
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 0.8em;
-  background-color: #3f424d;
   padding: 5px;
   border-radius: 3px;
 }
 
 .remark-inline-code {
+  font-size: 0.8em;
+  background-color: #3f424d;
   color: #FFCD50;
 }
 
-.footer {
+.highlight {
+  border-radius: 1px;
+  background-color: #4d5478;
+  padding-left: 0.18em;
+  padding-right: 0.18em;
+}
+
+.footnote {
   color: #9ba4a5;
   position: fixed;
   top: 90%;
