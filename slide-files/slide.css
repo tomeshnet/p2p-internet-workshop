@@ -29,11 +29,11 @@ h3 {
 p,ul,ol {
   color: #ddeaed;
   line-height: 1.4em;
-  margin-top: 1.4em;
+  margin-top: 0.8em;
 }
 
 li {
-  margin-top: 0.5em;
+  margin-top: 0.3em;
 }
 
 a, a:visited {

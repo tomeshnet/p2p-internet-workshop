@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Module Three</title>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="../slide-files/slide.css">
+		<script src="../slide-files/remark.js"></script>
+  </head>
+
+	<body>
+
+		<textarea id="source">
+
+			# Module 3: Building a node
+
+			1. Recap from last week
+			2. Parts of a node
+			3. Radio frequency
+			4. Meshing your nodes
+			5. Building your own node
+			6. Wrap-up & homework
+
+
+			---
+			# Recap from last week
+
+			**First Week**
+
+			Using Raspberry Pis, we _formed_ a .highlight[wireless mesh network].
+
+			**Last week**
+
+			Using Raspberry Pis, we configured a .highlight[wired network].
+
+			**This Week**
+
+			Using Raspberry Pis, we will _configure_ a .highlight[wireless mesh network].
+
+			---
+			class: center, middle
+
+			# Parts of a node
+
+			---
+
+			## Single Board Computer
+
+			* All the components of a computer on one board
+			* Components include processors, memory, storage, peripherals
+			* Smart phone revolution modernized these types of computers
+			* A node runs our software, processing signals and routing traffic
+
+			---
+
+			## Storage
+
+			* Many types of storage, each good for different reasons
+			* Some properties to be aware of:
+			  * **Format** - how the physical device works?
+			  * **Speed** - how fast can it access and store data?
+			  * **Capacity** - how much data can it store?
+			  * **Endurance** - how long can it store the data for?
+
+			---
+
+			## Power supply
+
+			* Allow us to power the node
+			* Consider what power you have available:
+			  * Wall plug - city's power gird
+			  * Batteries - stored power from another source
+			  * Solar, wind, etc. - alternative sources
+
+			---
+
+			## Antenna
+
+			* Used to receive (Rx) and transmit (Tx)
+			* Designed for specific frequency ranges and purposes
+
+			---
+
+			## Radio
+
+			* We use the 802.11 standard known as "WiFi"
+			* Radios can come in many formats
+			* They connect to an antenna
+
+			---
+
+			class: center, middle
+
+			# Radio & waves
+
+			Radio - the technology of using electromagnetic waves to carry information
+
+			---
+
+			**Properties of waves**
+			# Frequency
+
+			* Measured in Hertz (Hz), or cycles per second
+			* We tune the radio to hear other people on the same frequency
+
+			---
+
+			**Properties of waves**
+			# Amplitude
+
+			* How much power the wave has
+			* How loud we are talking
+
+			---
+
+			**Properties of waves**
+			# Polarity
+
+			* Which direction is the wave cycling
+			* Orientation of the antenna is important
+
+			---
+
+			**Properties of waves**
+			# Phase
+
+			* The offset of peaks and valleys of two waves
+			* You add the values at each point to calculate the new amplitude
+			  * Two peeks or valleys - wave has double the amplitude
+			  * A peek and a valley - amplitude closer to zero
+			* Interference happens when waves bounce off walls
+
+			---
+
+			**Properties of waves**
+			# Channel width
+
+			* Defines how wide of a frequency band does the signal take up
+			* Larger channel width:
+			  * Provides more frequencies
+			  * Allows for more data to be sent at once
+			  * Is more susceptible to mode noise
+
+			---
+
+			**Properties of waves**
+			# Frequencies & channels
+
+			Channels - human defined numbers that point to a specific frequency
+
+			* There are 13 channels defined for WiFi
+			* In Canada we can only use the first 11
+			* First channel starts at 2.412 GHz (or 2,412 MHz)
+			* The channels are spaced out by 5 MHz
+			* Standard WiFi signals use a channel width of 20 Mhz
+			* There are only 3 non-overlapping signals in the 2.4 GHz range (1, 6, and 11)
+
+			---
+
+			**Properties of waves**
+			# Licensing
+
+			* There are many frequencies coexisting in the air
+			* Most of them are designated to a specific function
+			* Government agency tasked with controlling them in Canada is the CRTC
+			* 2.4 Ghz and 5.0 Ghz do not require any licensing
+			* Used by many devices, such as microwave ovens, not just WiFi devices
+			* They look like noise to WiFi devices
+
+			---
+			class: center, middle
+
+			# Meshing your nodes
+
+			---
+
+			**Connecting with WiFi**
+			# Infrastructure mode
+
+			Most common setup for WiFi:
+
+			* Router acts as an Access Point (AP)
+			* Each device connects to it to communicate
+			* Single point of failure, the router
+
+			---
+
+			**Connecting with WiFi**
+			# Mesh mode
+
+			There are two different modes that we can use to create a mesh:
+
+			* Independent Basic Service Set (IBSS)
+			  * Also known as Ad-hoc
+			  * Much older and more supported
+			* Mesh Point (802.11s)
+			  * A new specification
+			  * Not many devices support this mode
+			  * Many useful features
+
+			---
+
+			**Connecting with WiFi**
+			# Meshing in Linux
+
+			To mesh in Linux you issue the following commands:
+
+			* Turn off the interface:
+			  * `ip link set dev <interface> down`
+			* Switch to a mesh mode:
+			  * `iw <interface> set type <mode>`
+			* Turn on the interface:
+			  * `ip link set dev <interface> up`
+			* Join a group at a particular frequency:
+			  * `iw dev <interface> <mode> join <group name> <frequency>`
+			* Assign an IP address:
+			  * `ip addr add <ip address>/24 dev <interface>`
+
+			---
+
+			# Worksheet
+
+			* Break up into pairs
+			* Configure the two nodes to mesh together
+			* Assign IP addresses
+			* Ping each IP address
+
+			---
+			class: center, middle
+
+			# Building your own node!
+
+			---
+
+			# Homework
+
+			Next session we will discuss wireless links more extensively, both theoretically and the practical aspects when configuring a wireless mesh network.
+
+			📝 [A quick tour of a mesh networking installation](https://www.youtube.com/watch?v=aLusYsScrv0) from the [Metamesh YouTube channel](https://www.youtube.com/channel/UCGEnntxbGKMU9J9GIZ1LQUQ)
+
+			_Optionally:_
+
+			- Read [Wireless Networking in the Developing World](http://wndw.net/pdf/wndw3-en/ch10-deployment-planning.pdf), Chapter 10: Deployment Planning
+			- Watch [How to install a Smartrek wireless mesh network for sugar making purposes](https://www.youtube.com/watch?v=eKkVEeVNhm8)  (4:31)
+			- Watch [Rural Next Generation Broadband Project](https://www.youtube.com/watch?v=QM7MUWDcNxk) (6:12)
+
+			---
+
+
+    </textarea>
+
+		<script>
+		var slideshow = remark.create({
+			// Slide aspect ratio can also be '4:3' and should be set according to your display!
+			ratio: '16:9',
+			slideNumberFormat:'',
+
+			// Presentation slide navigation options
+			navigation: {
+				scroll: false,
+				touch: true,
+				click: true,
+			},
+
+			// The highlight theme used by highlight.js to style code blocks
+			highlightStyle: 'atom-one-dark',
+		});
+		</script>
+
+  </body>
+</html>
