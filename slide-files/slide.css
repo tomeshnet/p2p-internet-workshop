@@ -29,7 +29,8 @@ h3 {
 p,ul,ol {
   color: #ddeaed;
   line-height: 1.4em;
-  margin-top: 0.8em;
+  margin-top: 0.6em;
+  margin-bottom: 0;
 }
 
 li {
