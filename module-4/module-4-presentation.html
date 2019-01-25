@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Module Four</title>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="../slide-files/slide.css">
+		<script src="../slide-files/remark.js"></script>
+  </head>
+
+	<body>
+
+		<textarea id="source">
+
+			# Module 4: Planning a network
+
+			1. Recap from last week
+			2. Network deployment planning
+			3. Mapping the Fort York Micro Mesh
+			4. Connecting technical and outreach strategies
+			5. Wrap-up & homework
+
+			---
+
+			# Recap from last week
+
+			Using .highlight[Raspberry Pis], we formed a .highlight[wireless mesh network] (week 1), we then learned more about .highlight[networks and the internet] (week 2), and .highlight[configuring wireless mesh networks] (week 3).
+
+			_This week we will start to think about scale and putting these networks out into the wild._
+
+			---
+			class: center, middle
+			# Network deployment planning
+
+			 Goals, site evaluation, and important considerations for creating a network!
+
+			---
+
+			# Identify goals
+
+			###Key questions:
+
+			- How will the network be used? What will it accomplish?
+			  - Detail specific applications or "use cases" (helps understand capacity)
+			- In one area, how many people do you expect to be on the network? (helps understand link speed "budget", select hardware)
+			  - Assessment based on surveying needs
+			  - Calculations using link planning software (e.g. RadioMobile)
+			  - Trial and error!
+			- _Others?_
+
+			---
+
+			# Evaluate potential sites
+
+			- **Wireless Networking Potential**, including tallest buildings, line of sight, obstructions (e.g. hills, trees and more), interference (i.e. other installations of wireless equipment (Resources: [Wireless Networking in the Developing World](http://wndw.net/))
+			- **Mounting and Power Options**, including where and how can power be provided? Roofs access and safety? Windows or tinted glass?
+			- **Social Opportunities and Challenges**, important locations, active members, local businesses, owners, willingness? (Resources: [Commotion Wireless Construction Kit](https://commotionwireless.net/docs))
+
+			---
+
+			# Important factors while planning
+
+			- Antenna types and characteristics
+			  - Transmit (TX) Power (dBm)
+			  - Gain (amplification based on shape)
+			  - Sensitivity or Received Signal Level (RSL)
+			  - Loss (distance, cable connections), attenuation (passing through objects), and scattering (dispersal)
+			- Noise and obstructions
+
+			---
+			class: center, middle
+
+			# Mapping the Fort York Micro Mesh
+
+			---
+			## Connecting technical & outreach strategies
+
+			Let's look at [Commotion Construction Kit](https://commotionwireless.net/docs/cck/)'s other resources:
+			  - [Survey your Neighbors](https://commotionwireless.net/docs/cck/planning/survey-your-neighbors/)
+			  - [Identify Neighbourhood Skills](https://commotionwireless.net/docs/cck/planning/identify-neighborhood-skills/)
+			  - [Inventory your Neighbourhood](https://commotionwireless.net/docs/cck/planning/inventory-the-neighborhood/)
+
+			---
+			class: center, middle
+
+			# Wrap-up & Homework
+
+			---
+
+			# Recap
+
+			- Discussed considerations for planning and deploying a network
+			- Went outside (hopefully)!
+			- Brainstormed how that might apply in Toronto
+
+			_Questions?_
+
+			---
+
+			# Homework
+
+			Next session we will discuss Measuring a Network as well as Net Neutrality.
+
+			📝 _Watch these videos on Net Neutrality!_
+
+			- [Net Neutrality - 6 Minute Explanation](https://www.youtube.com/watch?v=zASHI9qdB0U) by drawntoknowledge _(Note: This video incorrectly labels ISPs as Tier 1 providers_
+			- ["The Internet We Want" Panel starting @ 27:00](https://youtu.be/PtO4rPPBWjY?t=27m00s) hosted by Logic Magazine and NYC DSA Tech Action committee
+
+			_Optionally:_
+
+			- Read "[A plan to rescue the Web from the Internet](https://staltz.com/a-plan-to-rescue-the-web-from-the-internet.html)" by Andrew Staltz
+    </textarea>
+
+		<script>
+		var slideshow = remark.create({
+			// Slide aspect ratio can also be '4:3' and should be set according to your display!
+			ratio: '16:9',
+			slideNumberFormat:'',
+
+			// Presentation slide navigation options
+			navigation: {
+				scroll: false,
+				touch: true,
+				click: true,
+			},
+
+			// The highlight theme used by highlight.js to style code blocks
+			highlightStyle: 'atom-one-dark',
+		});
+		</script>
+
+  </body>
+</html>
