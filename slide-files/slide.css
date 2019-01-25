@@ -77,3 +77,25 @@ a:hover {
 div.remark-slide-content {
   background-color: #1c1f2b;
 }
+
+/* Table Styling */
+table {
+  margin-top: 1.6em;
+}
+
+tr {
+  color: #ddeaed;
+  background-color: #3f424d;
+}
+
+td {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+th {
+  color: #FFCD50;
+  padding: 0.3em;
+}
