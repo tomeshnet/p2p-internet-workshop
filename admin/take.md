@@ -17,4 +17,5 @@ See: https://github.com/tomeshnet/p2p-internet-workshop/issues/55
 
 | GitHub Handle | Dec 15 | Dec 29 |
 |:-------------:|:------:|:------:|
-| @benhylau     | C 1000 |        |
+| @benhylau     |  C 1000|        |
+| @darkdrgn2k   |  C  100|        |
