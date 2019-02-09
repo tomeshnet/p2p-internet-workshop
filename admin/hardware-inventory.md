@@ -5,7 +5,7 @@
 | Item | Units | Status |
 |:-----|:------|:-------|
 | Raspberry Pi 3B+ with power | 6 | With @darkdrgn2k |
-| Toplinkst TOP-S5 | 45 | With @darkdrgn2k |
+| Toplinkst TOP-S5 | 40 | With @darkdrgn2k |
 | Samsung Evo Select 32 GB | 20 | With @darkdrgn2k |
 | LoRa hardware | 0 | In chargeback process, have not ordered new ones |
 
