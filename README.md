@@ -52,19 +52,17 @@ This course can be facilitated in an environment without internet access. Partic
 
 ## Workshop Materials
 
-Class materials are written as [Markdown](https://en.wikipedia.org/wiki/Markdown) files and presentation slides are created as a Markdown-based [GitBook](https://www.gitbook.com). All generated assets are hosted on [GitHub Pages](https://tomeshnet.github.io/p2p-internet-workshop/) and packaged as a downloadable archive on [GitHub Releases](https://github.com/tomeshnet/p2p-internet-workshop/releases/latest).
-
-When facilitating the workshop in an offline environment, you can run `gitbook serve` from a `presentation` directory to serve the slides on `http://localhost:4000`.
+Class materials are written as [Markdown](https://en.wikipedia.org/wiki/Markdown) files and presentation slides are created as Markdown-based [Remark slides](https://github.com/gnab/remark). All generated assets are hosted on [GitHub Pages](https://tomeshnet.github.io/p2p-internet-workshop/) and packaged as a downloadable archive on [GitHub Releases](https://github.com/tomeshnet/p2p-internet-workshop/releases/latest).
 
 If you want to generate course assets yourself, simply run `./install-dependencies.sh` and `./build.sh`. You will find the generated assets in the `output` folder. The `./package.sh` script is used to zip up the generated assets into downloadable archives and to create the course website.
 
 [Travis CI](https://travis-ci.org/) is configured to build, package, and publish a new release to GitHub Pages and Releases whenever a new tag is pushed. So all you need to create a new release is to push a new tag with `git tag <version>` and `git push --tag`.
-  
+
 ## Credits
 
 The first version of this syllabus is created by [Toronto Mesh](https://tomesh.net) contributors: [@benhylau](https://github.com/benhylau), [@darkdrgn2k](https://github.com/darkdrgn2k), [@dcwalk](https://github.com/dcwalk), [@uditvira](https://github.com/uditvira), [@Shrinks99](https://github.com/Shrinks99), and [@Pedro-on-a-bike](https://github.com/Pedro-on-a-bike). While most of the material is created new, the course also incorporates many prior works listed [here](https://tomeshnet.github.io/p2p-internet-workshop/articles/general/general-extra-resources.pdf), or otherwise referenced in their individual course modules.
 
-Hands-on activities rely on software from many projects: [mesh-orange](https://github.com/tomeshnet/mesh-orange), [mesh-router-builder](https://github.com/benhylau/mesh-router-builder), [mesh-workshop](https://github.com/benhylau/mesh-workshop/), [steamlink](https://github.com/steamlink), [cjdns](https://github.com/cjdelisle/cjdns/), [Yggdrasil](https://yggdrasil-network.github.io/about.html), [IPFS](https://ipfs.io/), [Secure Scuttlebutt](https://github.com/ssbc/). Course material generation uses [markdown-pdf](https://github.com/alanshaw/markdown-pdf) and [gitbook-cli](https://github.com/GitbookIO/gitbook-cli). The course website is built with [Jekyll](https://jekyllrb.com/), and the theme is from [Mozilla's Open Leadership Training Series](https://github.com/mozilla/open-leadership-training-series). Icons from [Font Awesome](http://fontawesome.io/) and [Jake Ingman](https://thenounproject.com/search/?q=mesh&i=74809) are used.
+Hands-on activities rely on software from many projects: [mesh-orange](https://github.com/tomeshnet/mesh-orange), [mesh-router-builder](https://github.com/benhylau/mesh-router-builder), [mesh-workshop](https://github.com/benhylau/mesh-workshop/), [steamlink](https://github.com/steamlink), [cjdns](https://github.com/cjdelisle/cjdns/), [Yggdrasil](https://yggdrasil-network.github.io/about.html), [IPFS](https://ipfs.io/), [Secure Scuttlebutt](https://github.com/ssbc/). Course material generation uses [markdown-pdf](https://github.com/alanshaw/markdown-pdf) and [decktape](https://github.com/astefanutti/decktape). The course website is built with [Jekyll](https://jekyllrb.com/), and the theme is from [Mozilla's Open Leadership Training Series](https://github.com/mozilla/open-leadership-training-series). Icons from [Font Awesome](http://fontawesome.io/) and [Jake Ingman](https://thenounproject.com/search/?q=mesh&i=74809) are used.
 
 ## License
 
