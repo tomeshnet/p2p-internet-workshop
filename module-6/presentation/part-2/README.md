@@ -1,1 +1,0 @@
-# Technologies of smart environments

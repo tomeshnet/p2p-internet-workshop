@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Module Six</title>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="../slide-files/slide.css">
+		<script src="../slide-files/remark.js"></script>
+  </head>
+
+	<body>
+
+		<textarea id="source">
+
+			## Module 6: Living on a decentralized network
+
+			1. Recap
+			2. Motivation: Smart Environments and IoT
+			3. Technologies of Smart Environments
+			4. LoRa Workshop
+
+			---
+
+			# Recap
+
+			* Learned about mesh concepts
+			* Built WiFi mesh nodes
+			* Used IPFS to store and share files
+			* Talked about how to plan networks for a community
+			* Used tools to measure and evaluate network quality
+
+			---
+
+			# Today
+
+			* Apply our knowledge of WiFi networks to other types of wireless devices
+			* Talk about the .highlight[Internet of Things] and .highlight[Smart Environments]
+			* Build a .highlight[LoRa node] through which we can send and receive packets over radio
+
+			---
+
+			# Motivation
+
+			* When we think of the internet communication, we’re often thinking of our experience with the World Wide Web
+			* However, most new connected devices are *embedded systems* with wireless capabilities
+			* An IEEE report estimates *30 billion devices* will be connected to the internet by 2020
+
+			---
+
+			# Smart environments
+
+			* **Internet of Things**: Internet connected devices are becoming part of our daily lives for automation and sensing
+
+			* In some cities they are becoming a part of city infrastructure, some people call these ideas *Smart Cities*
+
+			---
+
+			# Need for network literacy
+
+			Although these technologies can be immensely useful for sensing and automation there are concerns about:
+
+			## Security
+
+			IoT device manufacturers have followed notoriously bad security hygiene. The 2016 Mirai Botnet DDoS attack exploited thousands of vulnerable internet connected CCTV cameras to take down DNS servers
+
+			## Surveillance
+
+			Ubiquitous sensing in our environments raises concern about who has access to sensed data and what they may do with it
+
+			## Resilience
+
+			As we become dependent on internet connected devices we need to ensure we have access to alternatives during failure
+
+			---
+			class: center, middle
+
+			# How do smart environments work?
+
+			---
+
+			**How do smart environments work?**
+			## Devices
+
+			* **Sensors** for collecting data from the environment
+			* **Transceivers** for sending and receiving wireless information
+			* **Microcontrollers** are the brains of the device
+
+			---
+
+			**How do smart environments work?**
+			## Gateways
+
+			Connect the device to the rest of the internet
+
+			---
+
+			**How do smart environments work?**
+			## Servers
+
+			Servers operated by your device provider or other third-parties manage your smart device's data
+
+			![smart-home](slide-images/smart-home.svg)
+
+			---
+
+			# Wireless technologies
+
+			Smart devices today can use many different wireless technologies
+
+			![wireless-tech](slide-images/wireless-tech.svg)
+
+			---
+
+			# Choice of technologies depends on...
+
+			* Cost
+			* Range
+			* Power Requirements
+			* Data Rate
+			* Licensing
+			* Coverage
+			* Ease of Installation
+
+			---
+
+			# Why LoRa is a promising choice
+
+			* **Cost**: Low Cost; $2 RF transceivers
+			* **Range**: Long Range; Advertised up to 25 km; World record: 702 km
+			* **Power Requirements**: Very Low Power; Sensor applications ~10 Year life from 2 AA batteries
+			* **Data Rate**: Low Data Rate; ~150 bps
+			* **Licensing** (900 MHz in Canada): ISM Band; No license requirement!
+			* **Coverage**: No LoRa providers; need set up our own gateways
+			* **Ease of Installation**: Community is developing and supported hardware is becoming available
+
+			---
+			class: center, middle
+
+			# LoRa workshop
+
+			---
+
+			# LoRa decoded
+
+			LoRa can achieve such great distances with such low power because it is not very susceptible to noise. LoRa works remarkably well with low signal strength.
+
+			LoRa uses *Chirp Spread Spectrum Modulation*, ie. the information is encoded in the shifts of increasing or decreasing frequency.
+
+			![Decoding LoRa](slide-images/decoding-lora.jpg)
+
+			.footnote[Image source: https://revspace.nl/images/d/d2/DecodingLora_Project.jpg]
+
+			---
+
+			# Steamlink
+
+			We're using an open source community platform for building, deploying, and managing low-cost low-powered long-range networks.
+
+			![Steamlink Setup](slide-images/steamlink-setup.svg)
+
+			---
+
+			# Build a node!
+
+			Let's build a circuit to connect to the network. You can send a message by pressing the button. Received messages should light up the LED.
+
+			![Steamlink Testnode](slide-images/sl-testnode0-bb.png)
+
+			In your browser, open `steamlink.local` to see your node!
+    </textarea>
+
+		<script>
+		var slideshow = remark.create({
+			// Slide aspect ratio can also be '4:3' and should be set according to your display!
+			ratio: '16:9',
+			slideNumberFormat:'',
+
+			// Presentation slide navigation options
+			navigation: {
+				scroll: false,
+				touch: true,
+				click: true,
+			},
+
+			// The highlight theme used by highlight.js to style code blocks
+			highlightStyle: 'atom-one-dark',
+		});
+		</script>
+
+  </body>
+</html>
