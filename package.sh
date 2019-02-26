@@ -75,7 +75,10 @@ for mod in module-*; do
     } > "$dst/presentation.md"
 
     # Copy presentation
-    cp -r "output/$mod/presentation" "$dst/presentation"
+    cp -r "output/slide-files" "$dst/slide-files"
+    mkdir "$dst/presentation"
+    cp -r "output/$mod/slide-images" "$dst/presentation/slide-images"
+    cp "output/$mod/presentation.html" "$dst/presentation/index.html"
     echo "* [presentation](index.html)" >> "$dst/presentation.md"
 
     # Create .pdf assets index file
@@ -97,10 +100,10 @@ for mod in module-*; do
     filename="$mod.pdf"
     echo "* [$filename]($filename)" >> "$dst/pdf-assets.md"
 
-    if [ -d output/$mod/worksheet ] && [ "$(ls output/$mod/worksheet/*.pdf 2>/dev/null)" ]; then
+    if [ -d output/$mod/handouts ] && [ "$(ls output/$mod/handouts/*.pdf 2>/dev/null)" ]; then
         echo "" >> "$dst/pdf-assets.md"
-        echo "### Class worksheets" >> "$dst/pdf-assets.md"
-        for doc in output/$mod/worksheet/*.pdf; do
+        echo "### Class handouts" >> "$dst/pdf-assets.md"
+        for doc in output/$mod/handouts/*.pdf; do
             if [ -f $doc ]; then
                 cp "$doc" "$dst/pdf-assets"
                 filename=$(basename $doc)

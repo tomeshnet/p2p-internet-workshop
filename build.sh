@@ -51,12 +51,12 @@ for mod in module-*; do
     done
 
     # Copy Remark presentation and generate .pdf copy with DeckTape
-    doc="$mod-presentation.html"
+    doc="presentation.html"
     cd $mod
     if [ -f $doc ]; then
         # Generate .pdf
         out="../output/$mod/handouts/$mod-presentation.pdf"
-        echo "Generating presentation from $doc to $out"
+        echo "Generating presentation from $mod/$doc to $out"
         decktape remark "$doc" "$out" --chrome-arg=--allow-file-access-from-files
 
         # Copy Remark presentation
