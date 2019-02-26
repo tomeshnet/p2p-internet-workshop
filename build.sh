@@ -50,14 +50,6 @@ for mod in module-*; do
         fi
     done
 
-    # Generate presentation GitBook
-    book="$mod/presentation"
-    if [ -d $book ]; then
-        out="output/$mod/presentation"
-        echo "Generating presentation from $book to $out"
-        gitbook build "$book" "$out"
-    fi
-
     # Copy Remark presentation and generate .pdf copy with DeckTape
     doc="$mod-presentation.html"
     cd $mod
