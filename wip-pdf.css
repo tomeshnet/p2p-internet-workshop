@@ -1,0 +1,29 @@
+@import url('slide-files/fonts/jost/jost.css');
+@import url('slide-files/fonts/zilla-slab/zilla-slab.css');
+@import url('slide-files/fonts/ubuntu-mono/ubuntu-mono.css');
+
+h1,h2 {
+  font-family: 'Jost*','Futura', sans-serif;
+}
+
+h3,h4 {
+  font-family: 'Jost*','Futura', sans-serif;
+}
+
+body {
+    font-size: 0.625em;
+    font-family: 'Zilla Slab', serif;
+}
+
+a {
+  font-size: 0.625em;
+  font-family: 'Zilla-Slab' serif;
+  color: #258ca7;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: 'Ubuntu Mono', monospace !important;
+}

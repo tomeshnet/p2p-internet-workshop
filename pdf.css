@@ -1,29 +1,13 @@
-@import url('slide-files/fonts/jost/jost.css');
-@import url('slide-files/fonts/zilla-slab/zilla-slab.css');
-@import url('slide-files/fonts/ubuntu-mono/ubuntu-mono.css');
-
-h1,h2 {
-  font-family: 'Jost*','Futura', sans-serif;
-}
-
-h3,h4 {
-  font-family: 'Jost*','Futura', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Mono:400,700,700i&subset=latin-ext');
 
 body {
     font-size: 0.625em;
-    font-family: 'Zilla Slab', serif;
-}
-
-a {
-  font-size: 0.625em;
-  font-family: 'Zilla-Slab' serif;
-  color: #258ca7;
+    font-family: 'Open Sans' sans-serif;
 }
 
 code,
 kbd,
 pre,
 samp {
-    font-family: 'Ubuntu Mono', monospace !important;
+    font-family: 'Roboto Mono' monospace, serif !important;
 }
