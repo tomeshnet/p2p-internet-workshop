@@ -161,7 +161,7 @@ html.no-js .sidebar .collapsible-content {
 
 .sidebar {
   position: relative;
-  background-color: #4383bf;
+  background-color: #1c1f2b;
   position: relative;
   height: auto;
   color: #fff;
@@ -204,6 +204,8 @@ html.no-js .sidebar .collapsible-content {
 
 .sidebar-header {
   position: relative;
+  font-family: "Jost*", "Futura", sans-serif !important;
+  color: #FFCD50;
   font-size: 1rem;
   padding: 1rem 0;
   overflow: hidden;
@@ -265,7 +267,7 @@ html.no-js .sidebar .collapsible-content {
 
 .sidebar-menu > li > a:hover,
 .sidebar-menu > li > a:focus {
-  background-color: #316DA2;
+  background-color: #3f424d;
   transition: background-color 3ms;
 }
 
@@ -275,7 +277,7 @@ html.no-js .sidebar .collapsible-content {
 }
 
 .sidebar-menu li.selected {
-  background-color: #2e5c87;
+  background-color: #4d5478;
 }
 
 .sidebar-menu strong {
@@ -393,6 +395,7 @@ html.no-js .sidebar .collapsible-content {
   padding: 20px;
   color: rgba(255,255,255,.5);
   margin: 2rem 0;
+  color: #3eb1cf;
 }
 
 #content {
@@ -402,7 +405,6 @@ html.no-js .sidebar .collapsible-content {
 
 #content img {
   max-width:100%;
-  border:1px solid #CCC;
 }
 
 #content h4 {
@@ -536,7 +538,7 @@ a.btn:hover {
 }
 
 .mofooter {
-  background: #000;
+  background: #0e1016;
   color: #fff;
   text-align: center;
   padding: 2.8125rem 0.625rem;

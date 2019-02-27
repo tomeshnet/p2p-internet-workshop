@@ -301,7 +301,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Fira Sans", "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Zilla Slab', serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
@@ -311,6 +311,7 @@ body {
   outline: none !important; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Jost*", "Futura", sans-serif !important;
   margin-top: 0;
   margin-bottom: .5rem; }
 
@@ -445,7 +446,6 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
-  font-weight: 500;
   line-height: 1.1;
   color: inherit; }
 
@@ -577,8 +577,7 @@ h1 {
   margin: 20px 0;
   font-size: 3rem;
   line-height: 1;
-  letter-spacing: -0.1rem;
-  font-weight: 400;
+  font-weight: 600;
   color: #4d4f53; }
   @media (min-width: 544px) {
     h1 {
@@ -594,8 +593,8 @@ h2 {
   margin: 20px 0 10px 0;
   font-size: 2.8rem;
   line-height: 1;
-  letter-spacing: -0.1rem;
-  font-weight: 200;
+  letter-spacing: -0.05rem;
+  font-weight: 500;
   color: #4d4f53; }
   @media (min-width: 544px) {
     h2 {
@@ -2307,6 +2306,7 @@ fieldset[disabled] a.btn {
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.75rem 1.25rem;
   font-size: 1.25rem;
+  letter-spacing: 0.05em;
   line-height: 1.33333;
   border-radius: 0.3rem; }
 
