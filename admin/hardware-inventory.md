@@ -4,9 +4,9 @@
 
 | Item | Units | Status |
 |:-----|:------|:-------|
-| Raspberry Pi 3B+ with power | 6 | With @benhylau |
-| Toplinkst TOP-S5 | 45 | Waiting for USB adapters |
-| Samsung Evo Select 32 GB | 20 | With @benhylau |
+| Raspberry Pi 3B+ with power | 6 | With @darkdrgn2k |
+| Toplinkst TOP-S5 | 40 | With @darkdrgn2k |
+| Samsung Evo Select 32 GB | 20 | With @darkdrgn2k |
 | LoRa hardware | 0 | In chargeback process, have not ordered new ones |
 
 ## Hardware allocation
@@ -15,6 +15,9 @@
 |:--|:--|:--|:--|:--|
 | TOP-S5 | 3 | 20.09 | @darkdrgn2k | Florida Polytechnic |
 | TOP-S5 | 2 | 0.00 | @benhylau | NYU Abu Dhabi |
+| TOP-S5 | 3 | 0.00 | @benhylau | Amber Initiative Foundation |
+| TOP-S5 | 1 | 0.00 | @benhylau | @makeworld-the-better-one |
+| TOP-S5 | 1 | 0.00 | @benhylau | @benhylau |
 
 See [collaboration groups](https://github.com/tomeshnet/p2p-internet-workshop/issues/68).
 
