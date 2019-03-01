@@ -11,10 +11,11 @@ echo "Using CSS styles from $css"
 # Define starting directory
 base_dir="$(pwd)"
 
+# Create folder for general assets
+mkdir output/general
+
 # Generate general assets
 for doc in general/*.md; do
-    # Create folder for general assets
-    mkdir output/general
 
     # Generate assets as .pdf
     if [ -f $doc ]; then
@@ -25,12 +26,12 @@ for doc in general/*.md; do
 done
 
 # Copy technical files used by Remark
-cp -r "slide-files/" "output/slide-files"
+cp -r "slide-files" "output/"
 
 # Go through each module
 for mod in module-*; do
     # Create folder for module
-    mkdir "$mod"
+    mkdir "output/$mod"
 
     # Generate lesson plan .pdf
     doc="$mod/README.md"
@@ -60,7 +61,7 @@ for mod in module-*; do
         decktape remark "$doc" "$out" --chrome-arg=--allow-file-access-from-files
 
         # Copy Remark presentation
-        cp -r "slide-images/" "../output/$mod/slide-images"
+        cp -r "slide-images" "../output/$mod/"
         cp "$doc" "../output/$mod/"
      fi
      cd $base_dir
