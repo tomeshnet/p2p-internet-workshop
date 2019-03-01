@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+
+      <title>Building the Peer-to-Peer Internet : Measuring networks</title>
+      <meta name="description" content="Workshop Series by Toronto Mesh">
+      <link rel="icon" type="image/png" sizes="196x196" href="/p2p-internet-workshop/img/favicon.png?1">
+
+      <link href="/p2p-internet-workshop/css/mofo-bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="/p2p-internet-workshop/css/syntax.css">
+      <link rel="stylesheet" href="/p2p-internet-workshop/css/main.css">
+      <link rel="stylesheet" href="http://flukeout.github.io/mozmaker-icon-font/cdn/mozmaker-icons.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+			
+			<link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+			<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,700,700i" rel="stylesheet">
+    </head>
+
+    <body>
+
+      <div class="page container-fluid">
+        <div class="row">
+          
+          <div id="navigation" class="col-md-3 col-xs-12 sidebar" role="navigation">
+            <div class="sidebar-header">
+  <a href="/p2p-internet-workshop/">Building the Peer-to-Peer Internet</a>
+</div>
+
+<ul class="sidebar-menu list-unstyled">
+  
+
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-1/">1. What is mesh?</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-2/">2. Setting up your first node </a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-3/">3. Building nodes (hardware)</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-4/">4. Planning a network</a>
+      
+  </li>
+
+  
+  <li class="selected">
+    <a href="/p2p-internet-workshop/articles/module-5/">5. Measuring networks</a>
+      
+        
+          
+
+<ul class="sidebar-subitems">
+
+  
+  <li>
+    <a class=""
+      href="/p2p-internet-workshop/articles/module-5/presentation/">Presentation slides
+    </a>
+  </li>
+
+  
+  <li>
+    <a class=""
+      href="/p2p-internet-workshop/articles/module-5/pdf-assets/">PDF assets
+    </a>
+  </li>
+
+</ul>
+        
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-6/">6. Living on a decentralized network</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/general/"> General</a>
+      
+  </li>
+
+</ul>
+
+<footer>
+  <i class="fa fa-archive" aria-hidden="true"></i> <a href="https://github.com/tomeshnet/p2p-internet-workshop/releases/latest">Download workshop materials</a>
+</footer>
+
+          </div>
+          <div id="content" class="col-md-9 col-xs-12">
+            <div class="lesson-content">
+<!--
+<div class="page-header">
+  <h2>
+    5.
+    Measuring networks
+  </h2>
+</div>
+-->
+<!--
+<div class="details">
+  <div class="row p-y-1">
+  
+    <div class="col-sm-4">
+      
+      <a target="_blank" class="suggest-changes" href="https://github.com/tomeshnet/p2p-internet-workshop/edit/gh-pages/_articles/module-5.md">Suggest changes</a>
+    </div>
+  </div>
+  
+</div>
+-->
+<h1 id="module-5-measuring-networks">Module 5: Measuring networks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Section</strong></th>
+      <th><strong>Length</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#1-topic-introduction"><strong>1: Topic introduction</strong></a></td>
+      <td>15 min</td>
+    </tr>
+    <tr>
+      <td><a href="#2-hands-on-and-material-exploration"><strong>2: Hands-on and material exploration</strong></a></td>
+      <td>40 min</td>
+    </tr>
+    <tr>
+      <td><a href="#3-discussion-and-reflection-activity"><strong>3: Discussion and reflection activity</strong></a></td>
+      <td>20 min</td>
+    </tr>
+    <tr>
+      <td><a href="#4-wrap-up-and-week-ahead"><strong>4: Wrap-up and week ahead</strong></a></td>
+      <td>5 min</td>
+    </tr>
+    <tr>
+      <td><strong>Workshop length</strong></td>
+      <td>1:30 min</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="1-topic-introduction">1: Topic introduction</h2>
+
+<ul>
+  <li>Review of homework on Net Neutrality:
+    <ul>
+      <li>Did you know about Net Neutrality?</li>
+      <li>Did you think it was a good thing?</li>
+      <li>Did you think about the negative aspects of it being put into law?</li>
+      <li>Are there reasons for traffic shaping or blocking connections</li>
+      <li>Why are large tel-cos interested in treating different internet traffic differently</li>
+      <li>How may this affect peer-to-peer applications?</li>
+      <li>How may a community mesh network affect this?</li>
+    </ul>
+  </li>
+  <li>Network is a limited resource that is determined by the infrastructure</li>
+  <li>Discuss the need for keeping a pulse of the network
+    <ul>
+      <li>What attributes are important to monitor</li>
+      <li>How are these attributes measured?</li>
+      <li>Identify units and what they mean</li>
+      <li>Where have we seen it in our daily lives?</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="2-hands-on-and-material-exploration">2: Hands-on and material exploration</h2>
+
+<p>Monitor flow of network traffic using different tools as we do every day digital things.</p>
+
+<h3 id="objectives">Objectives</h3>
+
+<p>Learn how these metrics affect us in our day to day lives, and in contrast how the same metrics affect others.</p>
+
+<h3 id="materials">Materials</h3>
+
+<ul>
+  <li>Your cellphone</li>
+  <li>Some sort of public WiFi or internet connection</li>
+  <li>A Raspberry Pi 3 for each participant labeled with the SSID for the node</li>
+  <li>SD cards with pre-flashed images with all required software</li>
+  <li>Laptops that can establish a SSH session to each Raspberry Pi (each running a Host AP with unique SSID)</li>
+  <li>USB WiFi radio that is <a href="https://github.com/phillymesh/802.11s-adapters">ad-hoc or 802.11s-capable</a> for each Raspberry Pi 3</li>
+</ul>
+
+<h3 id="format">Format</h3>
+
+<p>Groups (or pairs) to start, class discussion then back to groups again</p>
+
+<h3 id="activity">Activity</h3>
+
+<p>As the whole class:</p>
+
+<p>a. Review your cell phone usage:</p>
+<ul>
+  <li>Identify your apps’ data usage</li>
+  <li>Record a few of the top apps that took up the most data</li>
+  <li>Was this data cellular, or WiFi?</li>
+</ul>
+
+<p>b. Public WiFi speed test:</p>
+<ul>
+  <li>Use a speed test tool (e.g. speedtest.net) to test the speed of the public WiFi, record the result</li>
+  <li>Is it faster or slower than the connection you have at home?</li>
+  <li>Run the speed test again, record the result</li>
+</ul>
+
+<p>c. Discuss measurements and units:</p>
+<ul>
+  <li>What unit is the data usage of your apps measured in?</li>
+  <li>What does MB mean?</li>
+  <li>What was some of the top app and how much MB did it use?
+    <ul>
+      <li>Have participants volunteer their info if they feel comfortable doing so</li>
+    </ul>
+  </li>
+  <li>Was that surprising?</li>
+  <li>Would you be more/less surprised if it was cellular data? What if it was WiFi data?
+    <ul>
+      <li>Are different data sources worth more?</li>
+      <li>Why? What is your cell data limit?</li>
+    </ul>
+  </li>
+  <li>What unit was the WiFi speed measured in?</li>
+  <li>What does Mbps mean?</li>
+  <li>How does this relate to the MB from apps?</li>
+  <li>Why was the speed different between tests?</li>
+</ul>
+
+<p>d. Show <code class="highlighter-rouge">bwm-ng</code> (Bandwidth Monitor - Next Generation) on a mesh node and describe what it is:</p>
+<ul>
+  <li>Information provided</li>
+  <li>How to toggle between items</li>
+</ul>
+
+<p>Break into smaller groups:</p>
+
+<ul>
+  <li>Connect to the node</li>
+  <li>SSH into the node</li>
+  <li>Run small web server</li>
+  <li>Run <code class="highlighter-rouge">bwm-ng</code></li>
+  <li>Stream a video file that is located on a node’s local webserver and observe the metrics</li>
+  <li>Use <code class="highlighter-rouge">tc</code> (Traffic Control) to limit the bandwidth and observe what and how the metrics change</li>
+</ul>
+
+<p>Discuss results in larger group and ask the following questions:</p>
+
+<ul>
+  <li>Did difficulty increase measuring two nodes at the same time?</li>
+  <li>What would happen if we have a city-wide mesh?
+    <ul>
+      <li>Ping time</li>
+      <li>Throughput</li>
+      <li>CPU usage</li>
+    </ul>
+  </li>
+  <li>Are some metrics more important than others?</li>
+  <li>How do you represent a mesh network?
+    <ul>
+      <li>Physical network topology (e.g. <a href="https://tomesh.net/map/">Toronto Mesh map</a>)</li>
+      <li>Virtual peering topology (e.g. <a href="https://www.fc00.org/">fc00.org</a>)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3-discussion-and-reflection-activity">3: Discussion and reflection activity</h2>
+
+<p>Q &amp; A about sharing broken Internet experiences, understanding failure points and why we measure</p>
+
+<ul>
+  <li>Break into 3 groups</li>
+  <li>Each group is assigned a user profile
+    <ul>
+      <li>Gamer</li>
+      <li>Streamer (Youtube, Netflix, etc.)</li>
+      <li>Web user with occasional video conferencing calls (web, email, instant messaging, Skype, Hangout, etc.)</li>
+    </ul>
+  </li>
+  <li>Spend 10 minutes discussing the characteristics of this user and what metrics are important to them and why. Consider some of these questions:
+    <ul>
+      <li>What are the most used services by the user?</li>
+      <li>How would the user be affected if internet access becomes unavailable?</li>
+      <li>What would the user consider as “internet went down”?</li>
+      <li>What is the threshold for the user?
+        <ul>
+          <li>Packet loss / poor link quality</li>
+          <li>Latency / ping</li>
+          <li>Bandwidth speed</li>
+          <li>Bandwidth allotment</li>
+        </ul>
+      </li>
+      <li>Does network traffic trend change throughout the day for the user’s connection?</li>
+      <li>Look at your local internet provider (Bell, Rogers, etc.), which plan would you suggest for them and why?</li>
+      <li>Does wired vs wireless affect the experience?</li>
+    </ul>
+  </li>
+  <li>Have each group spend 2 minutes presenting their user profile and their findings</li>
+  <li>Make the assumption that the 3 profiles live in the same household, does that change any of the recommendations is so how?</li>
+  <li>How will things change if services are accessed through / hosted on a community mesh network?</li>
+</ul>
+
+<h2 id="4-wrap-up-and-week-ahead">4: Wrap-up and week ahead</h2>
+
+<ul>
+  <li>Read Sonia Bussu’s perspective on <a href="http://blogs.lse.ac.uk/usappblog/2014/12/13/public-engagement-on-the-internet-of-things-is-essential-if-we-are-to-put-societal-values-at-the-centre-of-technological-developments/">public engagement in the development of IoT</a></li>
+  <li>Browse <a href="https://publiclab.org/methods">Public Lab’s website of DIY science projects</a>. Are there any projects of your own that you might want to use technology to explore?</li>
+  <li>Optional: Watch the National Film Board series on Antennas:
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=7bDyA5t1ldU">Propogation</a></li>
+      <li><a href="https://www.youtube.com/watch?v=md7GjQQ2YA0&amp;">Directivity</a></li>
+      <li><a href="https://www.youtube.com/watch?v=9iV_YICgifA&amp;">Bandwidth</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+  <h3>In This Section</h3>
+
+  
+   <p>
+    Module 5.
+    <a href="/p2p-internet-workshop/articles/module-5/presentation/">Presentation slides</a>
+    
+  </p>
+
+  
+   <p>
+    Module 5.
+    <a href="/p2p-internet-workshop/articles/module-5/pdf-assets/">PDF assets</a>
+    
+  </p>
+
+
+
+
+ 
+ <a class="btn btn-lg btn-default btn-next" href="/p2p-internet-workshop/articles/module-5/presentation/">
+next:
+Presentation slides &nbsp;
+<i class="fa fa-play" aria-hidden="true"></i>
+</a>
+<br />
+
+
+
+<p class="help-us">
+    <edit></edit>
+    Help us improve content and
+    <a target="_blank" href="https://github.com/tomeshnet/p2p-internet-workshop/issues">suggest changes</a> to this course.
+</p>
+</div>
+
+          </div>
+        </div>
+
+        <div class="row">
+        <footer class="col-sm-12">
+    <div class="mofooter">
+      <div class="icons">
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/footer-icon-twitter.svg"><a target="_blank" href="https://twitter.com/tomeshnet">Twitter</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/footer-icon-irc.svg"><a target="_blank" href="https://chat.tomesh.net/#/room/#p2p-internet-workshop:tomesh.net">Chat</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/footer-icon-email.svg"><a target="_blank" href="mailto:hello@tomesh.net">Email</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/footer-icon-github.svg"><a target="_blank" href="https://github.com/tomeshnet/p2p-internet-workshop">Github</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/cc-logo.svg"><a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">License</a></div>
+        </div>
+      </div>
+      <div class="footer-content">
+        <p><a href="/p2p-internet-workshop/">Building the Peer-to-Peer Internet</a> workshop series by <a target="_blank" href="https://tomesh.net">Toronto Mesh</a></p>
+        <p>Open-source syllabus to explore community mesh networks and distributed applications through social activities and various tinkerings with Raspberry Pi and LoRa systems.</p>
+      </div>
+    </div>
+  </footer>
+
+        </div>
+      </div>
+      <script>
+      function WebAnalytics() {
+       var _dntStatus = navigator.doNotTrack || navigator.msDoNotTrack;
+       var fxMatch = navigator.userAgent.match(/Firefox\/(\d+)/);
+       var ie10Match = navigator.userAgent.match(/MSIE 10/i);
+       var w8Match = navigator.appVersion.match(/Windows NT 6.2/);
+       if (fxMatch && Number(fxMatch[1]) < 32) {
+          _dntStatus = 'Unspecified';
+       } else if (ie10Match && w8Match) {
+           _dntStatus = 'Unspecified';
+       } else {
+          _dntStatus = { '0': 'Disabled', '1': 'Enabled' }[_dntStatus] || 'Unspecified';
+       }
+       if (_dntStatus !== 'Enabled'){
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-87658599-3', 'auto');
+        ga('send', 'pageview');
+       }
+      }
+      WebAnalytics();
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.js"></script>
+      <script>anchors.add('h3,h4');</script>
+
+    </body>
+</html>

@@ -1,0 +1,101 @@
+@import url('fonts/jost/jost.css');
+@import url('fonts/zilla-slab/zilla-slab.css');
+@import url('fonts/ubuntu-mono/ubuntu-mono.css');
+
+/* Typography */
+body {
+  font-family: 'Zilla Slab', serif;
+}
+
+h1 {
+  font-family: 'Jost*','Futura', sans-serif;
+  font-weight: 600;
+  color: #FFCD50;
+}
+
+h2 {
+  font-family: 'Jost*','Futura', sans-serif;
+  font-weight: 600;
+  font-size: 1.7em !important;
+  color: #FFCD50;
+}
+
+h3 {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 700;
+  color: #ddeaed;
+}
+
+p,ul,ol {
+  color: #ddeaed;
+  line-height: 1.4em;
+  margin-top: 0.6em;
+  margin-bottom: 0;
+}
+
+li {
+  margin-top: 0.3em;
+}
+
+a, a:visited {
+  color: #3EB1CF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #78d3eb;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'Ubuntu Mono', monospace;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.remark-inline-code {
+  font-size: 0.8em;
+  background-color: #3f424d;
+  color: #FFCD50;
+}
+
+.highlight {
+  border-radius: 1px;
+  background-color: #4d5478;
+  padding-left: 0.18em;
+  padding-right: 0.18em;
+}
+
+.footnote {
+  color: #9ba4a5;
+  position: fixed;
+  top: 90%;
+  left: 6.5%;
+  width: 100%;
+}
+
+/* Slide Layout */
+div.remark-slide-content {
+  background-color: #1c1f2b;
+}
+
+/* Table Styling */
+table {
+  margin-top: 1.6em;
+}
+
+tr {
+  color: #ddeaed;
+  background-color: #3f424d;
+}
+
+td {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+th {
+  color: #FFCD50;
+  padding: 0.3em;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Module Two</title>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="../slide-files/slide.css">
+		<script src="../slide-files/remark.js"></script>
+  </head>
+
+	<body>
+
+		<textarea id="source">
+
+			# Module 2: Setting up your first node
+
+			1. Recap from last week
+			2. Internet protocols and network routing
+			3. Your node in a mesh network
+			4. Top-level domains of the internet
+			5. Wrap-up & homework
+
+			---
+			# Recap from last week
+
+			Using .highlight[Raspberry Pis], we formed a .highlight[wireless mesh network] and shared messages between them using a .highlight[content-addressed] .highlight[peer-to-peer] file system.
+
+			![Peer-to-peer applications](slide-images/peer-to-peer-applications.svg)
+
+			Last week the mesh network formed autonomously once we turned on the Raspberry Pis. Today we will manually form the mesh network!
+
+			---
+
+			# Internet protocols and routing
+
+			### .highlight[IP address] .highlight[IP packet] .highlight[DHCP] .highlight[NAT] .highlight[DNS] .highlight[Network route]
+
+			## Challenges of mesh networking software:
+			- Assignment of IP addresses
+			- Efficient & secure network routing
+			- Private & secure communications
+
+			---
+
+			# Your node in a mesh network
+
+			1. With a partner, configure two Raspberry Pis to talk over an ethernet cable
+			2. As a class, put a couple Raspberry Pis together to form a hierarchical network
+			3. Reconfigure the Raspberry Pis to form a mesh network
+
+			![Three-node mesh network](slide-images/three-node-mesh-network.svg)
+
+			---
+			class: center, middle
+
+			# Top-level domains of the internet
+
+			This activity is based on [I Think Therefore ICANN](http://networks.land/activities/i-think-therefore-icann/) by [networks.land](http://networks.land/).
+
+			---
+			# Domain names
+
+			- Domain Name System (DNS) maps computer IP addresses to human-readable URLs
+			- Your computer asks the DNS server: _"I need to reach **example.com**"_
+
+			---
+			## Who runs the thirteen DNS root servers of the internet?
+
+			  ```python
+			  a.root-servers.net    198.41.0.4        Verisign
+			  b.root-servers.net    192.228.79.201    USC-ISI
+			  c.root-servers.net    192.33.4.12       Cogent Communications
+			  d.root-servers.net    199.7.91.13       University of Maryland
+			  e.root-servers.net    192.203.230.10    NASA
+			  f.root-servers.net    192.5.5.241       Internet Systems Consortium
+			  g.root-servers.net    192.112.36.4      Defense Info Systems Agency
+			  h.root-servers.net    128.63.2.53       US Army Research Lab
+			  i.root-servers.net    192.36.148.17     Netnod
+			  j.root-servers.net    192.58.128.30     Verisign
+			  k.root-servers.net    193.0.14.129      RIPE NCC
+			  l.root-servers.net    199.7.83.42       ICANN
+			  m.root-servers.net    202.12.27.33      WIDE Project
+			  ```
+
+			---
+
+			# Top-level domains
+
+			What happens when you register `tomesh.net` through a Domain Name Registrar like Namecheap?
+
+			- Namecheap requests the Internet Corporation for Assigned Names and Numbers (ICANN) to add a new entry
+			- ICANN directs the Top-Level Domain (TLD) server to add the new entry
+
+			When I type `tomesh.net` into my browser:
+
+			- One of those thirteen root servers check which TLD server is responsible for resolving `.net`
+			- The TLD server for `.net` run by Verisign replies `159.203.15.166` is where I want to go
+
+			In reality, most resolutions are done by root server-mirroring DNS servers run by ISPs and other institutions.
+
+			---
+			class: center, middle
+
+			# The "original" TLDs
+
+			---
+
+			# `.com`
+
+			###Use Case:
+			"commercial"–can be used by anyone, sort of through the weirdness of early internet history became the default top-level domain for commercial or personal use.
+
+			###Managed By:
+			Initially managed by Network Solutions, Inc. as a contractor to the U.S. government, it's now managed by Verisign, Inc.
+
+			---
+
+			# `.net`
+
+			###Use Case:
+			"network"–originally intended for distributed networks of computers.
+
+			###Managed By:
+			Verisign, Inc.
+
+			---
+
+			# `.org`
+
+			###Use Case:
+			"organization"–originally intended for non-profit organizations only (and used by many non-profits for this reason), it's also appropriated by less benevolent initiatives (see internet.org)
+
+			###Managed By:
+			the Public Interest Registry, a domain registrar created by the non-profit organization Internet Society.
+
+			---
+
+			# `.edu`
+
+			###Use Case:
+			"educational"–what's considered an "educational" means more "institutions of education". As of 2001 the domain is actually only for United States education institutions accredited by any agency recognized by the U.S. Department of Education.
+
+			###Managed By:
+			Educause, a nonprofit dedicated to supporting higher education IT initiatives, is responsible for the TLD, although they actually contract out this work to… Surprise! Verisign again.
+
+			---
+
+			# `.gov`
+
+			###Use Case:
+			U.S. state and federal agencies
+
+			###Managed By:
+			The General Services Administration contracts out maintenance of this TLD to Verisign.
+
+			---
+
+			# `.mil`
+
+			###Use Case:
+			The United States Military
+
+			###Managed By:
+			The U.S. Department of Defense
+
+			---
+
+			# Country-code TLDs
+
+			ccTLDs are associated with countries and they are managed by a national telecommunications authority or "partner" with companies that manage the domain and pay out royalties to countries. What happens when...
+
+			- `.tv` `.io` : Sweet country code but lacks infrastructure to benefit from the domain?
+			- `.ly` `.yu` : Country is in political unrest or breaks apart altogether?
+			- `vb.ly` : Domain name use does not reflect the country's politics and culture?
+
+			---
+
+			# Generic TLDs
+
+			Starting around 2000, started adding new gTLDs beyond the six "original" domains and in 2012 opened up a process through which companies can apply to establish new gTLDs for a fee. So people started registering things like:
+
+			- `.cat` `.scot` : Secessionist domains representing a non-recognized nation-states or cultural entities.
+			- `.accenture` : Brand recognition domains.
+			- `.sucks` : Contentious use domains.
+
+			---
+
+			class: center, middle
+
+			# Wrap-up & Homework
+
+			---
+
+			# Recap
+
+			- Discussed networking acronyms and concepts such as IP addresses, DHCP, NAT, and routing
+			- Started off building a simple wired ethernet link across two Raspberry Pi nodes
+			- Sent plain text and HTTP messages across that link, emulating how applications communicate under the hood
+			- As a class, constructed both a centralized network and a mesh network by hand
+
+			_Questions?_
+
+			---
+
+			# Homework
+
+			Next session we will discuss wireless links more extensively, both theoretically and the practical aspects when configuring a wireless mesh network.
+
+			📝 _Watch this video on YouTube or IPFS!_
+
+			[Frequency, Amplitude, and Phase](https://www.youtube.com/watch?v=5g-Din357iY) from the [Metamesh YouTube channel](https://www.youtube.com/channel/UCGEnntxbGKMU9J9GIZ1LQUQ):
+			- Explains what "is" WiFi in the physical sense
+			- Relates radio interference to WiFi channels
+			- Shows configuration of WiFi channel that is relevant to real-world network deployments
+			- Helps future discussions around urban vs. rural deployments and omnidirectional vs. directional links
+    </textarea>
+
+		<script>
+		var slideshow = remark.create({
+			// While the slide aspect ratio can be changed to '4:3' this can cause some content to be cut off.  If you plan on changing this please reformat the slides accordingly!
+			ratio: '16:9',
+			slideNumberFormat:'',
+
+			// Presentation slide navigation options
+			navigation: {
+				scroll: false,
+				touch: true,
+				click: true,
+			},
+
+			// The highlight theme used by highlight.js to style code blocks
+			highlightStyle: 'atom-one-dark',
+		});
+		</script>
+
+  </body>
+</html>

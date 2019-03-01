@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+
+      <title>Building the Peer-to-Peer Internet</title>
+      <meta name="description" content="Workshop Series by Toronto Mesh">
+      <link rel="icon" type="image/png" sizes="196x196" href="/p2p-internet-workshop/img/favicon.png?1">
+
+      <link href="/p2p-internet-workshop/css/mofo-bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="/p2p-internet-workshop/css/syntax.css">
+      <link rel="stylesheet" href="/p2p-internet-workshop/css/main.css">
+      <link rel="stylesheet" href="http://flukeout.github.io/mozmaker-icon-font/cdn/mozmaker-icons.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+			
+			<link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+			<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,700,700i" rel="stylesheet">
+    </head>
+
+    <body>
+
+      <div class="page container-fluid">
+        <div class="row">
+          
+          <div id="navigation" class="col-md-3 col-xs-12 sidebar" role="navigation">
+            <div class="sidebar-header">
+  <a href="/p2p-internet-workshop/">Building the Peer-to-Peer Internet</a>
+</div>
+
+<ul class="sidebar-menu list-unstyled">
+  
+
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-1/">1. What is mesh?</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-2/">2. Setting up your first node </a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-3/">3. Building nodes (hardware)</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-4/">4. Planning a network</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-5/">5. Measuring networks</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-6/">6. Living on a decentralized network</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/general/"> General</a>
+      
+  </li>
+
+</ul>
+
+<footer>
+  <i class="fa fa-archive" aria-hidden="true"></i> <a href="https://github.com/tomeshnet/p2p-internet-workshop/releases/latest">Download workshop materials</a>
+</footer>
+
+          </div>
+          <div id="content" class="col-md-9 col-xs-12">
+            <!--
+<div class="hero-unit home-page p-y-3 p-x-1">
+  <h1>Building the Peer-to-Peer Internet</h1>
+  <h2>Workshop Series by Toronto Mesh</h2>
+</div>
+-->
+
+<div class="lesson-content">
+  <h1 id="building-the-peer-to-peer-internet">Building the Peer-to-Peer Internet</h1>
+<p><em><strong>Workshop Series</strong> by <a href="https://tomesh.net">Toronto Mesh</a></em></p>
+
+<p><a href="https://travis-ci.org/tomeshnet/p2p-internet-workshop"><img src="https://travis-ci.org/tomeshnet/p2p-internet-workshop.svg?branch=master" alt="Build Status" /></a>
+<a href="https://github.com/tomeshnet/p2p-internet-workshop/releases"><img src="https://img.shields.io/github/release/tomeshnet/p2p-internet-workshop.svg" alt="GitHub release" /></a></p>
+
+<h2 id="description">Description</h2>
+
+<p>Participants will learn about community networks, wireless mesh networks, distributed applications, and train their pet Raspberry Pi to do networking things. While this course assumes no technical expertise, all sessions contain a technical hands-on component and a reflection activity to explore the role of technologies on our society. A socially-minded tinkerer who enjoys a collaborative learning experience will be the ideal participant.</p>
+
+<p>This course can be facilitated in an environment without internet access. Participants will be expected to bring their own laptop.</p>
+
+<p><strong>Duration:</strong> 1.5 hours per week for 6 weeks<br />
+<strong>Discussion:</strong> <a href="https://chat.tomesh.net/#/room/#p2p-internet-workshop:tomesh.net">#p2p-internet-workshop:tomesh.net</a></p>
+
+<h2 id="module-topics">Module Topics</h2>
+
+<ol>
+  <li><a href="https://tomeshnet.github.io/p2p-internet-workshop/articles/module-1/">What is mesh?</a></li>
+  <li><a href="https://tomeshnet.github.io/p2p-internet-workshop/articles/module-2/">Setting up your first node</a></li>
+  <li><a href="https://tomeshnet.github.io/p2p-internet-workshop/articles/module-3/">Building nodes (hardware)</a></li>
+  <li><a href="https://tomeshnet.github.io/p2p-internet-workshop/articles/module-4/">Planning a network</a></li>
+  <li><a href="https://tomeshnet.github.io/p2p-internet-workshop/articles/module-5/">Measuring networks</a></li>
+  <li><a href="https://tomeshnet.github.io/p2p-internet-workshop/articles/module-6/">Living on a decentralized network</a></li>
+</ol>
+
+<h2 id="learning-outcomes">Learning Outcomes</h2>
+
+<ul>
+  <li>Working with Raspberry Pi’s to make a network router</li>
+  <li>Building mesh networks and running peer-to-peer applications</li>
+  <li>Understanding the barriers to access and the history of the internet in Toronto as well as mesh networks worldwide</li>
+  <li>Unpacking the values of distributed vs. centralized systems</li>
+  <li>Applying network security and private communications</li>
+  <li>Starting and maintaining a sustainable community mesh network</li>
+</ul>
+
+<h2 id="expectations">Expectations</h2>
+
+<ul>
+  <li>Each participant will have a hardware kit</li>
+  <li>Participants will bring their own laptop</li>
+  <li>Participants will receive primer information via a <a href="https://tomeshnet.github.io/p2p-internet-workshop/articles/general/general-welcome-email.pdf">welcome email</a>, which includes <a href="https://tomeshnet.github.io/p2p-internet-workshop/articles/general/general-laptop-setup-instructions.pdf">laptop setup instructions</a>, a Linux shell primer, and a <a href="https://tomeshnet.github.io/p2p-internet-workshop/articles/general/general-pre-workshop-survey.pdf">pre-workshop survey</a></li>
+  <li>Participants are comfortable using a computer before, with no assumptions about prior programming or networking knowledge</li>
+</ul>
+
+<h2 id="facilitation-guidelines">Facilitation Guidelines</h2>
+
+<ul>
+  <li>Each module should be presented by a lead facilitator driving the session according to the lesson plan</li>
+  <li>Aim to have one helper for every 6 students, responsible for:
+    <ul>
+      <li>Providing assistance during hands-on sections</li>
+      <li>Keeping groups on schedule for each activity</li>
+      <li>Having one helper observe the class and providing feedback (<a href="http://www.teachhub.com/teaching-strategies-value-self-reflection">sample reflection questions</a>)</li>
+    </ul>
+  </li>
+  <li>Use a <a href="https://pad.riseup.net/p/peer-to-peer-internet">shared notepad</a> for:
+    <ul>
+      <li>Sharing notes and links</li>
+      <li>Jargon-busting</li>
+    </ul>
+  </li>
+  <li>Conclude with a <a href="http://www.ideasforeducators.com/idea-blog/a-twist-on-ticket-out-the-door">ticket out the door</a> activity where students can optionally and anonymously leave feedback as they leave the class</li>
+</ul>
+
+<h2 id="workshop-materials">Workshop Materials</h2>
+
+<p>Class materials are written as <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> files and presentation slides are created as Markdown-based <a href="https://github.com/gnab/remark">Remark slides</a>. All generated assets are hosted on <a href="https://tomeshnet.github.io/p2p-internet-workshop/">GitHub Pages</a> and packaged as a downloadable archive on <a href="https://github.com/tomeshnet/p2p-internet-workshop/releases/latest">GitHub Releases</a>.</p>
+
+<p>If you want to generate course assets yourself, simply run <code class="highlighter-rouge">./install-dependencies.sh</code> and <code class="highlighter-rouge">./build.sh</code>. You will find the generated assets in the <code class="highlighter-rouge">output</code> folder. The <code class="highlighter-rouge">./package.sh</code> script is used to zip up the generated assets into downloadable archives and to create the course website.</p>
+
+<p><a href="https://travis-ci.org/">Travis CI</a> is configured to build, package, and publish a new release to GitHub Pages and Releases whenever a new tag is pushed. So all you need to create a new release is to push a new tag with <code class="highlighter-rouge">git tag &lt;version&gt;</code> and <code class="highlighter-rouge">git push --tag</code>.</p>
+
+<h2 id="hardware">Hardware</h2>
+
+<p>Each node consists of one:</p>
+
+<ul>
+  <li>Raspberry Pi 3B or 3B+ with power supply</li>
+  <li>SD card with 8 GB or more space</li>
+  <li><a href="https://github.com/phillymesh/802.11s-adapters/blob/master/toplinkst-top-s5/toplinkst-top-s5.md">TOP-S5 USB WiFi adapter</a> from <a href="https://toplinkst-wifi.en.made-in-china.com/product/NyaQzvYEsGWL/China-Top-S5-802-11A-B-G-N-300Mbps-Rt5572-Dual-Band-USB-Wireless-Module-with-Ce-FCC-for-STB.html">Toplinkst</a></li>
+</ul>
+
+<p>It is possible to use other <a href="https://github.com/phillymesh/802.11s-adapters/blob/master/README.md">USB WiFi adapters</a> with <code class="highlighter-rouge">rt2800usb</code>, <code class="highlighter-rouge">ath9k_htc</code>, or <code class="highlighter-rouge">rtl8192cu</code> drivers with <a href="https://github.com/benhylau/mesh-workshop/tree/master/src/custom/etc/systemd/network">slight modifications to the software</a>.</p>
+
+<p>Other accessories:</p>
+
+<ul>
+  <li>Ethernet cables</li>
+  <li>A network switch may come in handy</li>
+  <li>LoRa hardware for <em>Module 6: Living on a decentralized network</em></li>
+</ul>
+
+<h2 id="software">Software</h2>
+
+<ol>
+  <li>
+    <p>Download the <a href="https://github.com/benhylau/mesh-router-builder/releases/latest">latest mesh-orange release</a> of <code class="highlighter-rouge">raspberrypi3-&lt;version&gt;_default.img</code>, then flash the image onto an SD card with a tool like <a href="https://www.balena.io/etcher/">Etcher</a>.</p>
+  </li>
+  <li>
+    <p>Download the <a href="https://github.com/benhylau/mesh-workshop/releases/latest">latest mesh-workshop release</a> and unpack it. Mount the FAT partition of the SD card you flashed in the previous step, then use the tool <code class="highlighter-rouge">mesh-workshop</code> to install workshop files on each node:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ ./mesh-workshop
+ Usage:   mesh-workshop confpath nodename
+ Example: mesh-workshop /Volumes/BOOT/conf.d/ bloor
+</code></pre></div>    </div>
+
+    <p>The example shows a path to your SD card on Mac OS, your local path may differ. The command installs node profile and workshop files to the SD card <code class="highlighter-rouge">conf.d</code> for the node with hostname <code class="highlighter-rouge">bloor</code>.</p>
+  </li>
+</ol>
+
+<h2 id="credits">Credits</h2>
+
+<p>The first version of this syllabus is created by <a href="https://tomesh.net">Toronto Mesh</a> contributors: <a href="https://github.com/benhylau">@benhylau</a>, <a href="https://github.com/darkdrgn2k">@darkdrgn2k</a>, <a href="https://github.com/dcwalk">@dcwalk</a>, <a href="https://github.com/uditvira">@uditvira</a>, <a href="https://github.com/Shrinks99">@Shrinks99</a>, and <a href="https://github.com/Pedro-on-a-bike">@Pedro-on-a-bike</a>. While most of the material is created new, the course also incorporates many prior works listed <a href="https://tomeshnet.github.io/p2p-internet-workshop/articles/general/general-extra-resources.pdf">here</a>, or otherwise referenced in their individual course modules.</p>
+
+<p>Hands-on activities rely on software from many projects: <a href="https://github.com/tomeshnet/mesh-orange">mesh-orange</a>, <a href="https://github.com/benhylau/mesh-router-builder">mesh-router-builder</a>, <a href="https://github.com/benhylau/mesh-workshop/">mesh-workshop</a>, <a href="https://github.com/steamlink">steamlink</a>, <a href="https://github.com/cjdelisle/cjdns/">cjdns</a>, <a href="https://yggdrasil-network.github.io/about.html">Yggdrasil</a>, <a href="https://ipfs.io/">IPFS</a>, <a href="https://github.com/ssbc/">Secure Scuttlebutt</a>. Course material generation uses <a href="https://github.com/alanshaw/markdown-pdf">markdown-pdf</a> and <a href="https://github.com/astefanutti/decktape">decktape</a>. The course website is built with <a href="https://jekyllrb.com/">Jekyll</a>, and the theme is from <a href="https://github.com/mozilla/open-leadership-training-series">Mozilla’s Open Leadership Training Series</a>. Icons from <a href="http://fontawesome.io/">Font Awesome</a> and <a href="https://thenounproject.com/search/?q=mesh&amp;i=74809">Jake Ingman</a> are used.</p>
+
+<h2 id="license">License</h2>
+
+<p>All <em>Building the Peer-to-Peer Internet</em> workshop materials at <a href="https://github.com/tomeshnet/p2p-internet-workshop/">github.com/tomeshnet/p2p-internet-workshop/</a> are licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>, the text of which is included in the repository <code class="highlighter-rouge">LICENSE</code> file.</p>
+
+  <a class="btn btn-lg btn-default btn-next" href="articles/module-1">
+    Get started &nbsp; <i class="fa fa-play" aria-hidden="true"></i>
+  </a>
+</div>
+
+          </div>
+        </div>
+
+        <div class="row">
+        <footer class="col-sm-12">
+    <div class="mofooter">
+      <div class="icons">
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/footer-icon-twitter.svg"><a target="_blank" href="https://twitter.com/tomeshnet">Twitter</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/footer-icon-irc.svg"><a target="_blank" href="https://chat.tomesh.net/#/room/#p2p-internet-workshop:tomesh.net">Chat</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/footer-icon-email.svg"><a target="_blank" href="mailto:hello@tomesh.net">Email</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/footer-icon-github.svg"><a target="_blank" href="https://github.com/tomeshnet/p2p-internet-workshop">Github</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/cc-logo.svg"><a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">License</a></div>
+        </div>
+      </div>
+      <div class="footer-content">
+        <p><a href="/p2p-internet-workshop/">Building the Peer-to-Peer Internet</a> workshop series by <a target="_blank" href="https://tomesh.net">Toronto Mesh</a></p>
+        <p>Open-source syllabus to explore community mesh networks and distributed applications through social activities and various tinkerings with Raspberry Pi and LoRa systems.</p>
+      </div>
+    </div>
+  </footer>
+
+        </div>
+      </div>
+      <script>
+      function WebAnalytics() {
+       var _dntStatus = navigator.doNotTrack || navigator.msDoNotTrack;
+       var fxMatch = navigator.userAgent.match(/Firefox\/(\d+)/);
+       var ie10Match = navigator.userAgent.match(/MSIE 10/i);
+       var w8Match = navigator.appVersion.match(/Windows NT 6.2/);
+       if (fxMatch && Number(fxMatch[1]) < 32) {
+          _dntStatus = 'Unspecified';
+       } else if (ie10Match && w8Match) {
+           _dntStatus = 'Unspecified';
+       } else {
+          _dntStatus = { '0': 'Disabled', '1': 'Enabled' }[_dntStatus] || 'Unspecified';
+       }
+       if (_dntStatus !== 'Enabled'){
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-87658599-3', 'auto');
+        ga('send', 'pageview');
+       }
+      }
+      WebAnalytics();
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.js"></script>
+      <script>anchors.add('h3,h4');</script>
+
+    </body>
+</html>

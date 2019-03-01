@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width">
+
+      <title>Building the Peer-to-Peer Internet : Setting up your first node </title>
+      <meta name="description" content="Workshop Series by Toronto Mesh">
+      <link rel="icon" type="image/png" sizes="196x196" href="/p2p-internet-workshop/img/favicon.png?1">
+
+      <link href="/p2p-internet-workshop/css/mofo-bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="/p2p-internet-workshop/css/syntax.css">
+      <link rel="stylesheet" href="/p2p-internet-workshop/css/main.css">
+      <link rel="stylesheet" href="http://flukeout.github.io/mozmaker-icon-font/cdn/mozmaker-icons.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+			
+			<link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+			<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,700,700i" rel="stylesheet">
+    </head>
+
+    <body>
+
+      <div class="page container-fluid">
+        <div class="row">
+          
+          <div id="navigation" class="col-md-3 col-xs-12 sidebar" role="navigation">
+            <div class="sidebar-header">
+  <a href="/p2p-internet-workshop/">Building the Peer-to-Peer Internet</a>
+</div>
+
+<ul class="sidebar-menu list-unstyled">
+  
+
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-1/">1. What is mesh?</a>
+      
+  </li>
+
+  
+  <li class="selected">
+    <a href="/p2p-internet-workshop/articles/module-2/">2. Setting up your first node </a>
+      
+        
+          
+
+<ul class="sidebar-subitems">
+
+  
+  <li>
+    <a class=""
+      href="/p2p-internet-workshop/articles/module-2/presentation/">Presentation slides
+    </a>
+  </li>
+
+  
+  <li>
+    <a class=""
+      href="/p2p-internet-workshop/articles/module-2/pdf-assets/">PDF assets
+    </a>
+  </li>
+
+</ul>
+        
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-3/">3. Building nodes (hardware)</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-4/">4. Planning a network</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-5/">5. Measuring networks</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/module-6/">6. Living on a decentralized network</a>
+      
+  </li>
+
+  
+  <li>
+    <a href="/p2p-internet-workshop/articles/general/"> General</a>
+      
+  </li>
+
+</ul>
+
+<footer>
+  <i class="fa fa-archive" aria-hidden="true"></i> <a href="https://github.com/tomeshnet/p2p-internet-workshop/releases/latest">Download workshop materials</a>
+</footer>
+
+          </div>
+          <div id="content" class="col-md-9 col-xs-12">
+            <div class="lesson-content">
+<!--
+<div class="page-header">
+  <h2>
+    2.
+    Setting up your first node 
+  </h2>
+</div>
+-->
+<!--
+<div class="details">
+  <div class="row p-y-1">
+  
+    <div class="col-sm-4">
+      
+      <a target="_blank" class="suggest-changes" href="https://github.com/tomeshnet/p2p-internet-workshop/edit/gh-pages/_articles/module-2.md">Suggest changes</a>
+    </div>
+  </div>
+  
+</div>
+-->
+<h1 id="module-2-setting-up-your-first-node">Module 2: Setting up your first node</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Section</strong></th>
+      <th><strong>Length</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#1-topic-introduction"><strong>1: Topic introduction</strong></a></td>
+      <td>15 min</td>
+    </tr>
+    <tr>
+      <td><a href="#2-hands-on-and-material-exploration"><strong>2: Hands-on and material exploration</strong></a></td>
+      <td>40 min</td>
+    </tr>
+    <tr>
+      <td><a href="#3-discussion-and-reflection-activity"><strong>3: Discussion and reflection activity</strong></a></td>
+      <td>20 min</td>
+    </tr>
+    <tr>
+      <td><a href="#4-wrap-up-and-week-ahead"><strong>4: Wrap-up and week ahead</strong></a></td>
+      <td>5 min</td>
+    </tr>
+    <tr>
+      <td><strong>Workshop length</strong></td>
+      <td>1:30 min</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="1-topic-introduction">1: Topic introduction</h2>
+
+<ul>
+  <li>Recap that in the last session, we ran a peer-to-peer application over a mesh network isolated from the internet, and today we will manually set up such a mesh network on the same Raspberry Pi devices running GNU/Linux</li>
+  <li>Summarize homework takeaways and answer any questions:
+    <ul>
+      <li>IP address and packet</li>
+      <li>DHCP, NAT, IPv6 self-addressing</li>
+      <li>Packet forwarding and network routing</li>
+    </ul>
+  </li>
+  <li>Act as DHCP server and assign IP addresses to a couple students, route a paper message, using the terminologies, to demonstrate these concepts</li>
+</ul>
+
+<h2 id="2-hands-on-and-material-exploration">2: Hands-on and material exploration</h2>
+
+<p>Make visible the underlying infrastructure by sending text messages over ethernet cables.</p>
+
+<h3 id="objectives">Objectives</h3>
+
+<p>Set up a very basic network in class as manually as possible with the following goals:</p>
+
+<ul>
+  <li>Allow students to relate familiar day-to-day user interfaces (i.e. a desktop browser or a mobile app) to the physical infrastructure that carry our communications (i.e. an ethernet cable or a wireless radio)</li>
+  <li>Allow opportunity for students to tinker with command line tools, and help each other out to encourage an atmosphere of peer-to-peer learning, since we expect varying degrees of experience and comfort with typing into a shell from our audience (small set of simple commands with recoverable states)</li>
+  <li>Concretize abstract concepts discussed earlier such as <em>IP addresses</em> and <em>centralize points of failure in hierarchical networks</em></li>
+  <li>As we go through the steps in the activity, make a connection between what we are building to concepts that we have discussed before</li>
+</ul>
+
+<h3 id="materials">Materials</h3>
+
+<ul>
+  <li>An even number of Raspberry Pi 3s and power supplies</li>
+  <li>SD card with <a href="https://github.com/benhylau/mesh-workshop">mesh-workshop</a> pre-configured to mesh wirelessly with cjdns</li>
+  <li>One ethernet cable for each pair of Raspberry Pi 3s</li>
+  <li>Two USB WiFi radios that is <a href="https://github.com/phillymesh/802.11s-adapters">ad-hoc or 802.11s-capable</a></li>
+  <li>A 4-port network switch (to demostrate network centralization)</li>
+  <li>A physical lock with a key (to demostrate end-to-end encryption)</li>
+</ul>
+
+<h3 id="format">Format</h3>
+
+<ul>
+  <li>Groups (or Pairs) to start, then Class</li>
+</ul>
+
+<h3 id="activity">Activity</h3>
+
+<h4 id="make-wired-ethernet-link-and-assign-route-with-ip">Make wired ethernet link and assign route with <code class="highlighter-rouge">ip</code></h4>
+
+<ul>
+  <li>Each group starts with a pair of Raspberry Pis</li>
+  <li>Each group has two laptops, each connecting to one of their Raspberry Pi’s Host AP:
+    <ul>
+      <li>Connect to SSID <code class="highlighter-rouge">&lt;hostname&gt;</code> with password <code class="highlighter-rouge">password</code></li>
+      <li>Initiate a SSH session to <code class="highlighter-rouge">root@&lt;hostname&gt;.local</code> with password <code class="highlighter-rouge">root</code></li>
+    </ul>
+  </li>
+  <li>In the SSH session, look at the <code class="highlighter-rouge">eth0</code> ethernet interface using <code class="highlighter-rouge">networkctl status eth0</code></li>
+  <li>Connect the two nodes with an ethernet cable and run <code class="highlighter-rouge">networkctl status eth0</code> again</li>
+  <li>Explain that we now have a road (i.e. ethernet cable) but no street addresses (i.e. IP addresses) or road signs for directions (i.e. routes)</li>
+  <li>Assign an IP address to <code class="highlighter-rouge">eth0</code> and add a route on <code class="highlighter-rouge">&lt;host1&gt;</code>:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  root@host1:~# ip addr add 192.168.0.1 dev eth0
+  root@host1:~# ip route add 192.168.0.0/24 via 192.168.0.1
+</code></pre></div>    </div>
+    <p>and on <code class="highlighter-rouge">&lt;host2&gt;</code>:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  root@host2:~# ip addr add 192.168.0.2 dev eth0
+  root@host2:~# ip route add 192.168.0.0/24 via 192.168.0.2
+</code></pre></div>    </div>
+  </li>
+  <li>Verify the results with <code class="highlighter-rouge">networkctl status eth0</code> and <code class="highlighter-rouge">ip route</code></li>
+</ul>
+
+<h4 id="communicate-over-the-wire-with-nc">Communicate over the wire with <code class="highlighter-rouge">nc</code></h4>
+
+<ul>
+  <li>Use <code class="highlighter-rouge">nc</code> to send plaintext messages to one another, listen on port 80 on <code class="highlighter-rouge">&lt;host1&gt;</code>:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  root@host1:~# nc -l -p 80
+</code></pre></div>    </div>
+    <p>and connect to it from <code class="highlighter-rouge">&lt;host2&gt;</code>:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  root@host2:~# nc &lt;host1&gt;.local 80
+</code></pre></div>    </div>
+    <p>then start typing text messages</p>
+  </li>
+  <li>Run a minimal webserver that can respond to HTTP messages. Look at the script <code class="highlighter-rouge">start-webserver.sh</code> and run it:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  root@host1:~# cat ~/scripts/start-webserver.sh
+  root@host1:~# sh ~/scripts/start-webserver.sh
+</code></pre></div>    </div>
+    <p>and send a HTTP request to it from <code class="highlighter-rouge">&lt;host2&gt;</code>:</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  root@host2:~# curl &lt;host1&gt;.local
+</code></pre></div>    </div>
+    <p>then observe the response from the webserver. When you are ready to move on, hit <code class="highlighter-rouge">Ctrl + C</code> to stop the server.</p>
+  </li>
+  <li>This is similar to manually performing the task of a browser or application</li>
+</ul>
+
+<h4 id="form-a-3-node-centralized-network">Form a 3-node centralized network</h4>
+
+<ul>
+  <li>End the group stage and take three volunteers to form a network by plugging three Raspberry Pis into the network switch each with an ethernet cable</li>
+  <li>Point out two people in different groups may have selected the same IPv4 address for their <code class="highlighter-rouge">eth0</code> interface, like how two previously disjoint communities assigned the same street name and house number, which only becomes a problem when we bridge these two communities</li>
+  <li>Talk about NAT and self-assignment of IPv6</li>
+  <li>Resolve IP conflicts and show how we can talk to both other nodes from one node</li>
+  <li>Explain that if there is an outage at the switch none of the nodes can communicate anymore, and that is analogous to our Internet Service Providers in traditional network topologies</li>
+</ul>
+
+<h4 id="form-a-3-node-mesh-network">Form a 3-node mesh network</h4>
+
+<ul>
+  <li>As a class, construct the following network topology to form a mesh network and send a message from one edge node to the other, utilizing the middle one as relay:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  +--------------------+          +-------------------------------------+                +----------------+
+  | &lt;host1&gt; with       | wireless | &lt;host2&gt; with                        | ethernet cable | &lt;host3&gt; with   |
+  | mesh point adapter +----------+ mesh point adapter + ethernet cable +================+ ethernet cable |
+  | running cjdns      |          | running cjdns                       |                | running cjdns  |
+  +--------------------+          +-------------------------------------+                +----------------+
+</code></pre></div>    </div>
+    <ul>
+      <li>From <code class="highlighter-rouge">&lt;host1&gt;</code>, ping <code class="highlighter-rouge">&lt;host2&gt;</code> and then <code class="highlighter-rouge">&lt;host3&gt;</code></li>
+      <li>Explain mesh routing over relay <code class="highlighter-rouge">&lt;host2&gt;</code> across different network interfaces</li>
+      <li>Explain IPv6 self-addressing to prevent IP collision problem we discussed</li>
+      <li>Explain how end-to-end encryption makes the middle node unaware of what is in the data stream
+        <ul>
+          <li>Using the lock and key, make analogy to mailing a locked package where the recipient has the key to open the lock)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3-discussion-and-reflection-activity">3: Discussion and reflection activity</h2>
+
+<p>Spend a little time to casually discuss how our internet’s Domain Name System (DNS) works, and who controls which Top-Level Domains (TLDs). Draw from <a href="http://networks.land/activities/i-think-therefore-icann/">I Think Therefore ICANN</a> by <a href="http://networks.land">Networks Land</a>.</p>
+
+<p>Start with <a href="http://networks.land/reference/top-level-domains/">The “original” TLDs</a> and emphasize which organization controls each domain.</p>
+
+<p>There will not be enough time to play <a href="http://networks.land/activities/i-think-therefore-icann/">I Think Therefore ICANN</a>, but we can print some of the “Neat Real-World Examples” on cards and share them with the class, for example:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">.ly</code>: Libya’s two governments, as well as other splinter groups, are competing over the ability to communicate officially via the internet, and in places it comes down simply to who holds the login details: “the government domains are distributed between the two parties and it depends on who has the password which allows them to change the details of the domain.</p>
+</blockquote>
+
+<p>Hand out the scenario cards each to a different student, when we get to that particular TLD, they can volunteer to read the incident on the card to the class.</p>
+
+<h2 id="4-wrap-up-and-week-ahead">4: Wrap-up and week ahead</h2>
+
+<ul>
+  <li>Recap that we have:
+    <ul>
+      <li>Discussed networking acronyms and concepts such as IP addresses, DHCP, NAT, and routing</li>
+      <li>Started off building a simple wired ethernet link across two Raspberry Pi nodes</li>
+      <li>Sent plain text and HTTP messages across that link, emulating how applications communicate under the hood</li>
+      <li>As a class, constructed both a centralized network and a mesh network by hand</li>
+    </ul>
+  </li>
+  <li>Next session we will discuss wireless links more extensively, both theoretically and the practical aspects when configuring a wireless mesh network</li>
+</ul>
+
+<h3 id="homework">Homework</h3>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=5g-Din357iY">Frequency, Amplitude, and Phase</a> from the <a href="https://www.youtube.com/channel/UCGEnntxbGKMU9J9GIZ1LQUQ">Metamesh YouTube channel</a>
+    <ul>
+      <li>Explains what “is” WiFi in the physical sense</li>
+      <li>Relates radio interference to WiFi channels</li>
+      <li>Shows configuration of WiFi channel that is relevant to real-world network deployments</li>
+      <li>Helps future discussions around urban vs. rural deployments and omnidirectional vs. directional links</li>
+    </ul>
+  </li>
+  <li>Retrieve video content from Hyperboria server as stretch goal</li>
+</ul>
+
+
+
+  <h3>In This Section</h3>
+
+  
+   <p>
+    Module 2.
+    <a href="/p2p-internet-workshop/articles/module-2/presentation/">Presentation slides</a>
+    
+  </p>
+
+  
+   <p>
+    Module 2.
+    <a href="/p2p-internet-workshop/articles/module-2/pdf-assets/">PDF assets</a>
+    
+  </p>
+
+
+
+
+ 
+ <a class="btn btn-lg btn-default btn-next" href="/p2p-internet-workshop/articles/module-2/presentation/">
+next:
+Presentation slides &nbsp;
+<i class="fa fa-play" aria-hidden="true"></i>
+</a>
+<br />
+
+
+
+<p class="help-us">
+    <edit></edit>
+    Help us improve content and
+    <a target="_blank" href="https://github.com/tomeshnet/p2p-internet-workshop/issues">suggest changes</a> to this course.
+</p>
+</div>
+
+          </div>
+        </div>
+
+        <div class="row">
+        <footer class="col-sm-12">
+    <div class="mofooter">
+      <div class="icons">
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/footer-icon-twitter.svg"><a target="_blank" href="https://twitter.com/tomeshnet">Twitter</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/footer-icon-irc.svg"><a target="_blank" href="https://chat.tomesh.net/#/room/#p2p-internet-workshop:tomesh.net">Chat</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/footer-icon-email.svg"><a target="_blank" href="mailto:hello@tomesh.net">Email</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/footer-icon-github.svg"><a target="_blank" href="https://github.com/tomeshnet/p2p-internet-workshop">Github</a></div>
+        </div>
+        <div class="icon-container">
+          <div class="icon"><img class="footer-icon" src="/p2p-internet-workshop/img/cc-logo.svg"><a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">License</a></div>
+        </div>
+      </div>
+      <div class="footer-content">
+        <p><a href="/p2p-internet-workshop/">Building the Peer-to-Peer Internet</a> workshop series by <a target="_blank" href="https://tomesh.net">Toronto Mesh</a></p>
+        <p>Open-source syllabus to explore community mesh networks and distributed applications through social activities and various tinkerings with Raspberry Pi and LoRa systems.</p>
+      </div>
+    </div>
+  </footer>
+
+        </div>
+      </div>
+      <script>
+      function WebAnalytics() {
+       var _dntStatus = navigator.doNotTrack || navigator.msDoNotTrack;
+       var fxMatch = navigator.userAgent.match(/Firefox\/(\d+)/);
+       var ie10Match = navigator.userAgent.match(/MSIE 10/i);
+       var w8Match = navigator.appVersion.match(/Windows NT 6.2/);
+       if (fxMatch && Number(fxMatch[1]) < 32) {
+          _dntStatus = 'Unspecified';
+       } else if (ie10Match && w8Match) {
+           _dntStatus = 'Unspecified';
+       } else {
+          _dntStatus = { '0': 'Disabled', '1': 'Enabled' }[_dntStatus] || 'Unspecified';
+       }
+       if (_dntStatus !== 'Enabled'){
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-87658599-3', 'auto');
+        ga('send', 'pageview');
+       }
+      }
+      WebAnalytics();
+      </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.js"></script>
+      <script>anchors.add('h3,h4');</script>
+
+    </body>
+</html>
