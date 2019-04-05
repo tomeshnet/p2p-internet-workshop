@@ -5,9 +5,9 @@
 | Item | Units | Status |
 |:-----|:------|:-------|
 | Raspberry Pi 3B+ with power | 6 | With @darkdrgn2k |
-| Toplinkst TOP-S5 | 40 | With @darkdrgn2k |
+| Toplinkst TOP-S5 | 35 | With @darkdrgn2k |
 | Samsung Evo Select 32 GB | 20 | With @darkdrgn2k |
-| LoRa hardware | 0 | In chargeback process, have not ordered new ones |
+| LoRa hardware | 0 | Not ordered |
 
 ## Hardware allocation
 
@@ -18,6 +18,7 @@
 | TOP-S5 | 3 | 0.00 | @benhylau | Amber Initiative Foundation |
 | TOP-S5 | 1 | 0.00 | @benhylau | @makeworld-the-better-one |
 | TOP-S5 | 1 | 0.00 | @benhylau | @benhylau |
+| TOP-S5 | 5 | 0.00 | @benhylau | People's Open |
 
 See [collaboration groups](https://github.com/tomeshnet/p2p-internet-workshop/issues/68).
 
