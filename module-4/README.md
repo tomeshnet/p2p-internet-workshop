@@ -28,7 +28,6 @@ following: _articles/module-4/presentation.md
 ### Materials
 
 - Class Presentation
-- Class Shared Notes (i.e., using Riseup Pad or something similar)
 
 ### Activity
 
@@ -53,10 +52,10 @@ following: _articles/module-4/presentation.md
 
 ### Activity
 
-- Introduce Group Mapping Exercise 
+- Introduce Group Mapping Exercise
   - Based on [Commotion Construction Kit](https://commotionwireless.net/docs/cck/): "[Every Network Tells a Story](https://commotionwireless.net/docs/cck/planning/design-your-network-every-network-tells-story/)"
   - Describe Routers and Rules
-- Group Mapping 
+- Group Mapping
 - Discussion, Show & Tell
 
 ## 3: Discussion and reflection activity
@@ -74,7 +73,7 @@ following: _articles/module-4/presentation.md
 
 - Next session we will talk about Net Neutrality and _why_ and _how_ to "keep the pulse of a network"
 
-### Homework 
+### Homework
 
 - Watch [Net Neutrality - 6 Minute Explanation](https://www.youtube.com/watch?v=zASHI9qdB0U) by drawntoknowledge _(NOTE: This video incorrectly labeled ISPs as Tier 1 providers, however this does not impact the video's message)_
 - Watch selection of ["The Internet We Want" Panel starting @ 27:00](https://youtu.be/PtO4rPPBWjY?t=27m00s)

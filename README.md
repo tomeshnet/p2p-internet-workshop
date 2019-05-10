@@ -45,9 +45,6 @@ This course can be facilitated in an environment without internet access. Partic
     - Providing assistance during hands-on sections
     - Keeping groups on schedule for each activity
     - Having one helper observe the class and providing feedback ([sample reflection questions](http://www.teachhub.com/teaching-strategies-value-self-reflection))
-- Use a [shared notepad](https://pad.riseup.net/p/peer-to-peer-internet) for:
-    - Sharing notes and links
-    - Jargon-busting
 - Conclude with a [ticket out the door](http://www.ideasforeducators.com/idea-blog/a-twist-on-ticket-out-the-door) activity where students can optionally and anonymously leave feedback as they leave the class
 
 ## Workshop Materials
